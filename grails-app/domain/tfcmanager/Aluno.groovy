@@ -5,7 +5,7 @@ class Aluno {
 	String email
 	String faculdade
 	
-	static belongsTo = [HorarioSemanal, TFC]
+	static belongsTo = TFC
 	static hasMany = [horario : HorarioSemanal, tfc : TFC]
 
     static constraints = {

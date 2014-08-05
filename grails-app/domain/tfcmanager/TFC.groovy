@@ -12,7 +12,6 @@ class TFC {
 	
 	static hasMany = [seminario : Seminario, peso : PesoAvaliacao, professor : Professor, 
 		presenca : PresencaOrientacao, aluno : Aluno]
-	static belongsTo = Professor
 
     static constraints = {
     }
