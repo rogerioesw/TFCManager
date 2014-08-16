@@ -2,11 +2,11 @@ package tfcmanager
 
 class BancaDefesa {
 	Date data
-	Date horario
+	String horario
 	String observacao
 	
 	static belongsTo = TFC
-	static hasMany = [professor : Professor]
+	static hasMany = [bancahasProfessor : BancaDefesa_has_Professor]
 
     static constraints = {
     }

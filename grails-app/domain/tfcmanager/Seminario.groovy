@@ -3,10 +3,10 @@ package tfcmanager
 class Seminario {
 	String descricao
 	Date data
-	Date horario
+	String horario
 	String observacao
 	
-	TFC tfc
+	static belongsTo = [tfc:TFC]
 
     static constraints = {
     }

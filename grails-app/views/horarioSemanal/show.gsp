@@ -23,6 +23,17 @@
 			</g:if>
 			<ol class="property-list horarioSemanal">
 			
+				<g:if test="${horarioSemanalInstance?.alunohasHorario}">
+				<li class="fieldcontain">
+					<span id="alunohasHorario-label" class="property-label"><g:message code="horarioSemanal.alunohasHorario.label" default="Alunohas Horario" /></span>
+					
+						<g:each in="${horarioSemanalInstance.alunohasHorario}" var="a">
+						<span class="property-value" aria-labelledby="alunohasHorario-label"><g:link controller="aluno_has_HorarioSemanal" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${horarioSemanalInstance?.diasemana}">
 				<li class="fieldcontain">
 					<span id="diasemana-label" class="property-label"><g:message code="horarioSemanal.diasemana.label" default="Diasemana" /></span>
@@ -41,12 +52,23 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${horarioSemanalInstance?.professor}">
+				<g:if test="${horarioSemanalInstance?.professorhasHorario}">
 				<li class="fieldcontain">
-					<span id="professor-label" class="property-label"><g:message code="horarioSemanal.professor.label" default="Professor" /></span>
+					<span id="professorhasHorario-label" class="property-label"><g:message code="horarioSemanal.professorhasHorario.label" default="Professorhas Horario" /></span>
 					
-						<g:each in="${horarioSemanalInstance.professor}" var="p">
-						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						<g:each in="${horarioSemanalInstance.professorhasHorario}" var="p">
+						<span class="property-value" aria-labelledby="professorhasHorario-label"><g:link controller="professor_has_HorarioSemanal" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${horarioSemanalInstance?.tfc}">
+				<li class="fieldcontain">
+					<span id="tfc-label" class="property-label"><g:message code="horarioSemanal.tfc.label" default="Tfc" /></span>
+					
+						<g:each in="${horarioSemanalInstance.tfc}" var="t">
+						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

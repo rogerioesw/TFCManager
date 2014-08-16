@@ -2,10 +2,10 @@ package tfcmanager
 
 class HorarioSemanal {
 	String diasemana
-	Date horario
+	String horario
 	
-	static belongsTo = [Aluno, Professor]
-	static hasMany = [professor : Professor, aluno : Aluno, tfc : TFC]
+	static hasMany = [tfc : TFC, alunohasHorario : Aluno_has_HorarioSemanal, 
+		professorhasHorario : Professor_has_HorarioSemanal]
 
     static constraints = {
     }

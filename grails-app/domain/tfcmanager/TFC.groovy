@@ -5,13 +5,12 @@ class TFC {
 	String situacao
 	String observacao
 	
-	Disciplina disciplina
-	ProjetoOrientacao projetoorientacao
-	HorarioSemanal horariosemanal
-	BancaDefesa banca
 	
-	static hasMany = [seminario : Seminario, peso : PesoAvaliacao, professor : Professor, 
-		presenca : PresencaOrientacao, aluno : Aluno]
+	static belongsTo = [disciplina:Disciplina, projetoorientacao:ProjetoOrientacao,
+		horariosemanal:HorarioSemanal, banca:BancaDefesa]
+	
+	static hasMany = [seminario : Seminario, presenca : PresencaOrientacao, 
+		pesohasTFC : PesoAvaliacao_has_TFC, tfchasProfessor : TFC_has_Professor]
 
     static constraints = {
     }

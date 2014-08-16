@@ -23,6 +23,17 @@
 			</g:if>
 			<ol class="property-list professor">
 			
+				<g:if test="${professorInstance?.bancahasProfessor}">
+				<li class="fieldcontain">
+					<span id="bancahasProfessor-label" class="property-label"><g:message code="professor.bancahasProfessor.label" default="Bancahas Professor" /></span>
+					
+						<g:each in="${professorInstance.bancahasProfessor}" var="b">
+						<span class="property-value" aria-labelledby="bancahasProfessor-label"><g:link controller="bancaDefesa_has_Professor" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${professorInstance?.email}">
 				<li class="fieldcontain">
 					<span id="email-label" class="property-label"><g:message code="professor.email.label" default="Email" /></span>
@@ -32,22 +43,33 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${professorInstance?.horario}">
-				<li class="fieldcontain">
-					<span id="horario-label" class="property-label"><g:message code="professor.horario.label" default="Horario" /></span>
-					
-						<g:each in="${professorInstance.horario}" var="h">
-						<span class="property-value" aria-labelledby="horario-label"><g:link controller="horarioSemanal" action="show" id="${h.id}">${h?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${professorInstance?.nome}">
 				<li class="fieldcontain">
 					<span id="nome-label" class="property-label"><g:message code="professor.nome.label" default="Nome" /></span>
 					
 						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${professorInstance}" field="nome"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${professorInstance?.professorhasHorario}">
+				<li class="fieldcontain">
+					<span id="professorhasHorario-label" class="property-label"><g:message code="professor.professorhasHorario.label" default="Professorhas Horario" /></span>
+					
+						<g:each in="${professorInstance.professorhasHorario}" var="p">
+						<span class="property-value" aria-labelledby="professorhasHorario-label"><g:link controller="professor_has_HorarioSemanal" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${professorInstance?.tfchasProfessor}">
+				<li class="fieldcontain">
+					<span id="tfchasProfessor-label" class="property-label"><g:message code="professor.tfchasProfessor.label" default="Tfchas Professor" /></span>
+					
+						<g:each in="${professorInstance.tfchasProfessor}" var="t">
+						<span class="property-value" aria-labelledby="tfchasProfessor-label"><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

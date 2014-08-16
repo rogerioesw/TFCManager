@@ -3,7 +3,7 @@ package tfcmanager
 class Documentos {
 	String descricao
 	
-	ProjetoOrientacao projetoorientacao
+	static belongsTo = [projetoorientacao:ProjetoOrientacao]
 
     static constraints = {
     }

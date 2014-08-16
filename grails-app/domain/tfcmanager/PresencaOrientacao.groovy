@@ -4,7 +4,7 @@ class PresencaOrientacao {
 	Date data
 	String observacao
 	
-	TFC tfc
+	static belongsTo = [tfc:TFC]
 
     static constraints = {
     }
