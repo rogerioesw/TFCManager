@@ -4,7 +4,7 @@ class PesoAvaliacao {
 	String descricao
 	int percentual
 	
-	static hasMany = [pesohasTFC : PesoAvaliacao_has_TFC]
+	static hasMany = [pesohasAluno:PesoAvaliacao_has_Aluno]
 
     static constraints = {
     }

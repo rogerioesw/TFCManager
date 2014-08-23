@@ -1,9 +1,10 @@
 package tfcmanager
 
 class PesoAvaliacao_has_TFC {
-	double nota
+	String situacao
+	double notafinal
 	
-	static belongsTo = [peso:PesoAvaliacao, tfc:TFC]
+	static belongsTo = [PesoAvaliacao_has_Aluno, TFC, Aluno]
 
     static constraints = {
     }

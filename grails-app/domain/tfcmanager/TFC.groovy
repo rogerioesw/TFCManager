@@ -6,11 +6,10 @@ class TFC {
 	String observacao
 	
 	
-	static belongsTo = [disciplina:Disciplina, projetoorientacao:ProjetoOrientacao,
-		horariosemanal:HorarioSemanal, banca:BancaDefesa]
+	static belongsTo = [Disciplina, ProjetoOrientacao, HorarioSemanal, BancaDefesa]
 	
 	static hasMany = [seminario : Seminario, presenca : PresencaOrientacao, 
-		pesohasTFC : PesoAvaliacao_has_TFC, tfchasProfessor : TFC_has_Professor]
+		pesohasTFC:PesoAvaliacao_has_TFC, tfchasProfessor : TFC_has_Professor]
 
     static constraints = {
     }

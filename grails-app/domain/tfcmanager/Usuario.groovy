@@ -5,7 +5,7 @@ class Usuario {
 	String login
 	String senha
 	
-	static belongsTo = [projetoorientacao:ProjetoOrientacao]
+	static belongsTo = ProjetoOrientacao
 
     static constraints = {
 		login(blank:false, maxSize:20, nullable:false, unique:true)
