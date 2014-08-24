@@ -2,6 +2,24 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'diasemana', 'error')} required">
+	<label for="diasemana">
+		<g:message code="horarioSemanal.diasemana.label" default="Diasemana" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="diasemana" maxlength="14" required="" value="${horarioSemanalInstance?.diasemana}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'horario', 'error')} required">
+	<label for="horario">
+		<g:message code="horarioSemanal.horario.label" default="Horario" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="horario" pattern="${horarioSemanalInstance.constraints.horario.matches}" required="" value="${horarioSemanalInstance?.horario}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'alunohasHorario', 'error')} ">
 	<label for="alunohasHorario">
 		<g:message code="horarioSemanal.alunohasHorario.label" default="Alunohas Horario" />
@@ -20,39 +38,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'diasemana', 'error')} required">
-	<label for="diasemana">
-		<g:message code="horarioSemanal.diasemana.label" default="Diasemana" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="diasemana" required="" value="${horarioSemanalInstance?.diasemana}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'horario', 'error')} required">
-	<label for="horario">
-		<g:message code="horarioSemanal.horario.label" default="Horario" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:datePicker name="horario" precision="day"  value="${horarioSemanalInstance?.horario}"  />
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'professorhasHorario', 'error')} ">
 	<label for="professorhasHorario">
 		<g:message code="horarioSemanal.professorhasHorario.label" default="Professorhas Horario" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${horarioSemanalInstance?.professorhasHorario?}" var="p">
-    <li><g:link controller="professor_has_HorarioSemanal" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="professor_has_HorarioSemanal" action="create" params="['horarioSemanal.id': horarioSemanalInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'professor_has_HorarioSemanal.label', default: 'Professor_has_HorarioSemanal')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="professorhasHorario" from="${tfcmanager.Professor_has_HorarioSemanal.list()}" multiple="multiple" optionKey="id" size="5" value="${horarioSemanalInstance?.professorhasHorario*.id}" class="many-to-many"/>
 
 </div>
 
@@ -61,16 +52,7 @@
 		<g:message code="horarioSemanal.tfc.label" default="Tfc" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${horarioSemanalInstance?.tfc?}" var="t">
-    <li><g:link controller="TFC" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="TFC" action="create" params="['horarioSemanal.id': horarioSemanalInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'TFC.label', default: 'TFC')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="tfc" from="${tfcmanager.TFC.list()}" multiple="multiple" optionKey="id" size="5" value="${horarioSemanalInstance?.tfc*.id}" class="many-to-many"/>
 
 </div>
 

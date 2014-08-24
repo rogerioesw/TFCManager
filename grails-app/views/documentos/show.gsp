@@ -32,6 +32,13 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${documentosInstance?.arquivo}">
+				<li class="fieldcontain">
+					<span id="arquivo-label" class="property-label"><g:message code="documentos.arquivo.label" default="Arquivo" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${documentosInstance?.projetoorientacao}">
 				<li class="fieldcontain">
 					<span id="projetoorientacao-label" class="property-label"><g:message code="documentos.projetoorientacao.label" default="Projetoorientacao" /></span>

@@ -8,5 +8,7 @@ class HorarioSemanal {
 		professorhasHorario : Professor_has_HorarioSemanal]
 
     static constraints = {
+		diasemana(blank:false, maxSize:14, minSize:6)
+		horario(blank:false, matches:"^([0-1][0-9]|[2][0-3]):([0-5][0-9])")
     }
 }

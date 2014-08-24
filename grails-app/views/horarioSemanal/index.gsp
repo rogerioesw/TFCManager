@@ -36,7 +36,7 @@
 					
 						<td><g:link action="show" id="${horarioSemanalInstance.id}">${fieldValue(bean: horarioSemanalInstance, field: "diasemana")}</g:link></td>
 					
-						<td><g:formatDate date="${horarioSemanalInstance.horario}" /></td>
+						<td>${fieldValue(bean: horarioSemanalInstance, field: "horario")}</td>
 					
 					</tr>
 				</g:each>

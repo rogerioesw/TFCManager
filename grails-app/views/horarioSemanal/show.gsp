@@ -23,17 +23,6 @@
 			</g:if>
 			<ol class="property-list horarioSemanal">
 			
-				<g:if test="${horarioSemanalInstance?.alunohasHorario}">
-				<li class="fieldcontain">
-					<span id="alunohasHorario-label" class="property-label"><g:message code="horarioSemanal.alunohasHorario.label" default="Alunohas Horario" /></span>
-					
-						<g:each in="${horarioSemanalInstance.alunohasHorario}" var="a">
-						<span class="property-value" aria-labelledby="alunohasHorario-label"><g:link controller="aluno_has_HorarioSemanal" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${horarioSemanalInstance?.diasemana}">
 				<li class="fieldcontain">
 					<span id="diasemana-label" class="property-label"><g:message code="horarioSemanal.diasemana.label" default="Diasemana" /></span>
@@ -47,7 +36,18 @@
 				<li class="fieldcontain">
 					<span id="horario-label" class="property-label"><g:message code="horarioSemanal.horario.label" default="Horario" /></span>
 					
-						<span class="property-value" aria-labelledby="horario-label"><g:formatDate date="${horarioSemanalInstance?.horario}" /></span>
+						<span class="property-value" aria-labelledby="horario-label"><g:fieldValue bean="${horarioSemanalInstance}" field="horario"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${horarioSemanalInstance?.alunohasHorario}">
+				<li class="fieldcontain">
+					<span id="alunohasHorario-label" class="property-label"><g:message code="horarioSemanal.alunohasHorario.label" default="Alunohas Horario" /></span>
+					
+						<g:each in="${horarioSemanalInstance.alunohasHorario}" var="a">
+						<span class="property-value" aria-labelledby="alunohasHorario-label"><g:link controller="aluno_has_HorarioSemanal" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

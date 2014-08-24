@@ -7,7 +7,16 @@
 		<g:message code="documentos.descricao.label" default="Descricao" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="descricao" required="" value="${documentosInstance?.descricao}"/>
+	<g:textField name="descricao" maxlength="80" required="" value="${documentosInstance?.descricao}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'arquivo', 'error')} ">
+	<label for="arquivo">
+		<g:message code="documentos.arquivo.label" default="Arquivo" />
+		
+	</label>
+	<input type="file" id="arquivo" name="arquivo" />
 
 </div>
 
