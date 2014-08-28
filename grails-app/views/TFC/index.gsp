@@ -24,17 +24,11 @@
 			<thead>
 					<tr>
 					
-						<th><g:message code="TFC.banca.label" default="Banca" /></th>
-					
-						<th><g:message code="TFC.disciplina.label" default="Disciplina" /></th>
-					
-						<th><g:message code="TFC.horariosemanal.label" default="Horariosemanal" /></th>
-					
 						<g:sortableColumn property="observacao" title="${message(code: 'TFC.observacao.label', default: 'Observacao')}" />
 					
-						<th><g:message code="TFC.projetoorientacao.label" default="Projetoorientacao" /></th>
-					
 						<g:sortableColumn property="semestre" title="${message(code: 'TFC.semestre.label', default: 'Semestre')}" />
+					
+						<g:sortableColumn property="situacao" title="${message(code: 'TFC.situacao.label', default: 'Situacao')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +36,11 @@
 				<g:each in="${TFCInstanceList}" status="i" var="TFCInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${TFCInstance.id}">${fieldValue(bean: TFCInstance, field: "banca")}</g:link></td>
-					
-						<td>${fieldValue(bean: TFCInstance, field: "disciplina")}</td>
-					
-						<td>${fieldValue(bean: TFCInstance, field: "horariosemanal")}</td>
-					
-						<td>${fieldValue(bean: TFCInstance, field: "observacao")}</td>
-					
-						<td>${fieldValue(bean: TFCInstance, field: "projetoorientacao")}</td>
+						<td><g:link action="show" id="${TFCInstance.id}">${fieldValue(bean: TFCInstance, field: "observacao")}</g:link></td>
 					
 						<td>${fieldValue(bean: TFCInstance, field: "semestre")}</td>
+					
+						<td>${fieldValue(bean: TFCInstance, field: "situacao")}</td>
 					
 					</tr>
 				</g:each>

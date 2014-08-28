@@ -20,21 +20,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: pesoAvaliacaoInstance, field: 'pesohasTFC', 'error')} ">
-	<label for="pesohasTFC">
-		<g:message code="pesoAvaliacao.pesohasTFC.label" default="Pesohas TFC" />
+<div class="fieldcontain ${hasErrors(bean: pesoAvaliacaoInstance, field: 'pesohasAluno', 'error')} ">
+	<label for="pesohasAluno">
+		<g:message code="pesoAvaliacao.pesohasAluno.label" default="Pesohas Aluno" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${pesoAvaliacaoInstance?.pesohasTFC?}" var="p">
-    <li><g:link controller="pesoAvaliacao_has_TFC" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="pesoAvaliacao_has_TFC" action="create" params="['pesoAvaliacao.id': pesoAvaliacaoInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'pesoAvaliacao_has_TFC.label', default: 'PesoAvaliacao_has_TFC')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="pesohasAluno" from="${tfcmanager.PesoAvaliacao_has_Aluno.list()}" multiple="multiple" optionKey="id" size="5" value="${pesoAvaliacaoInstance?.pesohasAluno*.id}" class="many-to-many"/>
 
 </div>
 

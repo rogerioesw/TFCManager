@@ -23,33 +23,6 @@
 			</g:if>
 			<ol class="property-list TFC">
 			
-				<g:if test="${TFCInstance?.banca}">
-				<li class="fieldcontain">
-					<span id="banca-label" class="property-label"><g:message code="TFC.banca.label" default="Banca" /></span>
-					
-						<span class="property-value" aria-labelledby="banca-label"><g:link controller="bancaDefesa" action="show" id="${TFCInstance?.banca?.id}">${TFCInstance?.banca?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFCInstance?.disciplina}">
-				<li class="fieldcontain">
-					<span id="disciplina-label" class="property-label"><g:message code="TFC.disciplina.label" default="Disciplina" /></span>
-					
-						<span class="property-value" aria-labelledby="disciplina-label"><g:link controller="disciplina" action="show" id="${TFCInstance?.disciplina?.id}">${TFCInstance?.disciplina?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFCInstance?.horariosemanal}">
-				<li class="fieldcontain">
-					<span id="horariosemanal-label" class="property-label"><g:message code="TFC.horariosemanal.label" default="Horariosemanal" /></span>
-					
-						<span class="property-value" aria-labelledby="horariosemanal-label"><g:link controller="horarioSemanal" action="show" id="${TFCInstance?.horariosemanal?.id}">${TFCInstance?.horariosemanal?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${TFCInstance?.observacao}">
 				<li class="fieldcontain">
 					<span id="observacao-label" class="property-label"><g:message code="TFC.observacao.label" default="Observacao" /></span>
@@ -77,15 +50,6 @@
 						<g:each in="${TFCInstance.presenca}" var="p">
 						<span class="property-value" aria-labelledby="presenca-label"><g:link controller="presencaOrientacao" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFCInstance?.projetoorientacao}">
-				<li class="fieldcontain">
-					<span id="projetoorientacao-label" class="property-label"><g:message code="TFC.projetoorientacao.label" default="Projetoorientacao" /></span>
-					
-						<span class="property-value" aria-labelledby="projetoorientacao-label"><g:link controller="projetoOrientacao" action="show" id="${TFCInstance?.projetoorientacao?.id}">${TFCInstance?.projetoorientacao?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

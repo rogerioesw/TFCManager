@@ -41,12 +41,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${pesoAvaliacaoInstance?.pesohasTFC}">
+				<g:if test="${pesoAvaliacaoInstance?.pesohasAluno}">
 				<li class="fieldcontain">
-					<span id="pesohasTFC-label" class="property-label"><g:message code="pesoAvaliacao.pesohasTFC.label" default="Pesohas TFC" /></span>
+					<span id="pesohasAluno-label" class="property-label"><g:message code="pesoAvaliacao.pesohasAluno.label" default="Pesohas Aluno" /></span>
 					
-						<g:each in="${pesoAvaliacaoInstance.pesohasTFC}" var="p">
-						<span class="property-value" aria-labelledby="pesohasTFC-label"><g:link controller="pesoAvaliacao_has_TFC" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						<g:each in="${pesoAvaliacaoInstance.pesohasAluno}" var="p">
+						<span class="property-value" aria-labelledby="pesohasAluno-label"><g:link controller="pesoAvaliacao_has_Aluno" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

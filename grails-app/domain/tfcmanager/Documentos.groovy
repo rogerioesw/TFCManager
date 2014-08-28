@@ -8,6 +8,6 @@ class Documentos {
 
     static constraints = {
 		descricao(blank:false, maxSize:80, minSize:4)
-		arquivo(nullable:true, maxSize:16777215)
+		arquivo(blank:false, nullable:false, minSize:4, maxSize:16777215)
     }
 }

@@ -23,29 +23,20 @@
 			</g:if>
 			<ol class="property-list pesoAvaliacao_has_TFC">
 			
-				<g:if test="${pesoAvaliacao_has_TFCInstance?.nota}">
+				<g:if test="${pesoAvaliacao_has_TFCInstance?.notafinal}">
 				<li class="fieldcontain">
-					<span id="nota-label" class="property-label"><g:message code="pesoAvaliacao_has_TFC.nota.label" default="Nota" /></span>
+					<span id="notafinal-label" class="property-label"><g:message code="pesoAvaliacao_has_TFC.notafinal.label" default="Notafinal" /></span>
 					
-						<span class="property-value" aria-labelledby="nota-label"><g:fieldValue bean="${pesoAvaliacao_has_TFCInstance}" field="nota"/></span>
+						<span class="property-value" aria-labelledby="notafinal-label"><g:fieldValue bean="${pesoAvaliacao_has_TFCInstance}" field="notafinal"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${pesoAvaliacao_has_TFCInstance?.peso}">
+				<g:if test="${pesoAvaliacao_has_TFCInstance?.situacao}">
 				<li class="fieldcontain">
-					<span id="peso-label" class="property-label"><g:message code="pesoAvaliacao_has_TFC.peso.label" default="Peso" /></span>
+					<span id="situacao-label" class="property-label"><g:message code="pesoAvaliacao_has_TFC.situacao.label" default="Situacao" /></span>
 					
-						<span class="property-value" aria-labelledby="peso-label"><g:link controller="pesoAvaliacao" action="show" id="${pesoAvaliacao_has_TFCInstance?.peso?.id}">${pesoAvaliacao_has_TFCInstance?.peso?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${pesoAvaliacao_has_TFCInstance?.tfc}">
-				<li class="fieldcontain">
-					<span id="tfc-label" class="property-label"><g:message code="pesoAvaliacao_has_TFC.tfc.label" default="Tfc" /></span>
-					
-						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${pesoAvaliacao_has_TFCInstance?.tfc?.id}">${pesoAvaliacao_has_TFCInstance?.tfc?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="situacao-label"><g:fieldValue bean="${pesoAvaliacao_has_TFCInstance}" field="situacao"/></span>
 					
 				</li>
 				</g:if>

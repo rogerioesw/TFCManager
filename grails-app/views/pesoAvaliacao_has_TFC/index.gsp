@@ -24,11 +24,9 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="nota" title="${message(code: 'pesoAvaliacao_has_TFC.nota.label', default: 'Nota')}" />
+						<g:sortableColumn property="notafinal" title="${message(code: 'pesoAvaliacao_has_TFC.notafinal.label', default: 'Notafinal')}" />
 					
-						<th><g:message code="pesoAvaliacao_has_TFC.peso.label" default="Peso" /></th>
-					
-						<th><g:message code="pesoAvaliacao_has_TFC.tfc.label" default="Tfc" /></th>
+						<g:sortableColumn property="situacao" title="${message(code: 'pesoAvaliacao_has_TFC.situacao.label', default: 'Situacao')}" />
 					
 					</tr>
 				</thead>
@@ -36,11 +34,9 @@
 				<g:each in="${pesoAvaliacao_has_TFCInstanceList}" status="i" var="pesoAvaliacao_has_TFCInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${pesoAvaliacao_has_TFCInstance.id}">${fieldValue(bean: pesoAvaliacao_has_TFCInstance, field: "nota")}</g:link></td>
+						<td><g:link action="show" id="${pesoAvaliacao_has_TFCInstance.id}">${fieldValue(bean: pesoAvaliacao_has_TFCInstance, field: "notafinal")}</g:link></td>
 					
-						<td>${fieldValue(bean: pesoAvaliacao_has_TFCInstance, field: "peso")}</td>
-					
-						<td>${fieldValue(bean: pesoAvaliacao_has_TFCInstance, field: "tfc")}</td>
+						<td>${fieldValue(bean: pesoAvaliacao_has_TFCInstance, field: "situacao")}</td>
 					
 					</tr>
 				</g:each>

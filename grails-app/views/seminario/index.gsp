@@ -32,8 +32,6 @@
 					
 						<g:sortableColumn property="observacao" title="${message(code: 'seminario.observacao.label', default: 'Observacao')}" />
 					
-						<th><g:message code="seminario.tfc.label" default="Tfc" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -44,11 +42,9 @@
 					
 						<td>${fieldValue(bean: seminarioInstance, field: "descricao")}</td>
 					
-						<td><g:formatDate date="${seminarioInstance.horario}" /></td>
+						<td>${fieldValue(bean: seminarioInstance, field: "horario")}</td>
 					
 						<td>${fieldValue(bean: seminarioInstance, field: "observacao")}</td>
-					
-						<td>${fieldValue(bean: seminarioInstance, field: "tfc")}</td>
 					
 					</tr>
 				</g:each>

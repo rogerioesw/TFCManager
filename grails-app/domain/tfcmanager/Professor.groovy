@@ -9,5 +9,7 @@ class Professor {
 		professorhasConvocacao:Professor_has_Convocacao]
 
     static constraints = {
+		nome(blank:false, maxSize:40, minSize:10)
+		email(blank:false, email:true)
     }
 }

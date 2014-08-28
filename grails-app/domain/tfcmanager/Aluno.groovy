@@ -4,7 +4,7 @@ class Aluno {
 	String nome
 	String email
 	
-	static belongsTo = Faculdade
+	static belongsTo = [faculdade:Faculdade]
 	
 	static hasMany = [alunohasHorario : Aluno_has_HorarioSemanal]
 

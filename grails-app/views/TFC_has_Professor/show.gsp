@@ -23,24 +23,6 @@
 			</g:if>
 			<ol class="property-list TFC_has_Professor">
 			
-				<g:if test="${TFC_has_ProfessorInstance?.professor}">
-				<li class="fieldcontain">
-					<span id="professor-label" class="property-label"><g:message code="TFC_has_Professor.professor.label" default="Professor" /></span>
-					
-						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${TFC_has_ProfessorInstance?.professor?.id}">${TFC_has_ProfessorInstance?.professor?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFC_has_ProfessorInstance?.tfc}">
-				<li class="fieldcontain">
-					<span id="tfc-label" class="property-label"><g:message code="TFC_has_Professor.tfc.label" default="Tfc" /></span>
-					
-						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${TFC_has_ProfessorInstance?.tfc?.id}">${TFC_has_ProfessorInstance?.tfc?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${TFC_has_ProfessorInstance?.tipo}">
 				<li class="fieldcontain">
 					<span id="tipo-label" class="property-label"><g:message code="TFC_has_Professor.tipo.label" default="Tipo" /></span>

@@ -9,26 +9,6 @@ import grails.transaction.Transactional
 class UsuarioController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-	
-	def login = {}
-	
-	def authenticate = {
-		def usuario = Usuario.findByLoginAndSenha(params.login, params.senha)
-		if (usuario) {
-			session.usuario = usuario
-			flash.message = "Olá ${usuario.nomecompleto}!"
-			redirect(controller:"entry", action:"list")
-		} else {
-			flash.message = "Desculpe, ${params.login}. Por favor, tente novamente."
-			redirect(action:"login")
-		}
-	}
-	
-	def logout = {
-		flash.message = "Até mais ${session.usuario.nomecompleto}"
-		session.usuario = null
-		redirect(controller:"entry", action:"list")
-	}
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)

@@ -23,13 +23,11 @@
 			</g:if>
 			<ol class="property-list aluno">
 			
-				<g:if test="${alunoInstance?.alunohasHorario}">
+				<g:if test="${alunoInstance?.nome}">
 				<li class="fieldcontain">
-					<span id="alunohasHorario-label" class="property-label"><g:message code="aluno.alunohasHorario.label" default="Alunohas Horario" /></span>
+					<span id="nome-label" class="property-label"><g:message code="aluno.nome.label" default="Nome" /></span>
 					
-						<g:each in="${alunoInstance.alunohasHorario}" var="a">
-						<span class="property-value" aria-labelledby="alunohasHorario-label"><g:link controller="aluno_has_HorarioSemanal" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${alunoInstance}" field="nome"/></span>
 					
 				</li>
 				</g:if>
@@ -43,20 +41,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${alunoInstance?.faculdade}">
+				<g:if test="${alunoInstance?.alunohasHorario}">
 				<li class="fieldcontain">
-					<span id="faculdade-label" class="property-label"><g:message code="aluno.faculdade.label" default="Faculdade" /></span>
+					<span id="alunohasHorario-label" class="property-label"><g:message code="aluno.alunohasHorario.label" default="Alunohas Horario" /></span>
 					
-						<span class="property-value" aria-labelledby="faculdade-label"><g:fieldValue bean="${alunoInstance}" field="faculdade"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${alunoInstance?.nome}">
-				<li class="fieldcontain">
-					<span id="nome-label" class="property-label"><g:message code="aluno.nome.label" default="Nome" /></span>
-					
-						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${alunoInstance}" field="nome"/></span>
+						<g:each in="${alunoInstance.alunohasHorario}" var="a">
+						<span class="property-value" aria-labelledby="alunohasHorario-label"><g:link controller="aluno_has_HorarioSemanal" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

@@ -28,8 +28,6 @@
 					
 						<g:sortableColumn property="observacao" title="${message(code: 'presencaOrientacao.observacao.label', default: 'Observacao')}" />
 					
-						<th><g:message code="presencaOrientacao.tfc.label" default="Tfc" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -39,8 +37,6 @@
 						<td><g:link action="show" id="${presencaOrientacaoInstance.id}">${fieldValue(bean: presencaOrientacaoInstance, field: "data")}</g:link></td>
 					
 						<td>${fieldValue(bean: presencaOrientacaoInstance, field: "observacao")}</td>
-					
-						<td>${fieldValue(bean: presencaOrientacaoInstance, field: "tfc")}</td>
 					
 					</tr>
 				</g:each>

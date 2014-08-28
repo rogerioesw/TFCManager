@@ -5,7 +5,7 @@ class BancaDefesa {
 	String horario
 	String observacao
 	
-	static belongsTo = TFC
+	static belongsTo = [tfc:TFC]
 	static hasMany = [bancahasProfessor : BancaDefesa_has_Professor]
 
     static constraints = {

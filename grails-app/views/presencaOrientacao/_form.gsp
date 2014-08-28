@@ -20,12 +20,3 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: presencaOrientacaoInstance, field: 'tfc', 'error')} required">
-	<label for="tfc">
-		<g:message code="presencaOrientacao.tfc.label" default="Tfc" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="tfc" name="tfc.id" from="${tfcmanager.TFC.list()}" optionKey="id" required="" value="${presencaOrientacaoInstance?.tfc?.id}" class="many-to-one"/>
-
-</div>
-

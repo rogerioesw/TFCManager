@@ -24,11 +24,11 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="semestre" title="${message(code: 'aluno_has_HorarioSemanal.semestre.label', default: 'Semestre')}" />
+					
 						<th><g:message code="aluno_has_HorarioSemanal.aluno.label" default="Aluno" /></th>
 					
 						<th><g:message code="aluno_has_HorarioSemanal.horario.label" default="Horario" /></th>
-					
-						<g:sortableColumn property="semestre" title="${message(code: 'aluno_has_HorarioSemanal.semestre.label', default: 'Semestre')}" />
 					
 					</tr>
 				</thead>
@@ -36,11 +36,11 @@
 				<g:each in="${aluno_has_HorarioSemanalInstanceList}" status="i" var="aluno_has_HorarioSemanalInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${aluno_has_HorarioSemanalInstance.id}">${fieldValue(bean: aluno_has_HorarioSemanalInstance, field: "aluno")}</g:link></td>
+						<td><g:link action="show" id="${aluno_has_HorarioSemanalInstance.id}">${fieldValue(bean: aluno_has_HorarioSemanalInstance, field: "semestre")}</g:link></td>
+					
+						<td>${fieldValue(bean: aluno_has_HorarioSemanalInstance, field: "aluno")}</td>
 					
 						<td>${fieldValue(bean: aluno_has_HorarioSemanalInstance, field: "horario")}</td>
-					
-						<td>${fieldValue(bean: aluno_has_HorarioSemanalInstance, field: "semestre")}</td>
 					
 					</tr>
 				</g:each>

@@ -25,16 +25,7 @@
 		<g:message code="disciplina.tfc.label" default="Tfc" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${disciplinaInstance?.tfc?}" var="t">
-    <li><g:link controller="TFC" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="TFC" action="create" params="['disciplina.id': disciplinaInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'TFC.label', default: 'TFC')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="tfc" from="${tfcmanager.TFC.list()}" multiple="multiple" optionKey="id" size="5" value="${disciplinaInstance?.tfc*.id}" class="many-to-many"/>
 
 </div>
 

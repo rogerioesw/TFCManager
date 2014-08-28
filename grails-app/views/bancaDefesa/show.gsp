@@ -23,17 +23,6 @@
 			</g:if>
 			<ol class="property-list bancaDefesa">
 			
-				<g:if test="${bancaDefesaInstance?.bancahasProfessor}">
-				<li class="fieldcontain">
-					<span id="bancahasProfessor-label" class="property-label"><g:message code="bancaDefesa.bancahasProfessor.label" default="Bancahas Professor" /></span>
-					
-						<g:each in="${bancaDefesaInstance.bancahasProfessor}" var="b">
-						<span class="property-value" aria-labelledby="bancahasProfessor-label"><g:link controller="bancaDefesa_has_Professor" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${bancaDefesaInstance?.data}">
 				<li class="fieldcontain">
 					<span id="data-label" class="property-label"><g:message code="bancaDefesa.data.label" default="Data" /></span>
@@ -47,7 +36,7 @@
 				<li class="fieldcontain">
 					<span id="horario-label" class="property-label"><g:message code="bancaDefesa.horario.label" default="Horario" /></span>
 					
-						<span class="property-value" aria-labelledby="horario-label"><g:formatDate date="${bancaDefesaInstance?.horario}" /></span>
+						<span class="property-value" aria-labelledby="horario-label"><g:fieldValue bean="${bancaDefesaInstance}" field="horario"/></span>
 					
 				</li>
 				</g:if>
@@ -57,6 +46,17 @@
 					<span id="observacao-label" class="property-label"><g:message code="bancaDefesa.observacao.label" default="Observacao" /></span>
 					
 						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${bancaDefesaInstance}" field="observacao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${bancaDefesaInstance?.bancahasProfessor}">
+				<li class="fieldcontain">
+					<span id="bancahasProfessor-label" class="property-label"><g:message code="bancaDefesa.bancahasProfessor.label" default="Bancahas Professor" /></span>
+					
+						<g:each in="${bancaDefesaInstance.bancahasProfessor}" var="b">
+						<span class="property-value" aria-labelledby="bancahasProfessor-label"><g:link controller="bancaDefesa_has_Professor" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

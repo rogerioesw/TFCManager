@@ -41,15 +41,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${usuarioInstance?.projetoorientacao}">
-				<li class="fieldcontain">
-					<span id="projetoorientacao-label" class="property-label"><g:message code="usuario.projetoorientacao.label" default="Projetoorientacao" /></span>
-					
-						<span class="property-value" aria-labelledby="projetoorientacao-label"><g:link controller="projetoOrientacao" action="show" id="${usuarioInstance?.projetoorientacao?.id}">${usuarioInstance?.projetoorientacao?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${usuarioInstance?.senha}">
 				<li class="fieldcontain">
 					<span id="senha-label" class="property-label"><g:message code="usuario.senha.label" default="Senha" /></span>

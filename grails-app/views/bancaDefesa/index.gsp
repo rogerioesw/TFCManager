@@ -38,7 +38,7 @@
 					
 						<td><g:link action="show" id="${bancaDefesaInstance.id}">${fieldValue(bean: bancaDefesaInstance, field: "data")}</g:link></td>
 					
-						<td><g:formatDate date="${bancaDefesaInstance.horario}" /></td>
+						<td>${fieldValue(bean: bancaDefesaInstance, field: "horario")}</td>
 					
 						<td>${fieldValue(bean: bancaDefesaInstance, field: "observacao")}</td>
 					

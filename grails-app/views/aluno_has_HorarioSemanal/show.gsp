@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list aluno_has_HorarioSemanal">
 			
+				<g:if test="${aluno_has_HorarioSemanalInstance?.semestre}">
+				<li class="fieldcontain">
+					<span id="semestre-label" class="property-label"><g:message code="aluno_has_HorarioSemanal.semestre.label" default="Semestre" /></span>
+					
+						<span class="property-value" aria-labelledby="semestre-label"><g:fieldValue bean="${aluno_has_HorarioSemanalInstance}" field="semestre"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${aluno_has_HorarioSemanalInstance?.aluno}">
 				<li class="fieldcontain">
 					<span id="aluno-label" class="property-label"><g:message code="aluno_has_HorarioSemanal.aluno.label" default="Aluno" /></span>
@@ -37,15 +46,6 @@
 					<span id="horario-label" class="property-label"><g:message code="aluno_has_HorarioSemanal.horario.label" default="Horario" /></span>
 					
 						<span class="property-value" aria-labelledby="horario-label"><g:link controller="horarioSemanal" action="show" id="${aluno_has_HorarioSemanalInstance?.horario?.id}">${aluno_has_HorarioSemanalInstance?.horario?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${aluno_has_HorarioSemanalInstance?.semestre}">
-				<li class="fieldcontain">
-					<span id="semestre-label" class="property-label"><g:message code="aluno_has_HorarioSemanal.semestre.label" default="Semestre" /></span>
-					
-						<span class="property-value" aria-labelledby="semestre-label"><g:fieldValue bean="${aluno_has_HorarioSemanalInstance}" field="semestre"/></span>
 					
 				</li>
 				</g:if>

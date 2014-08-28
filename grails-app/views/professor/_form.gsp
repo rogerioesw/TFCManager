@@ -38,21 +38,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: professorInstance, field: 'professorhasConvocacao', 'error')} ">
+	<label for="professorhasConvocacao">
+		<g:message code="professor.professorhasConvocacao.label" default="Professorhas Convocacao" />
+		
+	</label>
+	<g:select name="professorhasConvocacao" from="${tfcmanager.Professor_has_Convocacao.list()}" multiple="multiple" optionKey="id" size="5" value="${professorInstance?.professorhasConvocacao*.id}" class="many-to-many"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: professorInstance, field: 'professorhasHorario', 'error')} ">
 	<label for="professorhasHorario">
 		<g:message code="professor.professorhasHorario.label" default="Professorhas Horario" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${professorInstance?.professorhasHorario?}" var="p">
-    <li><g:link controller="professor_has_HorarioSemanal" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="professor_has_HorarioSemanal" action="create" params="['professor.id': professorInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'professor_has_HorarioSemanal.label', default: 'Professor_has_HorarioSemanal')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="professorhasHorario" from="${tfcmanager.Professor_has_HorarioSemanal.list()}" multiple="multiple" optionKey="id" size="5" value="${professorInstance?.professorhasHorario*.id}" class="many-to-many"/>
 
 </div>
 
@@ -61,16 +61,7 @@
 		<g:message code="professor.tfchasProfessor.label" default="Tfchas Professor" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${professorInstance?.tfchasProfessor?}" var="t">
-    <li><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="TFC_has_Professor" action="create" params="['professor.id': professorInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'TFC_has_Professor.label', default: 'TFC_has_Professor')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="tfchasProfessor" from="${tfcmanager.TFC_has_Professor.list()}" multiple="multiple" optionKey="id" size="5" value="${professorInstance?.tfchasProfessor*.id}" class="many-to-many"/>
 
 </div>
 

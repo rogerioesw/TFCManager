@@ -24,10 +24,6 @@
 			<thead>
 					<tr>
 					
-						<th><g:message code="TFC_has_Professor.professor.label" default="Professor" /></th>
-					
-						<th><g:message code="TFC_has_Professor.tfc.label" default="Tfc" /></th>
-					
 						<g:sortableColumn property="tipo" title="${message(code: 'TFC_has_Professor.tipo.label', default: 'Tipo')}" />
 					
 					</tr>
@@ -36,11 +32,7 @@
 				<g:each in="${TFC_has_ProfessorInstanceList}" status="i" var="TFC_has_ProfessorInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${TFC_has_ProfessorInstance.id}">${fieldValue(bean: TFC_has_ProfessorInstance, field: "professor")}</g:link></td>
-					
-						<td>${fieldValue(bean: TFC_has_ProfessorInstance, field: "tfc")}</td>
-					
-						<td>${fieldValue(bean: TFC_has_ProfessorInstance, field: "tipo")}</td>
+						<td><g:link action="show" id="${TFC_has_ProfessorInstance.id}">${fieldValue(bean: TFC_has_ProfessorInstance, field: "tipo")}</g:link></td>
 					
 					</tr>
 				</g:each>

@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="horario-label" class="property-label"><g:message code="seminario.horario.label" default="Horario" /></span>
 					
-						<span class="property-value" aria-labelledby="horario-label"><g:formatDate date="${seminarioInstance?.horario}" /></span>
+						<span class="property-value" aria-labelledby="horario-label"><g:fieldValue bean="${seminarioInstance}" field="horario"/></span>
 					
 				</li>
 				</g:if>
@@ -55,15 +55,6 @@
 					<span id="observacao-label" class="property-label"><g:message code="seminario.observacao.label" default="Observacao" /></span>
 					
 						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${seminarioInstance}" field="observacao"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${seminarioInstance?.tfc}">
-				<li class="fieldcontain">
-					<span id="tfc-label" class="property-label"><g:message code="seminario.tfc.label" default="Tfc" /></span>
-					
-						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${seminarioInstance?.tfc?.id}">${seminarioInstance?.tfc?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

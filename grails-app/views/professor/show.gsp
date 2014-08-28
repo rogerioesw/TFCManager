@@ -52,6 +52,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${professorInstance?.professorhasConvocacao}">
+				<li class="fieldcontain">
+					<span id="professorhasConvocacao-label" class="property-label"><g:message code="professor.professorhasConvocacao.label" default="Professorhas Convocacao" /></span>
+					
+						<g:each in="${professorInstance.professorhasConvocacao}" var="p">
+						<span class="property-value" aria-labelledby="professorhasConvocacao-label"><g:link controller="professor_has_Convocacao" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${professorInstance?.professorhasHorario}">
 				<li class="fieldcontain">
 					<span id="professorhasHorario-label" class="property-label"><g:message code="professor.professorhasHorario.label" default="Professorhas Horario" /></span>

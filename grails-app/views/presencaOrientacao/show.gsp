@@ -41,15 +41,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${presencaOrientacaoInstance?.tfc}">
-				<li class="fieldcontain">
-					<span id="tfc-label" class="property-label"><g:message code="presencaOrientacao.tfc.label" default="Tfc" /></span>
-					
-						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${presencaOrientacaoInstance?.tfc?.id}">${presencaOrientacaoInstance?.tfc?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 			</ol>
 			<g:form url="[resource:presencaOrientacaoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

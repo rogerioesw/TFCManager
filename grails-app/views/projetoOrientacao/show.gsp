@@ -23,22 +23,11 @@
 			</g:if>
 			<ol class="property-list projetoOrientacao">
 			
-				<g:if test="${projetoOrientacaoInstance?.documentos}">
+				<g:if test="${projetoOrientacaoInstance?.tema}">
 				<li class="fieldcontain">
-					<span id="documentos-label" class="property-label"><g:message code="projetoOrientacao.documentos.label" default="Documentos" /></span>
+					<span id="tema-label" class="property-label"><g:message code="projetoOrientacao.tema.label" default="Tema" /></span>
 					
-						<g:each in="${projetoOrientacaoInstance.documentos}" var="d">
-						<span class="property-value" aria-labelledby="documentos-label"><g:link controller="documentos" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${projetoOrientacaoInstance?.observacao}">
-				<li class="fieldcontain">
-					<span id="observacao-label" class="property-label"><g:message code="projetoOrientacao.observacao.label" default="Observacao" /></span>
-					
-						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${projetoOrientacaoInstance}" field="observacao"/></span>
+						<span class="property-value" aria-labelledby="tema-label"><g:fieldValue bean="${projetoOrientacaoInstance}" field="tema"/></span>
 					
 				</li>
 				</g:if>
@@ -52,11 +41,22 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${projetoOrientacaoInstance?.tema}">
+				<g:if test="${projetoOrientacaoInstance?.observacao}">
 				<li class="fieldcontain">
-					<span id="tema-label" class="property-label"><g:message code="projetoOrientacao.tema.label" default="Tema" /></span>
+					<span id="observacao-label" class="property-label"><g:message code="projetoOrientacao.observacao.label" default="Observacao" /></span>
 					
-						<span class="property-value" aria-labelledby="tema-label"><g:fieldValue bean="${projetoOrientacaoInstance}" field="tema"/></span>
+						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${projetoOrientacaoInstance}" field="observacao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projetoOrientacaoInstance?.documentos}">
+				<li class="fieldcontain">
+					<span id="documentos-label" class="property-label"><g:message code="projetoOrientacao.documentos.label" default="Documentos" /></span>
+					
+						<g:each in="${projetoOrientacaoInstance.documentos}" var="d">
+						<span class="property-value" aria-labelledby="documentos-label"><g:link controller="documentos" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

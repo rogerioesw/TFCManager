@@ -26,10 +26,6 @@
 					
 						<th><g:message code="bancaDefesa_has_Professor.banca.label" default="Banca" /></th>
 					
-						<g:sortableColumn property="nota" title="${message(code: 'bancaDefesa_has_Professor.nota.label', default: 'Nota')}" />
-					
-						<g:sortableColumn property="observacao" title="${message(code: 'bancaDefesa_has_Professor.observacao.label', default: 'Observacao')}" />
-					
 						<th><g:message code="bancaDefesa_has_Professor.professor.label" default="Professor" /></th>
 					
 					</tr>
@@ -39,10 +35,6 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${bancaDefesa_has_ProfessorInstance.id}">${fieldValue(bean: bancaDefesa_has_ProfessorInstance, field: "banca")}</g:link></td>
-					
-						<td>${fieldValue(bean: bancaDefesa_has_ProfessorInstance, field: "nota")}</td>
-					
-						<td>${fieldValue(bean: bancaDefesa_has_ProfessorInstance, field: "observacao")}</td>
 					
 						<td>${fieldValue(bean: bancaDefesa_has_ProfessorInstance, field: "professor")}</td>
 					

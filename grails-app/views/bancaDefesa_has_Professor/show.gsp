@@ -32,24 +32,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${bancaDefesa_has_ProfessorInstance?.nota}">
-				<li class="fieldcontain">
-					<span id="nota-label" class="property-label"><g:message code="bancaDefesa_has_Professor.nota.label" default="Nota" /></span>
-					
-						<span class="property-value" aria-labelledby="nota-label"><g:fieldValue bean="${bancaDefesa_has_ProfessorInstance}" field="nota"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${bancaDefesa_has_ProfessorInstance?.observacao}">
-				<li class="fieldcontain">
-					<span id="observacao-label" class="property-label"><g:message code="bancaDefesa_has_Professor.observacao.label" default="Observacao" /></span>
-					
-						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${bancaDefesa_has_ProfessorInstance}" field="observacao"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${bancaDefesa_has_ProfessorInstance?.professor}">
 				<li class="fieldcontain">
 					<span id="professor-label" class="property-label"><g:message code="bancaDefesa_has_Professor.professor.label" default="Professor" /></span>

@@ -23,24 +23,6 @@
 			</g:if>
 			<ol class="property-list professor_has_HorarioSemanal">
 			
-				<g:if test="${professor_has_HorarioSemanalInstance?.horario}">
-				<li class="fieldcontain">
-					<span id="horario-label" class="property-label"><g:message code="professor_has_HorarioSemanal.horario.label" default="Horario" /></span>
-					
-						<span class="property-value" aria-labelledby="horario-label"><g:link controller="horarioSemanal" action="show" id="${professor_has_HorarioSemanalInstance?.horario?.id}">${professor_has_HorarioSemanalInstance?.horario?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${professor_has_HorarioSemanalInstance?.professor}">
-				<li class="fieldcontain">
-					<span id="professor-label" class="property-label"><g:message code="professor_has_HorarioSemanal.professor.label" default="Professor" /></span>
-					
-						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${professor_has_HorarioSemanalInstance?.professor?.id}">${professor_has_HorarioSemanalInstance?.professor?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${professor_has_HorarioSemanalInstance?.semestre}">
 				<li class="fieldcontain">
 					<span id="semestre-label" class="property-label"><g:message code="professor_has_HorarioSemanal.semestre.label" default="Semestre" /></span>
