@@ -20,12 +20,3 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: pesoAvaliacaoInstance, field: 'pesohasAluno', 'error')} ">
-	<label for="pesohasAluno">
-		<g:message code="pesoAvaliacao.pesohasAluno.label" default="Pesohas Aluno" />
-		
-	</label>
-	<g:select name="pesohasAluno" from="${tfcmanager.PesoAvaliacao_has_Aluno.list()}" multiple="multiple" optionKey="id" size="5" value="${pesoAvaliacaoInstance?.pesohasAluno*.id}" class="many-to-many"/>
-
-</div>
-

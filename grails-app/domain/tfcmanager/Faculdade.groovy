@@ -8,4 +8,8 @@ class Faculdade {
     static constraints = {
 		nome(blank:false, minSize:5, maxSize:20)
     }
+	
+	String toString() {
+		nome
+	}
 }

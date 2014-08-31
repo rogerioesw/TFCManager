@@ -23,11 +23,56 @@
 			</g:if>
 			<ol class="property-list TFC">
 			
+				<g:if test="${TFCInstance?.semestre}">
+				<li class="fieldcontain">
+					<span id="semestre-label" class="property-label"><g:message code="TFC.semestre.label" default="Semestre" /></span>
+					
+						<span class="property-value" aria-labelledby="semestre-label"><g:fieldValue bean="${TFCInstance}" field="semestre"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${TFCInstance?.situacao}">
+				<li class="fieldcontain">
+					<span id="situacao-label" class="property-label"><g:message code="TFC.situacao.label" default="Situacao" /></span>
+					
+						<span class="property-value" aria-labelledby="situacao-label"><g:fieldValue bean="${TFCInstance}" field="situacao"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${TFCInstance?.observacao}">
 				<li class="fieldcontain">
 					<span id="observacao-label" class="property-label"><g:message code="TFC.observacao.label" default="Observacao" /></span>
 					
 						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${TFCInstance}" field="observacao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${TFCInstance?.banca}">
+				<li class="fieldcontain">
+					<span id="banca-label" class="property-label"><g:message code="TFC.banca.label" default="Banca" /></span>
+					
+						<span class="property-value" aria-labelledby="banca-label"><g:link controller="bancaDefesa" action="show" id="${TFCInstance?.banca?.id}">${TFCInstance?.banca?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${TFCInstance?.disciplina}">
+				<li class="fieldcontain">
+					<span id="disciplina-label" class="property-label"><g:message code="TFC.disciplina.label" default="Disciplina" /></span>
+					
+						<span class="property-value" aria-labelledby="disciplina-label"><g:link controller="disciplina" action="show" id="${TFCInstance?.disciplina?.id}">${TFCInstance?.disciplina?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${TFCInstance?.horario}">
+				<li class="fieldcontain">
+					<span id="horario-label" class="property-label"><g:message code="TFC.horario.label" default="Horario" /></span>
+					
+						<span class="property-value" aria-labelledby="horario-label"><g:link controller="horarioSemanal" action="show" id="${TFCInstance?.horario?.id}">${TFCInstance?.horario?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -54,11 +99,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${TFCInstance?.semestre}">
+				<g:if test="${TFCInstance?.projeto}">
 				<li class="fieldcontain">
-					<span id="semestre-label" class="property-label"><g:message code="TFC.semestre.label" default="Semestre" /></span>
+					<span id="projeto-label" class="property-label"><g:message code="TFC.projeto.label" default="Projeto" /></span>
 					
-						<span class="property-value" aria-labelledby="semestre-label"><g:fieldValue bean="${TFCInstance}" field="semestre"/></span>
+						<span class="property-value" aria-labelledby="projeto-label"><g:link controller="projetoOrientacao" action="show" id="${TFCInstance?.projeto?.id}">${TFCInstance?.projeto?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -70,15 +115,6 @@
 						<g:each in="${TFCInstance.seminario}" var="s">
 						<span class="property-value" aria-labelledby="seminario-label"><g:link controller="seminario" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFCInstance?.situacao}">
-				<li class="fieldcontain">
-					<span id="situacao-label" class="property-label"><g:message code="TFC.situacao.label" default="Situacao" /></span>
-					
-						<span class="property-value" aria-labelledby="situacao-label"><g:fieldValue bean="${TFCInstance}" field="situacao"/></span>
 					
 				</li>
 				</g:if>

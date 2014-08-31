@@ -23,20 +23,20 @@
 			</g:if>
 			<ol class="property-list seminario">
 			
-				<g:if test="${seminarioInstance?.data}">
-				<li class="fieldcontain">
-					<span id="data-label" class="property-label"><g:message code="seminario.data.label" default="Data" /></span>
-					
-						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${seminarioInstance?.data}" /></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${seminarioInstance?.descricao}">
 				<li class="fieldcontain">
 					<span id="descricao-label" class="property-label"><g:message code="seminario.descricao.label" default="Descricao" /></span>
 					
 						<span class="property-value" aria-labelledby="descricao-label"><g:fieldValue bean="${seminarioInstance}" field="descricao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${seminarioInstance?.data}">
+				<li class="fieldcontain">
+					<span id="data-label" class="property-label"><g:message code="seminario.data.label" default="Data" /></span>
+					
+						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${seminarioInstance?.data}" /></span>
 					
 				</li>
 				</g:if>
@@ -55,6 +55,15 @@
 					<span id="observacao-label" class="property-label"><g:message code="seminario.observacao.label" default="Observacao" /></span>
 					
 						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${seminarioInstance}" field="observacao"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${seminarioInstance?.tfc}">
+				<li class="fieldcontain">
+					<span id="tfc-label" class="property-label"><g:message code="seminario.tfc.label" default="Tfc" /></span>
+					
+						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${seminarioInstance?.tfc?.id}">${seminarioInstance?.tfc?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -61,6 +61,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${bancaDefesaInstance?.tfc}">
+				<li class="fieldcontain">
+					<span id="tfc-label" class="property-label"><g:message code="bancaDefesa.tfc.label" default="Tfc" /></span>
+					
+						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${bancaDefesaInstance?.tfc?.id}">${bancaDefesaInstance?.tfc?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:bancaDefesaInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

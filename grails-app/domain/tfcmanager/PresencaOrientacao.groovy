@@ -3,8 +3,7 @@ package tfcmanager
 class PresencaOrientacao {
 	Date data
 	String observacao
-	
-	static belongsTo = [tfc:TFC]
+	TFC tfc
 
     static constraints = {
 		data(blank:false, nullable:false)

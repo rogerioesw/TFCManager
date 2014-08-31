@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list professor_has_Convocacao">
 			
+				<g:if test="${professor_has_ConvocacaoInstance?.convocacao}">
+				<li class="fieldcontain">
+					<span id="convocacao-label" class="property-label"><g:message code="professor_has_Convocacao.convocacao.label" default="Convocacao" /></span>
+					
+						<span class="property-value" aria-labelledby="convocacao-label"><g:link controller="convocacao" action="show" id="${professor_has_ConvocacaoInstance?.convocacao?.id}">${professor_has_ConvocacaoInstance?.convocacao?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${professor_has_ConvocacaoInstance?.professor}">
+				<li class="fieldcontain">
+					<span id="professor-label" class="property-label"><g:message code="professor_has_Convocacao.professor.label" default="Professor" /></span>
+					
+						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${professor_has_ConvocacaoInstance?.professor?.id}">${professor_has_ConvocacaoInstance?.professor?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:professor_has_ConvocacaoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

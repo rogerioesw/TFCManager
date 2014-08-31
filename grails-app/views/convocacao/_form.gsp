@@ -47,12 +47,3 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: convocacaoInstance, field: 'professorhasConvocacao', 'error')} ">
-	<label for="professorhasConvocacao">
-		<g:message code="convocacao.professorhasConvocacao.label" default="Professorhas Convocacao" />
-		
-	</label>
-	<g:select name="professorhasConvocacao" from="${tfcmanager.Professor_has_Convocacao.list()}" multiple="multiple" optionKey="id" size="5" value="${convocacaoInstance?.professorhasConvocacao*.id}" class="many-to-many"/>
-
-</div>
-

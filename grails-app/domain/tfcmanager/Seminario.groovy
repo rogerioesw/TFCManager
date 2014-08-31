@@ -5,8 +5,7 @@ class Seminario {
 	Date data
 	String horario
 	String observacao
-	
-	static belongsTo = [tfc:TFC]
+	TFC tfc
 
     static constraints = {
 		descricao(blank:false, minSize:4, maxSize:15)

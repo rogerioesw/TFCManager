@@ -11,10 +11,10 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'arquivo', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'arquivo', 'error')} required">
 	<label for="arquivo">
 		<g:message code="documentos.arquivo.label" default="Arquivo" />
-		
+		<span class="required-indicator">*</span>
 	</label>
 	<input type="file" id="arquivo" name="arquivo" />
 

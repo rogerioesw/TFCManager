@@ -2,8 +2,7 @@ package tfcmanager
 
 class PesoAvaliacao_has_Aluno {
 	double nota
-	
-	static belongsTo = [peso:PesoAvaliacao]
+	PesoAvaliacao peso
 
     static constraints = {
 		nota(blank:false, nullable:false)

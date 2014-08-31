@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${pesoAvaliacao_has_AlunoInstance?.peso}">
+				<li class="fieldcontain">
+					<span id="peso-label" class="property-label"><g:message code="pesoAvaliacao_has_Aluno.peso.label" default="Peso" /></span>
+					
+						<span class="property-value" aria-labelledby="peso-label"><g:link controller="pesoAvaliacao" action="show" id="${pesoAvaliacao_has_AlunoInstance?.peso?.id}">${pesoAvaliacao_has_AlunoInstance?.peso?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:pesoAvaliacao_has_AlunoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

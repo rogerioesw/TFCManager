@@ -11,3 +11,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: pesoAvaliacao_has_AlunoInstance, field: 'peso', 'error')} required">
+	<label for="peso">
+		<g:message code="pesoAvaliacao_has_Aluno.peso.label" default="Peso" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="peso" name="peso.id" from="${tfcmanager.PesoAvaliacao.list()}" optionKey="id" required="" value="${pesoAvaliacao_has_AlunoInstance?.peso?.id}" class="many-to-one"/>
+
+</div>
+

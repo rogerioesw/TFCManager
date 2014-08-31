@@ -24,11 +24,19 @@
 			<thead>
 					<tr>
 					
+						<th><g:message code="professor_has_Convocacao.convocacao.label" default="Convocacao" /></th>
+					
+						<th><g:message code="professor_has_Convocacao.professor.label" default="Professor" /></th>
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${professor_has_ConvocacaoInstanceList}" status="i" var="professor_has_ConvocacaoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${professor_has_ConvocacaoInstance.id}">${fieldValue(bean: professor_has_ConvocacaoInstance, field: "convocacao")}</g:link></td>
+					
+						<td>${fieldValue(bean: professor_has_ConvocacaoInstance, field: "professor")}</td>
 					
 					</tr>
 				</g:each>

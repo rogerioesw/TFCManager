@@ -24,13 +24,15 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="data" title="${message(code: 'seminario.data.label', default: 'Data')}" />
-					
 						<g:sortableColumn property="descricao" title="${message(code: 'seminario.descricao.label', default: 'Descricao')}" />
+					
+						<g:sortableColumn property="data" title="${message(code: 'seminario.data.label', default: 'Data')}" />
 					
 						<g:sortableColumn property="horario" title="${message(code: 'seminario.horario.label', default: 'Horario')}" />
 					
 						<g:sortableColumn property="observacao" title="${message(code: 'seminario.observacao.label', default: 'Observacao')}" />
+					
+						<th><g:message code="seminario.tfc.label" default="Tfc" /></th>
 					
 					</tr>
 				</thead>
@@ -38,13 +40,15 @@
 				<g:each in="${seminarioInstanceList}" status="i" var="seminarioInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${seminarioInstance.id}">${fieldValue(bean: seminarioInstance, field: "data")}</g:link></td>
+						<td><g:link action="show" id="${seminarioInstance.id}">${fieldValue(bean: seminarioInstance, field: "descricao")}</g:link></td>
 					
-						<td>${fieldValue(bean: seminarioInstance, field: "descricao")}</td>
+						<td><g:formatDate date="${seminarioInstance.data}" /></td>
 					
 						<td>${fieldValue(bean: seminarioInstance, field: "horario")}</td>
 					
 						<td>${fieldValue(bean: seminarioInstance, field: "observacao")}</td>
+					
+						<td>${fieldValue(bean: seminarioInstance, field: "tfc")}</td>
 					
 					</tr>
 				</g:each>

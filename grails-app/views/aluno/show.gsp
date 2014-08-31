@@ -52,6 +52,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${alunoInstance?.faculdade}">
+				<li class="fieldcontain">
+					<span id="faculdade-label" class="property-label"><g:message code="aluno.faculdade.label" default="Faculdade" /></span>
+					
+						<span class="property-value" aria-labelledby="faculdade-label"><g:link controller="faculdade" action="show" id="${alunoInstance?.faculdade?.id}">${alunoInstance?.faculdade?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:alunoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

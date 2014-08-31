@@ -3,8 +3,8 @@ package tfcmanager
 class Aluno_has_HorarioSemanal {
 	
 	String semestre
-	
-	static belongsTo = [aluno:Aluno, horario:HorarioSemanal]
+	Aluno aluno
+	HorarioSemanal horario
 	
 
     static constraints = {

@@ -19,13 +19,3 @@
 	<g:textField name="status" required="" value="${disciplinaInstance?.status}"/>
 
 </div>
-
-<div class="fieldcontain ${hasErrors(bean: disciplinaInstance, field: 'tfc', 'error')} ">
-	<label for="tfc">
-		<g:message code="disciplina.tfc.label" default="Tfc" />
-		
-	</label>
-	<g:select name="tfc" from="${tfcmanager.TFC.list()}" multiple="multiple" optionKey="id" size="5" value="${disciplinaInstance?.tfc*.id}" class="many-to-many"/>
-
-</div>
-
