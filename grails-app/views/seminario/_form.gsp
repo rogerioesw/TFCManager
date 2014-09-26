@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.Seminario" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: seminarioInstance, field: 'descricao', 'error')} required">
 	<label for="descricao">
@@ -44,6 +44,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="tfc" name="tfc.id" from="${tfcmanager.TFC.list()}" optionKey="id" required="" value="${seminarioInstance?.tfc?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelatfc()" value="...">
 </div>
 

@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.Usuario" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'login', 'error')} required">
 	<label for="login">
@@ -27,5 +27,14 @@
 	</label>
 	<g:textField name="senha" maxlength="15" required="" value="${usuarioInstance?.senha}"/>
 
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'projeto', 'error')} required">
+	<label for="projeto">
+		<g:message code="usuario.projeto.label" default="Projeto" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="projeto" name="projeto.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${usuarioInstance?.projeto?.id}" class="many-to-one"/>
+	<input type="button" class="home" onclick="abrejanelaprojetoorientacao()" value="...">
 </div>
 

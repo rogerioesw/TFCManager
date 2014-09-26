@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.Documentos" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'descricao', 'error')} required">
 	<label for="descricao">
@@ -26,6 +26,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="projetoorientacao" name="projetoorientacao.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${documentosInstance?.projetoorientacao?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelaprojetoorientacao()" value="...">
 </div>
 

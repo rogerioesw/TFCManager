@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.Aluno_has_HorarioSemanal" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: aluno_has_HorarioSemanalInstance, field: 'semestre', 'error')} required">
 	<label for="semestre">
@@ -17,7 +17,7 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="aluno" name="aluno.id" from="${tfcmanager.Aluno.list()}" optionKey="id" required="" value="${aluno_has_HorarioSemanalInstance?.aluno?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelaaluno()" value="...">
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: aluno_has_HorarioSemanalInstance, field: 'horario', 'error')} required">
@@ -26,6 +26,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="horario" name="horario.id" from="${tfcmanager.HorarioSemanal.list()}" optionKey="id" required="" value="${aluno_has_HorarioSemanalInstance?.horario?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelahorario()" value="...">
 </div>
 

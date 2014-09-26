@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${usuarioInstance?.projeto}">
+				<li class="fieldcontain">
+					<span id="projeto-label" class="property-label"><g:message code="usuario.projeto.label" default="Projeto" /></span>
+					
+						<span class="property-value" aria-labelledby="projeto-label"><g:link controller="projetoOrientacao" action="show" id="${usuarioInstance?.projeto?.id}">${usuarioInstance?.projeto?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:usuarioInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

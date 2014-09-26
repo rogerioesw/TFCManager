@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.TFC_has_Professor" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: TFC_has_ProfessorInstance, field: 'tipo', 'error')} required">
 	<label for="tipo">
@@ -17,7 +17,7 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="professor" name="professor.id" from="${tfcmanager.Professor.list()}" optionKey="id" required="" value="${TFC_has_ProfessorInstance?.professor?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelaprofessor()" value="...">
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: TFC_has_ProfessorInstance, field: 'tfc', 'error')} required">
@@ -26,6 +26,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="tfc" name="tfc.id" from="${tfcmanager.TFC.list()}" optionKey="id" required="" value="${TFC_has_ProfessorInstance?.tfc?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelatfc()" value="...">
 </div>
 

@@ -9,7 +9,7 @@ class Faculdade {
 		nome(blank:false, minSize:5, maxSize:20)
     }
 	
-	String toString() {
-		nome
+	public String toString() {
+		this.nome
 	}
 }
