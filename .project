@@ -28,5 +28,10 @@
 			<type>2</type>
 			<location>C:/Users/Rogerio/git/TFCManager/target/work/plugins</location>
 		</link>
+		<link>
+			<name>web-app/images/brasao.png</name>
+			<type>1</type>
+			<location>C:/Users/Rogerio/Documents/GitHub/TFCManager/web-app/images/brasao.png</location>
+		</link>
 	</linkedResources>
 </projectDescription>
