@@ -82,16 +82,7 @@
 	</head>
 	<body>
 	
-		<div id="controller-list" role="navigation">
-			<ul id="menu">
-				<li>Cadastros
-					<ul>
-						<li><g:link controller="aluno">Cadastro de Alunos</g:link></li>
-						<li><g:link controller="professor">Cadastro de Professores</g:link></li>		
-					</ul>
-				</li>
-			</ul>
-		</div>
+		
 	
 		<!-- a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a-->
 		<!-- div id="status" role="complementary"-->

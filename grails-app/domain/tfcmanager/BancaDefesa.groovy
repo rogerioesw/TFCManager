@@ -4,7 +4,8 @@ class BancaDefesa {
 	Date data
 	String horario
 	String observacao
-	TFC tfc
+	
+	static belongsTo = [tfc : TFC]
 	
 	static hasMany = [bancahasProfessor : BancaDefesa_has_Professor]
 

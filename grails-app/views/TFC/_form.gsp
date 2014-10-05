@@ -64,4 +64,3 @@
 	<g:select id="projeto" name="projeto.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${TFCInstance?.projeto?.id}" class="many-to-one"/>
 	<input type="button" class="home" onclick="abrejanelaprojetoorientacao()" value="...">
 </div>
-
