@@ -106,8 +106,8 @@
 			</ul-->
 		
 		<div id="page-body" role="main">
-			<p>Esta é a aplicação web que irá te auxiliar em todos os processos referentes
-			ao Trabalho Final de Curso</p>
+			Esta é a aplicação web que irá te auxiliar em todos os processos referentes
+			ao Trabalho Final de Curso
 
 
 		</div>
