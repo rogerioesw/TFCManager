@@ -30,8 +30,6 @@
 					
 						<g:sortableColumn property="observacao" title="${message(code: 'bancaDefesa.observacao.label', default: 'Observacao')}" />
 					
-						<th><g:message code="bancaDefesa.tfc.label" default="Tfc" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -43,8 +41,6 @@
 						<td>${fieldValue(bean: bancaDefesaInstance, field: "horario")}</td>
 					
 						<td>${fieldValue(bean: bancaDefesaInstance, field: "observacao")}</td>
-					
-						<td>${fieldValue(bean: bancaDefesaInstance, field: "tfc")}</td>
 					
 					</tr>
 				</g:each>

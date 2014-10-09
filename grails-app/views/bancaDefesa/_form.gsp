@@ -28,14 +28,3 @@
 	<g:textField name="observacao" maxlength="80" required="" value="${bancaDefesaInstance?.observacao}"/>
 
 </div>
-
-
-<div class="fieldcontain ${hasErrors(bean: bancaDefesaInstance, field: 'tfc', 'error')} required">
-	<label for="tfc">
-		<g:message code="bancaDefesa.tfc.label" default="Tfc" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="tfc" name="tfc.id" from="${tfcmanager.TFC.list()}" optionKey="id" required="" value="${bancaDefesaInstance?.tfc?.id}" class="many-to-one"/>
-
-</div>
-
