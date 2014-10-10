@@ -13,5 +13,8 @@
 			</ul>
 		</div>
 		<h1>Gerar Relatórios</h1>
+		<g:form action="report" target="blank">
+			<input type="submit" value="Gerar Relatório"/>
+		</g:form>
 	</body>
 </html>

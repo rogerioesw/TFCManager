@@ -63,6 +63,8 @@
 						
 					</ul>
 				</li>
+				<li><g:link controller="relatorios">Relatórios</g:link>
+				</li>
 			</ul>
 		</div>
 		
