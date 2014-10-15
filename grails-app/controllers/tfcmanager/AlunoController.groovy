@@ -1,7 +1,7 @@
 package tfcmanager
 
 
-
+import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -10,20 +10,24 @@ class AlunoController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Aluno.list(params), model:[alunoInstanceCount: Aluno.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Aluno alunoInstance) {
         respond alunoInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Aluno(params)
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Aluno alunoInstance) {
         if (alunoInstance == null) {
             notFound()
@@ -46,11 +50,13 @@ class AlunoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Aluno alunoInstance) {
         respond alunoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Aluno alunoInstance) {
         if (alunoInstance == null) {
             notFound()
@@ -74,6 +80,7 @@ class AlunoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Aluno alunoInstance) {
 
         if (alunoInstance == null) {

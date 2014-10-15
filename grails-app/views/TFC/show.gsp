@@ -50,15 +50,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${TFCInstance?.banca}">
-				<li class="fieldcontain">
-					<span id="banca-label" class="property-label"><g:message code="TFC.banca.label" default="Banca" /></span>
-					
-						<span class="property-value" aria-labelledby="banca-label"><g:link controller="bancaDefesa" action="show" id="${TFCInstance?.banca?.id}">${TFCInstance?.banca?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${TFCInstance?.disciplina}">
 				<li class="fieldcontain">
 					<span id="disciplina-label" class="property-label"><g:message code="TFC.disciplina.label" default="Disciplina" /></span>

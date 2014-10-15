@@ -30,11 +30,11 @@
 					
 						<g:sortableColumn property="observacao" title="${message(code: 'TFC.observacao.label', default: 'Observacao')}" />
 					
-						<th><g:message code="TFC.banca.label" default="Banca" /></th>
-					
 						<th><g:message code="TFC.disciplina.label" default="Disciplina" /></th>
 					
 						<th><g:message code="TFC.horario.label" default="Horario" /></th>
+					
+						<th><g:message code="TFC.projeto.label" default="Projeto" /></th>
 					
 					</tr>
 				</thead>
@@ -48,11 +48,11 @@
 					
 						<td>${fieldValue(bean: TFCInstance, field: "observacao")}</td>
 					
-						<td>${fieldValue(bean: TFCInstance, field: "banca")}</td>
-					
 						<td>${fieldValue(bean: TFCInstance, field: "disciplina")}</td>
 					
 						<td>${fieldValue(bean: TFCInstance, field: "horario")}</td>
+					
+						<td>${fieldValue(bean: TFCInstance, field: "projeto")}</td>
 					
 					</tr>
 				</g:each>

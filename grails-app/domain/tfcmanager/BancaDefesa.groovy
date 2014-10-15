@@ -4,6 +4,7 @@ class BancaDefesa {
 	Date data
 	String horario
 	String observacao
+	TFC tfc
 	
 	
 	static hasMany = [bancahasProfessor : BancaDefesa_has_Professor]

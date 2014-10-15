@@ -1,7 +1,7 @@
 package tfcmanager
 
 
-
+import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -10,15 +10,18 @@ class Professor_has_HorarioSemanalController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Professor_has_HorarioSemanal.list(params), model:[professor_has_HorarioSemanalInstanceCount: Professor_has_HorarioSemanal.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Professor_has_HorarioSemanal professor_has_HorarioSemanalInstance) {
         respond professor_has_HorarioSemanalInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Professor_has_HorarioSemanal(params)
     }

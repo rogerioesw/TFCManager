@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 		
+		<!-- 
 		<link href="${resource(dir: 'css', file: 'kendo.common.min.css')}" rel="stylesheet" />
 		<link href="${resource(dir: 'css', file: 'kendo.default.min.css')}" rel="stylesheet" />
     	<link href="${resource(dir: 'css', file: 'kendo.dataviz.min.css')}" rel="stylesheet" />
@@ -17,7 +18,15 @@
     	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
     	<script src="${resource(dir: 'js', file: 'angular.min.js')}"></script>
     	<script src="${resource(dir: 'js', file: 'kendo.all.min.js')}"></script>
+    	-->
     	
+    	<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.common.min.css" rel="stylesheet" />
+    	<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.default.min.css" rel="stylesheet" />
+		<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.dataviz.min.css" rel="stylesheet" />
+		<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.dataviz.default.min.css" rel="stylesheet" />
+		<script src="http://cdn.kendostatic.com/2014.2.903/js/jquery.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2014.2.903/js/angular.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2014.2.903/js/kendo.all.min.js"></script>
 		
 		<g:layoutHead/>
 		<g:javascript library="application"/>		
@@ -47,20 +56,33 @@
 						</li>
 						<li><g:link controller="projetoOrientacao">Cadastro de Projetos</g:link></li>
 						<li><g:link controller="seminario">Cadastro de Seminários</g:link></li>
-						<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link></li>
-						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>		
+						<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link>
+							<ul>
+								<li><g:link controller="bancaDefesa_has_Professor">Cadastro de Avaliadores da Banca</g:link></li>
+							</ul>
+						</li>
+						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>
+						<li><g:link controller="TFC_has_Professor">Cadastro de Orientadores</g:link></li>
+						<li><g:link controller="usuario">Cadastro de Usuários</g:link></li>		
 					</ul>
 				</li>
 				<li>Lançamentos
 					<ul>
 						<li><g:link controller="documentos">Lançamento de Documentos</g:link></li>
-						<li><g:link controller="convocacao">Lançamento de Convocações</g:link>
+						<li><g:link controller="convocacao">Lançamento de Convocações</g:link></li>
 							<ul>
 								<li><g:link controller="professor_has_Convocacao">Alocar Professor em Convocação</g:link></li>
 							</ul>
 						</li>
-						<li><g:link controller="pesoAvaliacao">Lançamento de Pesos de Avaliação</g:link></li>
+						<li><g:link controller="presencaOrientacao">Lançamento de Presenças</g:link></li>
 						
+					</ul>
+				</li>
+				<li>Notas
+					<ul>
+						<li><g:link controller="pesoAvaliacao">Lançamento de Pesos de Avaliação</g:link></li>
+						<li><g:link controller="pesoAvaliacao_has_Aluno">Lançamento de Notas</g:link></li>
+						<li><g:link controller="pesoAvaliacao_has_TFC">Cálculo de Notas Finais</g:link></li>
 					</ul>
 				</li>
 				<li><g:link controller="relatorios">Relatórios</g:link>
@@ -68,6 +90,12 @@
 			</ul>
 		</div>
 		
+		<sec:loggedInUserInfo field="username" style="text-align:center; color:blue"/>
+		
+		<sec:ifNotLoggedIn>
+  			<g:link controller="login" action="auth">Login</g:link>
+		</sec:ifNotLoggedIn>
+		 
 		<g:layoutBody/>
 		<div id="footer">
 			<g:render template="/common/footer" />

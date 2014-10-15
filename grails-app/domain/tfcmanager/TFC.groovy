@@ -7,7 +7,6 @@ class TFC {
 	Disciplina disciplina
 	ProjetoOrientacao projeto
 	HorarioSemanal horario
-	BancaDefesa banca
 
 	
 	
@@ -18,6 +17,5 @@ class TFC {
 		semestre(blank:false, minSize:6, maxSize:6, matches:"^([1-9][0-9][0-9][0-9])/([1]|[2])")
 		situacao(blank:false, minSize:5, maxSize:8)
 		observacao(blank:false, minSize:5, maxSize:30)
-		banca(unique:true)
     }
 }

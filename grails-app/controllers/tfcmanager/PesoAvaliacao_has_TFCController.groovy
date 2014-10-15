@@ -1,7 +1,7 @@
 package tfcmanager
 
 
-
+import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -10,15 +10,18 @@ class PesoAvaliacao_has_TFCController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond PesoAvaliacao_has_TFC.list(params), model:[pesoAvaliacao_has_TFCInstanceCount: PesoAvaliacao_has_TFC.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(PesoAvaliacao_has_TFC pesoAvaliacao_has_TFCInstance) {
         respond pesoAvaliacao_has_TFCInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new PesoAvaliacao_has_TFC(params)
     }

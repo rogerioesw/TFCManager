@@ -1,14 +1,42 @@
 package tfcmanager
 
 class Usuario {
-	String nomecompleto
-	String login
-	String senha
-	ProjetoOrientacao projeto
 
-    static constraints = {
-		login(blank:false, maxSize:20, nullable:false, unique:true)
-		nomecompleto(blank:false, maxSize:100, nullable:false)
-		senha(blank:false, minSize:6, maxSize:15)
-    }
+	transient springSecurityService
+
+	String username
+	String password
+	boolean enabled = true
+	boolean accountExpired
+	boolean accountLocked
+	boolean passwordExpired
+
+	static transients = ['springSecurityService']
+
+	static constraints = {
+		username blank: false, unique: true
+		password blank: false
+	}
+
+	static mapping = {
+		password column: '`password`'
+	}
+
+	Set<Papel> getAuthorities() {
+		UsuarioPapel.findAllByUsuario(this).collect { it.papel }
+	}
+
+	def beforeInsert() {
+		encodePassword()
+	}
+
+	def beforeUpdate() {
+		if (isDirty('password')) {
+			encodePassword()
+		}
+	}
+
+	protected void encodePassword() {
+		password = springSecurityService?.passwordEncoder ? springSecurityService.encodePassword(password) : password
+	}
 }

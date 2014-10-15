@@ -1,7 +1,7 @@
 package tfcmanager
 
 
-
+import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -10,20 +10,24 @@ class Aluno_has_HorarioSemanalController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Aluno_has_HorarioSemanal.list(params), model:[aluno_has_HorarioSemanalInstanceCount: Aluno_has_HorarioSemanal.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Aluno_has_HorarioSemanal aluno_has_HorarioSemanalInstance) {
         respond aluno_has_HorarioSemanalInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Aluno_has_HorarioSemanal(params)
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Aluno_has_HorarioSemanal aluno_has_HorarioSemanalInstance) {
         if (aluno_has_HorarioSemanalInstance == null) {
             notFound()
@@ -46,11 +50,13 @@ class Aluno_has_HorarioSemanalController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Aluno_has_HorarioSemanal aluno_has_HorarioSemanalInstance) {
         respond aluno_has_HorarioSemanalInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Aluno_has_HorarioSemanal aluno_has_HorarioSemanalInstance) {
         if (aluno_has_HorarioSemanalInstance == null) {
             notFound()
@@ -74,6 +80,7 @@ class Aluno_has_HorarioSemanalController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Aluno_has_HorarioSemanal aluno_has_HorarioSemanalInstance) {
 
         if (aluno_has_HorarioSemanalInstance == null) {
