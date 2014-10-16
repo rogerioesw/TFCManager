@@ -11,7 +11,7 @@ class RelatoriosController {
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def report() {
 		params.jasperForceDownload=true
-		params.jasperDownloadName='Anexo0'
+		params.jasperDownloadName='Teste'
 		render params as Jasper
 	}
 }

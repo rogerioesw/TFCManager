@@ -10,15 +10,15 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 		
-		<!-- 
-		<link href="${resource(dir: 'css', file: 'kendo.common.min.css')}" rel="stylesheet" />
-		<link href="${resource(dir: 'css', file: 'kendo.default.min.css')}" rel="stylesheet" />
-    	<link href="${resource(dir: 'css', file: 'kendo.dataviz.min.css')}" rel="stylesheet" />
-    	<link href="${resource(dir: 'css', file: 'kendo.dataviz.default.min.css')}" rel="stylesheet" />
-    	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
-    	<script src="${resource(dir: 'js', file: 'angular.min.js')}"></script>
-    	<script src="${resource(dir: 'js', file: 'kendo.all.min.js')}"></script>
-    	-->
+		 
+		<!-- link href="${resource(dir: 'css', file: 'kendo.common.min.css')}" rel="stylesheet" /-->
+		<!-- link href="${resource(dir: 'css', file: 'kendo.default.min.css')}" rel="stylesheet" /-->
+    	<!-- link href="${resource(dir: 'css', file: 'kendo.dataviz.min.css')}" rel="stylesheet" /-->
+    	<!-- link href="${resource(dir: 'css', file: 'kendo.dataviz.default.min.css')}" rel="stylesheet" /-->
+    	<!-- script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script-->
+    	<!-- script src="${resource(dir: 'js', file: 'angular.min.js')}"></script-->
+    	<!-- script src="${resource(dir: 'js', file: 'kendo.all.min.js')}"></script-->
+    	
     	
     	<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.common.min.css" rel="stylesheet" />
     	<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.default.min.css" rel="stylesheet" />
