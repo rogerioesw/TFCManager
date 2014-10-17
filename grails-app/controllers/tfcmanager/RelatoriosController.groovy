@@ -2,6 +2,7 @@ package tfcmanager
 
 import grails.plugin.springsecurity.annotation.Secured
 import grails.plugin.jyoshiriro.jasperResponse.renderers.Jasper
+import org.xhtmlrenderer.pdf.ITextRenderer
 
 class RelatoriosController {
 
