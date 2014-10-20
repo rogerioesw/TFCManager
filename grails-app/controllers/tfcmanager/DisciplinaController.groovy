@@ -27,6 +27,7 @@ class DisciplinaController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Disciplina disciplinaInstance) {
         if (disciplinaInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class DisciplinaController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Disciplina disciplinaInstance) {
         respond disciplinaInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Disciplina disciplinaInstance) {
         if (disciplinaInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class DisciplinaController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Disciplina disciplinaInstance) {
 
         if (disciplinaInstance == null) {

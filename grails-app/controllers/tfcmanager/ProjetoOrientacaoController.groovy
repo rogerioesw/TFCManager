@@ -27,6 +27,7 @@ class ProjetoOrientacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(ProjetoOrientacao projetoOrientacaoInstance) {
         if (projetoOrientacaoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class ProjetoOrientacaoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(ProjetoOrientacao projetoOrientacaoInstance) {
         respond projetoOrientacaoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(ProjetoOrientacao projetoOrientacaoInstance) {
         if (projetoOrientacaoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class ProjetoOrientacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(ProjetoOrientacao projetoOrientacaoInstance) {
 
         if (projetoOrientacaoInstance == null) {

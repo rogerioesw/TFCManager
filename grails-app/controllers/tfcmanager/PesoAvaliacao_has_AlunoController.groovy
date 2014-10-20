@@ -27,6 +27,7 @@ class PesoAvaliacao_has_AlunoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(PesoAvaliacao_has_Aluno pesoAvaliacao_has_AlunoInstance) {
         if (pesoAvaliacao_has_AlunoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class PesoAvaliacao_has_AlunoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(PesoAvaliacao_has_Aluno pesoAvaliacao_has_AlunoInstance) {
         respond pesoAvaliacao_has_AlunoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(PesoAvaliacao_has_Aluno pesoAvaliacao_has_AlunoInstance) {
         if (pesoAvaliacao_has_AlunoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class PesoAvaliacao_has_AlunoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(PesoAvaliacao_has_Aluno pesoAvaliacao_has_AlunoInstance) {
 
         if (pesoAvaliacao_has_AlunoInstance == null) {

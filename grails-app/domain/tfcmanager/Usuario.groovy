@@ -17,6 +17,10 @@ class Usuario {
 		username blank: false, unique: true
 		password blank: false
 	}
+	
+	public String toString() {
+		this.username
+	}
 
 	static mapping = {
 		password column: '`password`'

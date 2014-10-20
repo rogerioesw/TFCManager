@@ -27,6 +27,7 @@ class PresencaOrientacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(PresencaOrientacao presencaOrientacaoInstance) {
         if (presencaOrientacaoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class PresencaOrientacaoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(PresencaOrientacao presencaOrientacaoInstance) {
         respond presencaOrientacaoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(PresencaOrientacao presencaOrientacaoInstance) {
         if (presencaOrientacaoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class PresencaOrientacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(PresencaOrientacao presencaOrientacaoInstance) {
 
         if (presencaOrientacaoInstance == null) {

@@ -27,6 +27,7 @@ class Professor_has_HorarioSemanalController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Professor_has_HorarioSemanal professor_has_HorarioSemanalInstance) {
         if (professor_has_HorarioSemanalInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class Professor_has_HorarioSemanalController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Professor_has_HorarioSemanal professor_has_HorarioSemanalInstance) {
         respond professor_has_HorarioSemanalInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Professor_has_HorarioSemanal professor_has_HorarioSemanalInstance) {
         if (professor_has_HorarioSemanalInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class Professor_has_HorarioSemanalController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Professor_has_HorarioSemanal professor_has_HorarioSemanalInstance) {
 
         if (professor_has_HorarioSemanalInstance == null) {

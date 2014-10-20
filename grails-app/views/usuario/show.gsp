@@ -23,38 +23,56 @@
 			</g:if>
 			<ol class="property-list usuario">
 			
-				<g:if test="${usuarioInstance?.login}">
+				<g:if test="${usuarioInstance?.username}">
 				<li class="fieldcontain">
-					<span id="login-label" class="property-label"><g:message code="usuario.login.label" default="Login" /></span>
+					<span id="username-label" class="property-label"><g:message code="usuario.username.label" default="Username" /></span>
 					
-						<span class="property-value" aria-labelledby="login-label"><g:fieldValue bean="${usuarioInstance}" field="login"/></span>
+						<span class="property-value" aria-labelledby="username-label"><g:fieldValue bean="${usuarioInstance}" field="username"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${usuarioInstance?.nomecompleto}">
+				<g:if test="${usuarioInstance?.password}">
 				<li class="fieldcontain">
-					<span id="nomecompleto-label" class="property-label"><g:message code="usuario.nomecompleto.label" default="Nomecompleto" /></span>
+					<span id="password-label" class="property-label"><g:message code="usuario.password.label" default="Password" /></span>
 					
-						<span class="property-value" aria-labelledby="nomecompleto-label"><g:fieldValue bean="${usuarioInstance}" field="nomecompleto"/></span>
+						<span class="property-value" aria-labelledby="password-label"><g:fieldValue bean="${usuarioInstance}" field="password"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${usuarioInstance?.senha}">
+				<g:if test="${usuarioInstance?.accountExpired}">
 				<li class="fieldcontain">
-					<span id="senha-label" class="property-label"><g:message code="usuario.senha.label" default="Senha" /></span>
+					<span id="accountExpired-label" class="property-label"><g:message code="usuario.accountExpired.label" default="Account Expired" /></span>
 					
-						<span class="property-value" aria-labelledby="senha-label"><g:fieldValue bean="${usuarioInstance}" field="senha"/></span>
+						<span class="property-value" aria-labelledby="accountExpired-label"><g:formatBoolean boolean="${usuarioInstance?.accountExpired}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${usuarioInstance?.projeto}">
+				<g:if test="${usuarioInstance?.accountLocked}">
 				<li class="fieldcontain">
-					<span id="projeto-label" class="property-label"><g:message code="usuario.projeto.label" default="Projeto" /></span>
+					<span id="accountLocked-label" class="property-label"><g:message code="usuario.accountLocked.label" default="Account Locked" /></span>
 					
-						<span class="property-value" aria-labelledby="projeto-label"><g:link controller="projetoOrientacao" action="show" id="${usuarioInstance?.projeto?.id}">${usuarioInstance?.projeto?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="accountLocked-label"><g:formatBoolean boolean="${usuarioInstance?.accountLocked}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${usuarioInstance?.enabled}">
+				<li class="fieldcontain">
+					<span id="enabled-label" class="property-label"><g:message code="usuario.enabled.label" default="Enabled" /></span>
+					
+						<span class="property-value" aria-labelledby="enabled-label"><g:formatBoolean boolean="${usuarioInstance?.enabled}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${usuarioInstance?.passwordExpired}">
+				<li class="fieldcontain">
+					<span id="passwordExpired-label" class="property-label"><g:message code="usuario.passwordExpired.label" default="Password Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${usuarioInstance?.passwordExpired}" /></span>
 					
 				</li>
 				</g:if>

@@ -27,6 +27,7 @@ class PesoAvaliacao_has_TFCController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(PesoAvaliacao_has_TFC pesoAvaliacao_has_TFCInstance) {
         if (pesoAvaliacao_has_TFCInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class PesoAvaliacao_has_TFCController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(PesoAvaliacao_has_TFC pesoAvaliacao_has_TFCInstance) {
         respond pesoAvaliacao_has_TFCInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(PesoAvaliacao_has_TFC pesoAvaliacao_has_TFCInstance) {
         if (pesoAvaliacao_has_TFCInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class PesoAvaliacao_has_TFCController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(PesoAvaliacao_has_TFC pesoAvaliacao_has_TFCInstance) {
 
         if (pesoAvaliacao_has_TFCInstance == null) {

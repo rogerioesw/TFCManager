@@ -27,6 +27,7 @@ class HorarioSemanalController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(HorarioSemanal horarioSemanalInstance) {
         if (horarioSemanalInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class HorarioSemanalController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(HorarioSemanal horarioSemanalInstance) {
         respond horarioSemanalInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(HorarioSemanal horarioSemanalInstance) {
         if (horarioSemanalInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class HorarioSemanalController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(HorarioSemanal horarioSemanalInstance) {
 
         if (horarioSemanalInstance == null) {

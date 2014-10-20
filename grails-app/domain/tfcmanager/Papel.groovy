@@ -11,4 +11,8 @@ class Papel {
 	static constraints = {
 		authority blank: false, unique: true
 	}
+	
+	public String toString() {
+		this.authority
+	}
 }

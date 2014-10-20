@@ -27,6 +27,7 @@ class BancaDefesa_has_ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(BancaDefesa_has_Professor bancaDefesa_has_ProfessorInstance) {
         if (bancaDefesa_has_ProfessorInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class BancaDefesa_has_ProfessorController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(BancaDefesa_has_Professor bancaDefesa_has_ProfessorInstance) {
         respond bancaDefesa_has_ProfessorInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(BancaDefesa_has_Professor bancaDefesa_has_ProfessorInstance) {
         if (bancaDefesa_has_ProfessorInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class BancaDefesa_has_ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(BancaDefesa_has_Professor bancaDefesa_has_ProfessorInstance) {
 
         if (bancaDefesa_has_ProfessorInstance == null) {

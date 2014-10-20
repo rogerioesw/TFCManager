@@ -27,6 +27,7 @@ class ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Professor professorInstance) {
         if (professorInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class ProfessorController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Professor professorInstance) {
         respond professorInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Professor professorInstance) {
         if (professorInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Professor professorInstance) {
 
         if (professorInstance == null) {

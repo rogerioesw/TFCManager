@@ -27,6 +27,7 @@ class TFC_has_ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(TFC_has_Professor TFC_has_ProfessorInstance) {
         if (TFC_has_ProfessorInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class TFC_has_ProfessorController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(TFC_has_Professor TFC_has_ProfessorInstance) {
         respond TFC_has_ProfessorInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(TFC_has_Professor TFC_has_ProfessorInstance) {
         if (TFC_has_ProfessorInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class TFC_has_ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(TFC_has_Professor TFC_has_ProfessorInstance) {
 
         if (TFC_has_ProfessorInstance == null) {

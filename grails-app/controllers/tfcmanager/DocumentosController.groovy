@@ -27,6 +27,7 @@ class DocumentosController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Documentos documentosInstance) {
         if (documentosInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class DocumentosController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Documentos documentosInstance) {
         respond documentosInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Documentos documentosInstance) {
         if (documentosInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class DocumentosController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Documentos documentosInstance) {
 
         if (documentosInstance == null) {

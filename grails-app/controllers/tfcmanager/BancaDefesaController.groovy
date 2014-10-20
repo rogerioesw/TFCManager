@@ -27,6 +27,7 @@ class BancaDefesaController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(BancaDefesa bancaDefesaInstance) {
         if (bancaDefesaInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class BancaDefesaController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(BancaDefesa bancaDefesaInstance) {
         respond bancaDefesaInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(BancaDefesa bancaDefesaInstance) {
         if (bancaDefesaInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class BancaDefesaController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(BancaDefesa bancaDefesaInstance) {
 
         if (bancaDefesaInstance == null) {

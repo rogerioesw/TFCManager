@@ -1,40 +1,58 @@
 <%@ page import="tfcmanager.Usuario" %>
 
-<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'login', 'error')} required">
-	<label for="login">
-		<g:message code="usuario.login.label" default="Login" />
+
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'username', 'error')} required">
+	<label for="username">
+		<g:message code="usuario.username.label" default="Username" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="login" maxlength="20" required="" value="${usuarioInstance?.login}"/>
+	<g:textField name="username" required="" value="${usuarioInstance?.username}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'nomecompleto', 'error')} required">
-	<label for="nomecompleto">
-		<g:message code="usuario.nomecompleto.label" default="Nomecompleto" />
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'password', 'error')} required">
+	<label for="password">
+		<g:message code="usuario.password.label" default="Password" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nomecompleto" maxlength="100" required="" value="${usuarioInstance?.nomecompleto}"/>
+	<g:textField name="password" required="" value="${usuarioInstance?.password}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'senha', 'error')} required">
-	<label for="senha">
-		<g:message code="usuario.senha.label" default="Senha" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'accountExpired', 'error')} ">
+	<label for="accountExpired">
+		<g:message code="usuario.accountExpired.label" default="Account Expired" />
+		
 	</label>
-	<g:textField name="senha" maxlength="15" required="" value="${usuarioInstance?.senha}"/>
+	<g:checkBox name="accountExpired" value="${usuarioInstance?.accountExpired}" />
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'projeto', 'error')} required">
-	<label for="projeto">
-		<g:message code="usuario.projeto.label" default="Projeto" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'accountLocked', 'error')} ">
+	<label for="accountLocked">
+		<g:message code="usuario.accountLocked.label" default="Account Locked" />
+		
 	</label>
-	<g:select id="projeto" name="projeto.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${usuarioInstance?.projeto?.id}" class="many-to-one"/>
-	<input type="button" class="home" onclick="abrejanelaprojetoorientacao()" value="...">
+	<g:checkBox name="accountLocked" value="${usuarioInstance?.accountLocked}" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'enabled', 'error')} ">
+	<label for="enabled">
+		<g:message code="usuario.enabled.label" default="Enabled" />
+		
+	</label>
+	<g:checkBox name="enabled" value="${usuarioInstance?.enabled}" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'passwordExpired', 'error')} ">
+	<label for="passwordExpired">
+		<g:message code="usuario.passwordExpired.label" default="Password Expired" />
+		
+	</label>
+	<g:checkBox name="passwordExpired" value="${usuarioInstance?.passwordExpired}" />
+
 </div>
 

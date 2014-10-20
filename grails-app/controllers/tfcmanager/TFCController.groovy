@@ -27,6 +27,7 @@ class TFCController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(TFC TFCInstance) {
         if (TFCInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class TFCController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(TFC TFCInstance) {
         respond TFCInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(TFC TFCInstance) {
         if (TFCInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class TFCController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(TFC TFCInstance) {
 
         if (TFCInstance == null) {

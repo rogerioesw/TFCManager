@@ -27,6 +27,7 @@ class ConvocacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Convocacao convocacaoInstance) {
         if (convocacaoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class ConvocacaoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Convocacao convocacaoInstance) {
         respond convocacaoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Convocacao convocacaoInstance) {
         if (convocacaoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class ConvocacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Convocacao convocacaoInstance) {
 
         if (convocacaoInstance == null) {

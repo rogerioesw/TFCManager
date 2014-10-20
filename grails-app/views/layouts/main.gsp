@@ -48,29 +48,37 @@
 						<li><g:link controller="professor">Cadastro de Professores</g:link></li>
 						<li><g:link controller="faculdade">Cadastro de Faculdade</g:link></li>
 						<li><g:link controller="disciplina">Cadastro de Disciplinas</g:link></li>
-						<li><g:link controller="horarioSemanal">Cadastro de Horários Semanais</g:link>
+						<li>Horários Semanais
 							<ul>
+								<li><g:link controller="horarioSemanal">Cadastro de Horários Semanais</g:link></li>
 								<li><g:link controller="aluno_has_HorarioSemanal">Horários Disponíveis para Alunos</g:link></li>
 								<li><g:link controller="professor_has_HorarioSemanal">Horários Disponíveis para Professores</g:link></li>
 							</ul>
 						</li>
 						<li><g:link controller="projetoOrientacao">Cadastro de Projetos</g:link></li>
 						<li><g:link controller="seminario">Cadastro de Seminários</g:link></li>
-						<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link>
+						<li>Banca de Defesa
 							<ul>
+								<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link></li>
 								<li><g:link controller="bancaDefesa_has_Professor">Cadastro de Avaliadores da Banca</g:link></li>
 							</ul>
 						</li>
 						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>
 						<li><g:link controller="TFC_has_Professor">Cadastro de Orientadores</g:link></li>
-						<li><g:link controller="usuario">Cadastro de Usuários</g:link></li>		
+						<li>Usuários
+							<ul>
+								<li><g:link controller="usuario">Cadastro de Usuários</g:link></li>
+								<li><g:link controller="usuarioPapel">Autorização de Usuários</g:link></li>
+							</ul>
+						</li>		
 					</ul>
 				</li>
 				<li>Lançamentos
 					<ul>
 						<li><g:link controller="documentos">Lançamento de Documentos</g:link></li>
-						<li><g:link controller="convocacao">Lançamento de Convocações</g:link></li>
+						<li>Convocações
 							<ul>
+								<li><g:link controller="convocacao">Lançamento de Convocações</g:link></li>
 								<li><g:link controller="professor_has_Convocacao">Alocar Professor em Convocação</g:link></li>
 							</ul>
 						</li>
@@ -90,12 +98,17 @@
 			</ul>
 		</div>
 		
-		<sec:loggedInUserInfo field="username" style="text-align:center; color:blue"/>
+		
 		
 		<sec:ifNotLoggedIn>
   			<g:link controller="login" action="auth">Login</g:link>
 		</sec:ifNotLoggedIn>
-		 
+		
+		
+		<sec:ifLoggedIn>
+			<sec:username /> (<g:link controller="logout">Logout</g:link>)
+		</sec:ifLoggedIn>
+		
 		<g:layoutBody/>
 		<div id="footer">
 			<g:render template="/common/footer" />

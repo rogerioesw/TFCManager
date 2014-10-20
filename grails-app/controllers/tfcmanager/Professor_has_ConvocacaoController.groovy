@@ -27,6 +27,7 @@ class Professor_has_ConvocacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Professor_has_Convocacao professor_has_ConvocacaoInstance) {
         if (professor_has_ConvocacaoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class Professor_has_ConvocacaoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Professor_has_Convocacao professor_has_ConvocacaoInstance) {
         respond professor_has_ConvocacaoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Professor_has_Convocacao professor_has_ConvocacaoInstance) {
         if (professor_has_ConvocacaoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class Professor_has_ConvocacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Professor_has_Convocacao professor_has_ConvocacaoInstance) {
 
         if (professor_has_ConvocacaoInstance == null) {

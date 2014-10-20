@@ -27,6 +27,7 @@ class SeminarioController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Seminario seminarioInstance) {
         if (seminarioInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class SeminarioController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Seminario seminarioInstance) {
         respond seminarioInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Seminario seminarioInstance) {
         if (seminarioInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class SeminarioController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Seminario seminarioInstance) {
 
         if (seminarioInstance == null) {

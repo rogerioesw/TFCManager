@@ -27,6 +27,7 @@ class PesoAvaliacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(PesoAvaliacao pesoAvaliacaoInstance) {
         if (pesoAvaliacaoInstance == null) {
             notFound()
@@ -49,11 +50,13 @@ class PesoAvaliacaoController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(PesoAvaliacao pesoAvaliacaoInstance) {
         respond pesoAvaliacaoInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(PesoAvaliacao pesoAvaliacaoInstance) {
         if (pesoAvaliacaoInstance == null) {
             notFound()
@@ -77,6 +80,7 @@ class PesoAvaliacaoController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(PesoAvaliacao pesoAvaliacaoInstance) {
 
         if (pesoAvaliacaoInstance == null) {
