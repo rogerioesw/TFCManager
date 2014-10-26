@@ -63,6 +63,19 @@ grails {
     }
 }
 
+fileuploader {
+	avatar {
+		maxSize = 1024 * 256 //256 kbytes
+		allowedExtensions = ["jpg","jpeg","gif","png"]
+		path = "D:/Arquivos_TFCManager/avatar/"
+	}
+	docs {
+		maxSize = 1000 * 1024 * 4 //4 mbytes
+		allowedExtensions = ["doc", "docx", "pdf", "rtf"]
+		path = "D:/Arquivos_TFCManager/docs/"
+	}
+}
+
 
 grails.converters.encoding = "UTF-8"
 // scaffolding templates configuration

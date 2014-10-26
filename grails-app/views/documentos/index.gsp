@@ -26,7 +26,7 @@
 					
 						<g:sortableColumn property="descricao" title="${message(code: 'documentos.descricao.label', default: 'Descricao')}" />
 					
-						<g:sortableColumn property="arquivo" title="${message(code: 'documentos.arquivo.label', default: 'Arquivo')}" />
+						<th><g:message code="documentos.arquivo.label" default="Arquivo" /></th>
 					
 						<th><g:message code="documentos.projetoorientacao.label" default="Projetoorientacao" /></th>
 					
@@ -38,8 +38,13 @@
 					
 						<td><g:link action="show" id="${documentosInstance.id}">${fieldValue(bean: documentosInstance, field: "descricao")}</g:link></td>
 					
-						<td>${fieldValue(bean: documentosInstance, field: "arquivo")}</td>
+						<td>
+						<fileuploader:download 	id="${documentosInstance.id}"
+													errorAction="index"
+													errorController="docs">${fieldValue(bean: documentosInstance, field: "arquivo")}</fileuploader:download>
+						</td>
 					
+						
 						<td>${fieldValue(bean: documentosInstance, field: "projetoorientacao")}</td>
 					
 					</tr>

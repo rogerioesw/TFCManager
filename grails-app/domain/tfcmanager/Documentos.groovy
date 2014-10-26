@@ -1,12 +1,15 @@
 package tfcmanager
 
+import com.lucastex.grails.fileuploader.UFile
+
 class Documentos {
 	String descricao
-	byte[] arquivo
+	//static hasMany = [arquivos: UFile]
+	UFile arquivo
 	ProjetoOrientacao projetoorientacao
 
     static constraints = {
 		descricao(blank:false, maxSize:80, minSize:4)
-		arquivo(blank:false, nullable:false, minSize:4, maxSize:50777215)
+		arquivo(nullable:true)
     }
 }

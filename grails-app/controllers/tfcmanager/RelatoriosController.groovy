@@ -11,8 +11,10 @@ class RelatoriosController {
 	
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def anexo0() {
-		params.jasperForceDownload=true
+		//params.jasperForceDownload=true
 		params.jasperDownloadName='Anexo0'
+		params.jasperParams=true
+		//params.jasperParams("nome_parametro","valor")
 		render params as Jasper
 	}
 	

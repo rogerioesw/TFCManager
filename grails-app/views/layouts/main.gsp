@@ -76,6 +76,7 @@
 				<li>Lançamentos
 					<ul>
 						<li><g:link controller="documentos">Lançamento de Documentos</g:link></li>
+						<li><g:link controller="ufile">Upload de Arquivos</g:link></li>
 						<li>Convocações
 							<ul>
 								<li><g:link controller="convocacao">Lançamento de Convocações</g:link></li>

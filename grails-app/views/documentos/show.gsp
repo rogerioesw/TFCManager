@@ -36,6 +36,8 @@
 				<li class="fieldcontain">
 					<span id="arquivo-label" class="property-label"><g:message code="documentos.arquivo.label" default="Arquivo" /></span>
 					
+						<span class="property-value" aria-labelledby="arquivo-label"><g:link controller="UFile" action="show" id="${documentosInstance?.arquivo?.id}">${documentosInstance?.arquivo?.encodeAsHTML()}</g:link></span>
+					
 				</li>
 				</g:if>
 			

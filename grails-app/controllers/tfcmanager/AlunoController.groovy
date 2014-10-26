@@ -7,6 +7,8 @@ import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class AlunoController {
+	
+	def alunoService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -15,6 +17,42 @@ class AlunoController {
         params.max = Math.min(max ?: 10, 100)
         respond Aluno.list(params), model:[alunoInstanceCount: Aluno.count()]
     }
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def list(Integer max) {
+		params.max = Math.min(max ?: 10, 100)
+        def alunoList = Aluno.list(params)
+        def alunoCount = Aluno.count()
+ 
+        //def request = HttpCommonUtils.getCurrentServletRequest()
+ 
+        //request?.getUserPrincipal()?.getName()
+ 
+        [alunoInstanceList: alunoList, alunoInstanceTotal: alunoCount]
+	}
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def filter() {
+		def alunoList = Aluno.findAllByNomeLike(params.pesquisa,"%")
+		//render view: "list", model: [alunoInstanceList: alunoList, alunoInstanceTotal: alunoList.size()]
+		render alunoList
+		//render view: "index", model:[alunoList: Aluno.count()]
+	}
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	private getFilterList(params) {
+		
+	   def queryParams = [:]
+
+	   if(params["pesquisa"]) {
+		 queryParams.put("pesquisa", params["pesquisa"])
+	   }
+
+	   
+	   queryParams
+   }
+	//"pesquisa", params["pesquisa"]
+	//def alunos = Aluno.findByNomeLike(params)
 
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Aluno alunoInstance) {

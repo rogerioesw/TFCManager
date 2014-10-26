@@ -18,4 +18,8 @@ class TFC {
 		situacao(blank:false, minSize:5, maxSize:8)
 		observacao(blank:false, minSize:5, maxSize:30)
     }
+	
+	public String toString() {
+		this.projeto
+	}
 }

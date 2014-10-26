@@ -14,4 +14,8 @@ class BancaDefesa {
 		horario(blank:false, matches:"^([0-1][0-9]|[2][0-3]):([0-5][0-9])")
 		observacao(blank:false, maxSize:80, minSize:2)
     }
+	
+	public String toString() {
+		this.tfc
+	}
 }

@@ -10,4 +10,8 @@ class Disciplina {
 		nome(blank:false, minSize:4, maxSize:4)
 		status(blank:false, minSize:5, maxSize:8)
     }
+	
+	public String toString() {
+		this.nome
+	}
 }

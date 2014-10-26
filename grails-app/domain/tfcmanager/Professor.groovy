@@ -12,4 +12,8 @@ class Professor {
 		nome(blank:false, maxSize:40, minSize:10)
 		email(blank:false, email:true)
     }
+	
+	public String toString() {
+		this.nome
+	}
 }

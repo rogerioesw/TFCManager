@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.Documentos" %>
 
-<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
+
 
 <div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'descricao', 'error')} required">
 	<label for="descricao">
@@ -11,12 +11,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'arquivo', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'arquivo', 'error')} ">
 	<label for="arquivo">
 		<g:message code="documentos.arquivo.label" default="Arquivo" />
-		<span class="required-indicator">*</span>
+		
 	</label>
-	<input type="file" id="arquivo" name="arquivo" />
+	<g:select id="arquivo" name="arquivo.id" from="${com.lucastex.grails.fileuploader.UFile.list()}" optionKey="id" value="${documentosInstance?.arquivo?.id}" class="many-to-one" noSelection="['null': '']"/>
 
 </div>
 
@@ -26,6 +26,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="projetoorientacao" name="projetoorientacao.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${documentosInstance?.projetoorientacao?.id}" class="many-to-one"/>
-	<input type="button" class="home" onclick="abrejanelaprojetoorientacao()" value="...">
+
 </div>
 
