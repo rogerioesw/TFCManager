@@ -34,7 +34,7 @@
 					
 						<th><g:message code="TFC.horario.label" default="Horario" /></th>
 					
-						<th><g:message code="TFC.projeto.label" default="Projeto" /></th>
+						<g:sortableColumn property="projeto" title="${message(code: 'TFC.projeto.label', default: 'Projeto')}" />
 					
 					</tr>
 				</thead>

@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'presencaOrientacao.label', default: 'PresencaOrientacao')}" />
+		<g:set var="entityName" value="${message(code: 'presencaOrientacao.label', default: 'Presença Orientação')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -34,7 +34,7 @@
 			
 				<g:if test="${presencaOrientacaoInstance?.observacao}">
 				<li class="fieldcontain">
-					<span id="observacao-label" class="property-label"><g:message code="presencaOrientacao.observacao.label" default="Observacao" /></span>
+					<span id="observacao-label" class="property-label"><g:message code="presencaOrientacao.observacao.label" default="Observação" /></span>
 					
 						<span class="property-value" aria-labelledby="observacao-label"><g:fieldValue bean="${presencaOrientacaoInstance}" field="observacao"/></span>
 					

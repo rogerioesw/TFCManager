@@ -61,6 +61,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${alunoInstance?.tfc}">
+				<li class="fieldcontain">
+					<span id="tfc-label" class="property-label"><g:message code="aluno.tfc.label" default="Tfc" /></span>
+					
+						<g:each in="${alunoInstance.tfc}" var="t">
+						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:alunoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

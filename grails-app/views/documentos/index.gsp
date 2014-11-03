@@ -28,7 +28,7 @@
 					
 						<th><g:message code="documentos.arquivo.label" default="Arquivo" /></th>
 					
-						<th><g:message code="documentos.projetoorientacao.label" default="Projetoorientacao" /></th>
+						<th><g:message code="documentos.tfc.label" default="Tfc" /></th>
 					
 					</tr>
 				</thead>
@@ -38,14 +38,11 @@
 					
 						<td><g:link action="show" id="${documentosInstance.id}">${fieldValue(bean: documentosInstance, field: "descricao")}</g:link></td>
 					
-						<td>
-						<fileuploader:download 	id="${documentosInstance.id}"
+						<td><fileuploader:download 	id="${documentosInstance.id}"
 													errorAction="index"
-													errorController="docs">${fieldValue(bean: documentosInstance, field: "arquivo")}</fileuploader:download>
-						</td>
+													errorController="docs">${fieldValue(bean: documentosInstance, field: "arquivo")}</fileuploader:download></td>
 					
-						
-						<td>${fieldValue(bean: documentosInstance, field: "projetoorientacao")}</td>
+						<td>${fieldValue(bean: documentosInstance, field: "tfc")}</td>
 					
 					</tr>
 				</g:each>

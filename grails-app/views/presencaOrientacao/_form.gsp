@@ -13,7 +13,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: presencaOrientacaoInstance, field: 'observacao', 'error')} required">
 	<label for="observacao">
-		<g:message code="presencaOrientacao.observacao.label" default="Observacao" />
+		<g:message code="presencaOrientacao.observacao.label" default="Observação" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="observacao" maxlength="25" required="" value="${presencaOrientacaoInstance?.observacao}"/>

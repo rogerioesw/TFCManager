@@ -21,13 +21,13 @@ class BancaDefesaController {
         respond bancaDefesaInstance
     }
 
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new BancaDefesa(params)
     }
 
     @Transactional
-	@Secured(['ROLE_ADMIN'])
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def save(BancaDefesa bancaDefesaInstance) {
         if (bancaDefesaInstance == null) {
             notFound()

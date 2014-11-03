@@ -20,12 +20,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'projetoorientacao', 'error')} required">
-	<label for="projetoorientacao">
-		<g:message code="documentos.projetoorientacao.label" default="Projetoorientacao" />
+<div class="fieldcontain ${hasErrors(bean: documentosInstance, field: 'tfc', 'error')} required">
+	<label for="tfc">
+		<g:message code="documentos.tfc.label" default="Tfc" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="projetoorientacao" name="projetoorientacao.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${documentosInstance?.projetoorientacao?.id}" class="many-to-one"/>
+	<g:select id="tfc" name="tfc.id" from="${tfcmanager.TFC.list()}" optionKey="id" required="" value="${documentosInstance?.tfc?.id}" class="many-to-one"/>
 
 </div>
 

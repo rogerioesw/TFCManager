@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'aluno', 'error')} ">
+	<label for="aluno">
+		<g:message code="TFC.aluno.label" default="Aluno" />
+		
+	</label>
+	<g:select name="aluno" from="${tfcmanager.Aluno.list()}" multiple="multiple" optionKey="id" size="5" value="${TFCInstance?.aluno*.id}" class="many-to-many"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'disciplina', 'error')} required">
 	<label for="disciplina">
 		<g:message code="TFC.disciplina.label" default="Disciplina" />
@@ -38,30 +47,30 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'documento', 'error')} ">
+	<label for="documento">
+		<g:message code="TFC.documento.label" default="Documento" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${TFCInstance?.documento?}" var="d">
+    <li><g:link controller="documentos" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="documentos" action="create" params="['TFC.id': TFCInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'documentos.label', default: 'Documentos')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'horario', 'error')} required">
 	<label for="horario">
 		<g:message code="TFC.horario.label" default="Horario" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="horario" name="horario.id" from="${tfcmanager.HorarioSemanal.list()}" optionKey="id" required="" value="${TFCInstance?.horario?.id}" class="many-to-one"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'pesohasTFC', 'error')} ">
-	<label for="pesohasTFC">
-		<g:message code="TFC.pesohasTFC.label" default="Pesohas TFC" />
-		
-	</label>
-	
-<ul class="one-to-many">
-<g:each in="${TFCInstance?.pesohasTFC?}" var="p">
-    <li><g:link controller="pesoAvaliacao_has_TFC" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="pesoAvaliacao_has_TFC" action="create" params="['TFC.id': TFCInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'pesoAvaliacao_has_TFC.label', default: 'PesoAvaliacao_has_TFC')])}</g:link>
-</li>
-</ul>
-
 
 </div>
 
@@ -88,7 +97,7 @@
 		<g:message code="TFC.projeto.label" default="Projeto" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="projeto" name="projeto.id" from="${tfcmanager.ProjetoOrientacao.list()}" optionKey="id" required="" value="${TFCInstance?.projeto?.id}" class="many-to-one"/>
+	<g:textField name="projeto" required="" value="${TFCInstance?.projeto}"/>
 
 </div>
 
@@ -110,14 +119,14 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'tfchasProfessor', 'error')} ">
-	<label for="tfchasProfessor">
-		<g:message code="TFC.tfchasProfessor.label" default="Tfchas Professor" />
+<div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'tfc_has_professor', 'error')} ">
+	<label for="tfc_has_professor">
+		<g:message code="TFC.tfc_has_professor.label" default="Tfchasprofessor" />
 		
 	</label>
 	
 <ul class="one-to-many">
-<g:each in="${TFCInstance?.tfchasProfessor?}" var="t">
+<g:each in="${TFCInstance?.tfc_has_professor?}" var="t">
     <li><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
 </g:each>
 <li class="add">

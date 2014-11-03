@@ -11,13 +11,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 		
 		 
-		<!-- link href="${resource(dir: 'css', file: 'kendo.common.min.css')}" rel="stylesheet" /-->
-		<!-- link href="${resource(dir: 'css', file: 'kendo.default.min.css')}" rel="stylesheet" /-->
-    	<!-- link href="${resource(dir: 'css', file: 'kendo.dataviz.min.css')}" rel="stylesheet" /-->
-    	<!-- link href="${resource(dir: 'css', file: 'kendo.dataviz.default.min.css')}" rel="stylesheet" /-->
-    	<!-- script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script-->
-    	<!-- script src="${resource(dir: 'js', file: 'angular.min.js')}"></script-->
-    	<!-- script src="${resource(dir: 'js', file: 'kendo.all.min.js')}"></script-->
+		
     	
     	
     	<link href="http://cdn.kendostatic.com/2014.2.903/styles/kendo.common.min.css" rel="stylesheet" />
@@ -55,7 +49,6 @@
 								<li><g:link controller="professor_has_HorarioSemanal">Horários Disponíveis para Professores</g:link></li>
 							</ul>
 						</li>
-						<li><g:link controller="projetoOrientacao">Cadastro de Projetos</g:link></li>
 						<li><g:link controller="seminario">Cadastro de Seminários</g:link></li>
 						<li>Banca de Defesa
 							<ul>
@@ -89,9 +82,7 @@
 				</li>
 				<li>Notas
 					<ul>
-						<li><g:link controller="pesoAvaliacao">Lançamento de Pesos de Avaliação</g:link></li>
-						<li><g:link controller="pesoAvaliacao_has_Aluno">Lançamento de Notas</g:link></li>
-						<li><g:link controller="pesoAvaliacao_has_TFC">Cálculo de Notas Finais</g:link></li>
+						<li><g:link controller="avaliacaoTFC">Lançamento de Notas</g:link></li>
 					</ul>
 				</li>
 				<li><g:link controller="relatorios">Relatórios</g:link>

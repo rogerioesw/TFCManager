@@ -7,7 +7,7 @@ class BancaDefesa {
 	TFC tfc
 	
 	
-	static hasMany = [bancahasProfessor : BancaDefesa_has_Professor]
+	static hasMany = [professor : Professor]
 
     static constraints = {
 		data(nullable:false)

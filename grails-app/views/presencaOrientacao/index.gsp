@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'presencaOrientacao.label', default: 'PresencaOrientacao')}" />
+		<g:set var="entityName" value="${message(code: 'presencaOrientacao.label', default: 'Presença Orientação')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -26,7 +26,7 @@
 					
 						<g:sortableColumn property="data" title="${message(code: 'presencaOrientacao.data.label', default: 'Data')}" />
 					
-						<g:sortableColumn property="observacao" title="${message(code: 'presencaOrientacao.observacao.label', default: 'Observacao')}" />
+						<g:sortableColumn property="observacao" title="${message(code: 'presencaOrientacao.observacao.label', default: 'Observação')}" />
 					
 						<th><g:message code="presencaOrientacao.tfc.label" default="Tfc" /></th>
 					

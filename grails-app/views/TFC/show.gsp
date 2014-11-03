@@ -50,6 +50,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${TFCInstance?.aluno}">
+				<li class="fieldcontain">
+					<span id="aluno-label" class="property-label"><g:message code="TFC.aluno.label" default="Aluno" /></span>
+					
+						<g:each in="${TFCInstance.aluno}" var="a">
+						<span class="property-value" aria-labelledby="aluno-label"><g:link controller="aluno" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${TFCInstance?.disciplina}">
 				<li class="fieldcontain">
 					<span id="disciplina-label" class="property-label"><g:message code="TFC.disciplina.label" default="Disciplina" /></span>
@@ -59,22 +70,22 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${TFCInstance?.documento}">
+				<li class="fieldcontain">
+					<span id="documento-label" class="property-label"><g:message code="TFC.documento.label" default="Documento" /></span>
+					
+						<g:each in="${TFCInstance.documento}" var="d">
+						<span class="property-value" aria-labelledby="documento-label"><g:link controller="documentos" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${TFCInstance?.horario}">
 				<li class="fieldcontain">
 					<span id="horario-label" class="property-label"><g:message code="TFC.horario.label" default="Horario" /></span>
 					
 						<span class="property-value" aria-labelledby="horario-label"><g:link controller="horarioSemanal" action="show" id="${TFCInstance?.horario?.id}">${TFCInstance?.horario?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${TFCInstance?.pesohasTFC}">
-				<li class="fieldcontain">
-					<span id="pesohasTFC-label" class="property-label"><g:message code="TFC.pesohasTFC.label" default="Pesohas TFC" /></span>
-					
-						<g:each in="${TFCInstance.pesohasTFC}" var="p">
-						<span class="property-value" aria-labelledby="pesohasTFC-label"><g:link controller="pesoAvaliacao_has_TFC" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
-						</g:each>
 					
 				</li>
 				</g:if>
@@ -94,7 +105,7 @@
 				<li class="fieldcontain">
 					<span id="projeto-label" class="property-label"><g:message code="TFC.projeto.label" default="Projeto" /></span>
 					
-						<span class="property-value" aria-labelledby="projeto-label"><g:link controller="projetoOrientacao" action="show" id="${TFCInstance?.projeto?.id}">${TFCInstance?.projeto?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="projeto-label"><g:fieldValue bean="${TFCInstance}" field="projeto"/></span>
 					
 				</li>
 				</g:if>
@@ -110,12 +121,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${TFCInstance?.tfchasProfessor}">
+				<g:if test="${TFCInstance?.tfc_has_professor}">
 				<li class="fieldcontain">
-					<span id="tfchasProfessor-label" class="property-label"><g:message code="TFC.tfchasProfessor.label" default="Tfchas Professor" /></span>
+					<span id="tfc_has_professor-label" class="property-label"><g:message code="TFC.tfc_has_professor.label" default="Tfchasprofessor" /></span>
 					
-						<g:each in="${TFCInstance.tfchasProfessor}" var="t">
-						<span class="property-value" aria-labelledby="tfchasProfessor-label"><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						<g:each in="${TFCInstance.tfc_has_professor}" var="t">
+						<span class="property-value" aria-labelledby="tfc_has_professor-label"><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

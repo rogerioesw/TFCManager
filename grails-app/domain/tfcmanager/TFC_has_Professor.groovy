@@ -6,6 +6,16 @@ class TFC_has_Professor {
 	TFC tfc
 
     static constraints = {
-		tipo(blank:false, minSize:5, maxSize:14)
+		tipo(inList:['Orientador', 'Co-orientador'])
     }
+	
+	String getTipo() {
+		switch (tipo) {
+			case 'Orientador': return "Orientador"; break
+			case 'Co-orientador' : return "Co-orientador"; break
+			default: "Não cadastrado"
+		}
+	}
+	
+	void setTipo() {}
 }

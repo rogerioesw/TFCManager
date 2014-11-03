@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'horarioSemanal.label', default: 'HorarioSemanal')}" />
+		<g:set var="entityName" value="${message(code: 'horarioSemanal.label', default: 'Horario Semanal')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -24,7 +24,7 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="diasemana" title="${message(code: 'horarioSemanal.diasemana.label', default: 'Diasemana')}" />
+						<g:sortableColumn property="diasemana" title="${message(code: 'horarioSemanal.diasemana.label', default: 'Dia da semana')}" />
 					
 						<g:sortableColumn property="horario" title="${message(code: 'horarioSemanal.horario.label', default: 'Horario')}" />
 					

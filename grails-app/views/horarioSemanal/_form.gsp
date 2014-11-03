@@ -4,7 +4,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: horarioSemanalInstance, field: 'diasemana', 'error')} required">
 	<label for="diasemana">
-		<g:message code="horarioSemanal.diasemana.label" default="Diasemana" />
+		<g:message code="horarioSemanal.diasemana.label" default="Dia da semana" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="diasemana" maxlength="14" required="" value="${horarioSemanalInstance?.diasemana}"/>

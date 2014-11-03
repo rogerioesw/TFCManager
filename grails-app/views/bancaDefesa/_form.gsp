@@ -29,6 +29,14 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: bancaDefesaInstance, field: 'professor', 'error')} ">
+	<label for="professor">
+		<g:message code="bancaDefesa.professor.label" default="Professor" />
+		
+	</label>
+	<g:select name="professor" from="${tfcmanager.Professor.list()}" multiple="multiple" optionKey="id" size="5" value="${bancaDefesaInstance?.professor*.id}" class="many-to-many"/>
+
+</div>
 
 <div class="fieldcontain ${hasErrors(bean: bancaDefesaInstance, field: 'tfc', 'error')} required">
 	<label for="tfc">

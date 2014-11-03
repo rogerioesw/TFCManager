@@ -7,7 +7,7 @@
 		<g:message code="disciplina.nome.label" default="Nome" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nome" required="" value="${disciplinaInstance?.nome}"/>
+	<g:select name="nome" from="${disciplinaInstance.constraints.nome.inList}" required="" value="${disciplinaInstance?.nome}" valueMessagePrefix="disciplina.nome"/>
 
 </div>
 
@@ -16,6 +16,8 @@
 		<g:message code="disciplina.status.label" default="Status" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="status" required="" value="${disciplinaInstance?.status}"/>
+	<g:select name="status" from="${disciplinaInstance.constraints.status.inList}" required="" value="${disciplinaInstance?.status}" valueMessagePrefix="disciplina.status"/>
 
 </div>
+
+

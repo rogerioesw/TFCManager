@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${documentosInstance?.projetoorientacao}">
+				<g:if test="${documentosInstance?.tfc}">
 				<li class="fieldcontain">
-					<span id="projetoorientacao-label" class="property-label"><g:message code="documentos.projetoorientacao.label" default="Projetoorientacao" /></span>
+					<span id="tfc-label" class="property-label"><g:message code="documentos.tfc.label" default="Tfc" /></span>
 					
-						<span class="property-value" aria-labelledby="projetoorientacao-label"><g:link controller="projetoOrientacao" action="show" id="${documentosInstance?.projetoorientacao?.id}">${documentosInstance?.projetoorientacao?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${documentosInstance?.tfc?.id}">${documentosInstance?.tfc?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

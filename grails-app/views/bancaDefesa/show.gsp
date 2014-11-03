@@ -50,12 +50,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${bancaDefesaInstance?.bancahasProfessor}">
+				<g:if test="${bancaDefesaInstance?.professor}">
 				<li class="fieldcontain">
-					<span id="bancahasProfessor-label" class="property-label"><g:message code="bancaDefesa.bancahasProfessor.label" default="Bancahas Professor" /></span>
+					<span id="professor-label" class="property-label"><g:message code="bancaDefesa.professor.label" default="Professor" /></span>
 					
-						<g:each in="${bancaDefesaInstance.bancahasProfessor}" var="b">
-						<span class="property-value" aria-labelledby="bancahasProfessor-label"><g:link controller="bancaDefesa_has_Professor" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
+						<g:each in="${bancaDefesaInstance.professor}" var="p">
+						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

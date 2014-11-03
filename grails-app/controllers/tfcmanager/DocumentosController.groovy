@@ -21,13 +21,13 @@ class DocumentosController {
         respond documentosInstance
     }
 
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Documentos(params)
     }
 
     @Transactional
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def save(Documentos documentosInstance) {
         if (documentosInstance == null) {
             notFound()
@@ -50,13 +50,13 @@ class DocumentosController {
         }
     }
 
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def edit(Documentos documentosInstance) {
         respond documentosInstance
     }
 
     @Transactional
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def update(Documentos documentosInstance) {
         if (documentosInstance == null) {
             notFound()
@@ -80,7 +80,7 @@ class DocumentosController {
     }
 
     @Transactional
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	@Secured(['ROLE_ADMIN'])
     def delete(Documentos documentosInstance) {
 
         if (documentosInstance == null) {

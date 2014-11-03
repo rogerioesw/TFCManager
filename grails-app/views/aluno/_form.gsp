@@ -1,6 +1,7 @@
 <%@ page import="tfcmanager.Aluno" %>
 
 
+
 <div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'nome', 'error')} required">
 	<label for="nome">
 		<g:message code="aluno.nome.label" default="Nome" />
@@ -19,14 +20,12 @@
 
 </div>
 
-<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
-
-<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'faculdade', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'faculdade', 'error')} required">
 	<label for="faculdade">
 		<g:message code="aluno.faculdade.label" default="Faculdade" />
-		  <span class="required-indicator">*</span>
+		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="faculdade" name="faculdade.id" from="${tfcmanager.Faculdade.list()}" optionKey="id" value="${alunoInstance?.faculdade?.id}" class="many-to-one"/>
-	<input type="button" class="home" onclick="abrejanelafaculdade()" value="...">
+	<g:select id="faculdade" name="faculdade.id" from="${tfcmanager.Faculdade.list()}" optionKey="id" required="" value="${alunoInstance?.faculdade?.id}" class="many-to-one"/>
+
 </div>
 

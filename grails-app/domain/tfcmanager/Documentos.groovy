@@ -6,7 +6,7 @@ class Documentos {
 	String descricao
 	//static hasMany = [arquivos: UFile]
 	UFile arquivo
-	ProjetoOrientacao projetoorientacao
+	TFC tfc
 
     static constraints = {
 		descricao(blank:false, maxSize:80, minSize:4)

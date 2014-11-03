@@ -23,13 +23,11 @@
 			</g:if>
 			<ol class="property-list professor">
 			
-				<g:if test="${professorInstance?.bancahasProfessor}">
+				<g:if test="${professorInstance?.nome}">
 				<li class="fieldcontain">
-					<span id="bancahasProfessor-label" class="property-label"><g:message code="professor.bancahasProfessor.label" default="Bancahas Professor" /></span>
+					<span id="nome-label" class="property-label"><g:message code="professor.nome.label" default="Nome" /></span>
 					
-						<g:each in="${professorInstance.bancahasProfessor}" var="b">
-						<span class="property-value" aria-labelledby="bancahasProfessor-label"><g:link controller="bancaDefesa_has_Professor" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${professorInstance}" field="nome"/></span>
 					
 				</li>
 				</g:if>
@@ -43,11 +41,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${professorInstance?.nome}">
+				<g:if test="${professorInstance?.banca}">
 				<li class="fieldcontain">
-					<span id="nome-label" class="property-label"><g:message code="professor.nome.label" default="Nome" /></span>
+					<span id="banca-label" class="property-label"><g:message code="professor.banca.label" default="Banca" /></span>
 					
-						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${professorInstance}" field="nome"/></span>
+						<g:each in="${professorInstance.banca}" var="b">
+						<span class="property-value" aria-labelledby="banca-label"><g:link controller="bancaDefesa" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
