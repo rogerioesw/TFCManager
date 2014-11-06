@@ -5,10 +5,10 @@ class Professor {
 	String email
 	
 	static hasMany = [professorhasHorario:Professor_has_HorarioSemanal, 
-		banca:BancaDefesa, tfchasProfessor:TFC_has_Professor,
-		professorhasConvocacao:Professor_has_Convocacao]
+		banca:BancaDefesa, tfchasProfessor:TFC_has_Professor, convocacao:Convocacao, 
+		memorando:Memorando]
 	
-	static belongsTo = BancaDefesa
+	static belongsTo = [BancaDefesa, Convocacao, Memorando]
 
     static constraints = {
 		nome(blank:false, maxSize:40, minSize:10)

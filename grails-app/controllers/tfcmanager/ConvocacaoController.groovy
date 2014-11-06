@@ -6,28 +6,25 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
+@Secured(['ROLE_ADMIN'])
 class ConvocacaoController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Convocacao.list(params), model:[convocacaoInstanceCount: Convocacao.count()]
     }
 
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Convocacao convocacaoInstance) {
         respond convocacaoInstance
     }
 
-	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Convocacao(params)
     }
 
     @Transactional
-	@Secured(['ROLE_ADMIN'])
     def save(Convocacao convocacaoInstance) {
         if (convocacaoInstance == null) {
             notFound()
@@ -50,13 +47,11 @@ class ConvocacaoController {
         }
     }
 
-	@Secured(['ROLE_ADMIN'])
     def edit(Convocacao convocacaoInstance) {
         respond convocacaoInstance
     }
 
     @Transactional
-	@Secured(['ROLE_ADMIN'])
     def update(Convocacao convocacaoInstance) {
         if (convocacaoInstance == null) {
             notFound()
@@ -80,7 +75,6 @@ class ConvocacaoController {
     }
 
     @Transactional
-	@Secured(['ROLE_ADMIN'])
     def delete(Convocacao convocacaoInstance) {
 
         if (convocacaoInstance == null) {

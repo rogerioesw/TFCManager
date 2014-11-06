@@ -70,12 +70,8 @@
 					<ul>
 						<li><g:link controller="documentos">Lançamento de Documentos</g:link></li>
 						<li><g:link controller="ufile">Upload de Arquivos</g:link></li>
-						<li>Convocações
-							<ul>
-								<li><g:link controller="convocacao">Lançamento de Convocações</g:link></li>
-								<li><g:link controller="professor_has_Convocacao">Alocar Professor em Convocação</g:link></li>
-							</ul>
-						</li>
+						<li><g:link controller="convocacao">Convocações</g:link></li>
+						<li><g:link controller="memorando">Memorandos</g:link></li>
 						<li><g:link controller="presencaOrientacao">Lançamento de Presenças</g:link></li>
 						
 					</ul>

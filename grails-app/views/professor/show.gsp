@@ -52,12 +52,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${professorInstance?.professorhasConvocacao}">
+				<g:if test="${professorInstance?.convocacao}">
 				<li class="fieldcontain">
-					<span id="professorhasConvocacao-label" class="property-label"><g:message code="professor.professorhasConvocacao.label" default="Professorhas Convocacao" /></span>
+					<span id="convocacao-label" class="property-label"><g:message code="professor.convocacao.label" default="Convocacao" /></span>
 					
-						<g:each in="${professorInstance.professorhasConvocacao}" var="p">
-						<span class="property-value" aria-labelledby="professorhasConvocacao-label"><g:link controller="professor_has_Convocacao" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						<g:each in="${professorInstance.convocacao}" var="c">
+						<span class="property-value" aria-labelledby="convocacao-label"><g:link controller="convocacao" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

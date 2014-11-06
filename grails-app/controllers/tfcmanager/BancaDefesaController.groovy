@@ -8,6 +8,8 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class BancaDefesaController {
 
+	def bancaService
+	
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
@@ -25,6 +27,7 @@ class BancaDefesaController {
     def create() {
         respond new BancaDefesa(params)
     }
+
 
     @Transactional
 	@Secured(['ROLE_USER','ROLE_ADMIN'])

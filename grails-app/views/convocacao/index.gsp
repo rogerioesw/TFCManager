@@ -26,11 +26,11 @@
 					
 						<g:sortableColumn property="ano" title="${message(code: 'convocacao.ano.label', default: 'Ano')}" />
 					
+						<g:sortableColumn property="data" title="${message(code: 'convocacao.data.label', default: 'Data')}" />
+					
 						<g:sortableColumn property="assunto" title="${message(code: 'convocacao.assunto.label', default: 'Assunto')}" />
 					
 						<g:sortableColumn property="mensagem" title="${message(code: 'convocacao.mensagem.label', default: 'Mensagem')}" />
-					
-						<g:sortableColumn property="data" title="${message(code: 'convocacao.data.label', default: 'Data')}" />
 					
 						<g:sortableColumn property="numero" title="${message(code: 'convocacao.numero.label', default: 'Numero')}" />
 					
@@ -42,11 +42,11 @@
 					
 						<td><g:link action="show" id="${convocacaoInstance.id}">${fieldValue(bean: convocacaoInstance, field: "ano")}</g:link></td>
 					
+						<td><g:formatDate date="${convocacaoInstance.data}" /></td>
+					
 						<td>${fieldValue(bean: convocacaoInstance, field: "assunto")}</td>
 					
 						<td>${fieldValue(bean: convocacaoInstance, field: "mensagem")}</td>
-					
-						<td><g:formatDate date="${convocacaoInstance.data}" /></td>
 					
 						<td>${fieldValue(bean: convocacaoInstance, field: "numero")}</td>
 					

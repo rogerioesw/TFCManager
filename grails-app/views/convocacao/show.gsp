@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${convocacaoInstance?.data}">
+				<li class="fieldcontain">
+					<span id="data-label" class="property-label"><g:message code="convocacao.data.label" default="Data" /></span>
+					
+						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${convocacaoInstance?.data}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${convocacaoInstance?.assunto}">
 				<li class="fieldcontain">
 					<span id="assunto-label" class="property-label"><g:message code="convocacao.assunto.label" default="Assunto" /></span>
@@ -50,15 +59,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${convocacaoInstance?.data}">
-				<li class="fieldcontain">
-					<span id="data-label" class="property-label"><g:message code="convocacao.data.label" default="Data" /></span>
-					
-						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${convocacaoInstance?.data}" /></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${convocacaoInstance?.numero}">
 				<li class="fieldcontain">
 					<span id="numero-label" class="property-label"><g:message code="convocacao.numero.label" default="Numero" /></span>
@@ -68,12 +68,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${convocacaoInstance?.professorhasConvocacao}">
+				<g:if test="${convocacaoInstance?.professor}">
 				<li class="fieldcontain">
-					<span id="professorhasConvocacao-label" class="property-label"><g:message code="convocacao.professorhasConvocacao.label" default="Professorhas Convocacao" /></span>
+					<span id="professor-label" class="property-label"><g:message code="convocacao.professor.label" default="Professor" /></span>
 					
-						<g:each in="${convocacaoInstance.professorhasConvocacao}" var="p">
-						<span class="property-value" aria-labelledby="professorhasConvocacao-label"><g:link controller="professor_has_Convocacao" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						<g:each in="${convocacaoInstance.professor}" var="p">
+						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

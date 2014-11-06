@@ -15,6 +15,13 @@
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
+		
+		<g:form action="filter" controller="aluno" method="post">
+			<label for="titulo">Pesquisa por nome:</label>
+            <g:textField name="pesquisa" id="pesquisa" value="" style="width: 250px;"/>
+            <g:submitButton name="btnpesquisa" value="Pesquisar" />
+		</g:form>
+		
 		<div id="list-aluno" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
