@@ -1,13 +1,26 @@
 package tfcmanager
 
+import tfcmanager.Aluno
+import tfcmanager.TFC
+import tfcmanager.Professor
 import grails.plugin.springsecurity.annotation.Secured
 import grails.plugin.jyoshiriro.jasperResponse.renderers.Jasper
+
 import org.xhtmlrenderer.pdf.ITextRenderer
 
 class RelatoriosController {
-
+	
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index() { }
+	
+	
+	/*@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def anexo0() {
+		params.id_professor = params.${professor_nome}
+		//params.jasperParams = true
+		//params.jasperParams("0", "${params.professor_nome}")
+		render params as Jasper	
+	}
 	
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def anexo0() {
@@ -16,7 +29,7 @@ class RelatoriosController {
 		params.jasperParams=true
 		//params.jasperParams("nome_parametro","valor")
 		render params as Jasper
-	}
+	}*/
 	
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def anexo1() {

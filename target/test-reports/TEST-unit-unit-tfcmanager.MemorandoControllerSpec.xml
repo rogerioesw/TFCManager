@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="Rogerio-PC" name="tfcmanager.MemorandoControllerSpec" tests="7" time="2.512" timestamp="2014-11-06T20:11:12">
+  <properties />
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the index action returns the correct model" time="0.861" />
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the create action returns the correct model" time="0.145" />
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the save action correctly persists an instance" time="0.319">
+    <error message="Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.MemorandoController.tt__save_closure9_closure14(MemorandoController.groovy:44)
+	at tfcmanager.MemorandoController.$tt__save(MemorandoController.groovy:41)
+	at tfcmanager.MemorandoControllerSpec.Test the save action correctly persists an instance(MemorandoControllerSpec.groovy:53)
+</error>
+  </testcase>
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the show action returns the correct model" time="0.103" />
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the edit action returns the correct model" time="0.1" />
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.26">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.MemorandoControllerSpec.Test the update action performs an update on a valid domain instance(MemorandoControllerSpec.groovy:120)
+</error>
+  </testcase>
+  <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.176">
+    <failure message="Condition not satisfied:&#xa;&#xa;Memorando.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Memorando.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.MemorandoControllerSpec.Test that the delete action deletes an instance if it exists(MemorandoControllerSpec.groovy:139)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

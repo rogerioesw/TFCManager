@@ -70,8 +70,8 @@ fileuploader {
 		path = "D:/Arquivos_TFCManager/avatar/"
 	}
 	docs {
-		maxSize = 1000 * 1024 * 4 //4 mbytes
-		allowedExtensions = ["doc", "docx", "pdf", "rtf"]
+		maxSize = 1000 * 1024 * 8 //4 mbytes
+		allowedExtensions = ["doc", "docx", "pdf", "rtf", "zip", "rar"]
 		path = "D:/Arquivos_TFCManager/docs/"
 	}
 }

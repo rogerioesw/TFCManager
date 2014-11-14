@@ -1,11 +1,7 @@
 /com/
-/dbdoc/
 /grails/
 /hibernate/
-/hibernate.cfg.xml
-/javascripts/
 /login/
-/messages.properties
 /org/
 /spring/
 /spring-security-core.properties
@@ -14,8 +10,6 @@
 /spring-security-core_it.properties
 /spring-security-core_nb.properties
 /spring-security-core_pt_BR.properties
-/spring-security-core_ru.properties
-/spring-security-core_sv.properties
 /tfcmanager/
 /DbdocUrlMappings$__clinit__closure1.class
 /DbdocUrlMappings.class

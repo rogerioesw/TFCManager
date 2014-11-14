@@ -1,0 +1,55 @@
+Testsuite: tfcmanager.SeminarioControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 2,354 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,882 sec
+Testcase: Test the create action returns the correct model took 0,143 sec
+Testcase: Test the save action correctly persists an instance took 0,218 sec
+	Caused an ERROR
+Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.SeminarioController.tt__save_closure9_closure14(SeminarioController.groovy:47)
+	at tfcmanager.SeminarioController.$tt__save(SeminarioController.groovy:44)
+	at tfcmanager.SeminarioControllerSpec.Test the save action correctly persists an instance(SeminarioControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,103 sec
+Testcase: Test that the edit action returns the correct model took 0,098 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,205 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.SeminarioControllerSpec.Test the update action performs an update on a valid domain instance(SeminarioControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,09 sec
+	FAILED
+Condition not satisfied:
+
+Seminario.count() == 1
+          |       |
+          0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Seminario.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.SeminarioControllerSpec.Test that the delete action deletes an instance if it exists(SeminarioControllerSpec.groovy:139)
+

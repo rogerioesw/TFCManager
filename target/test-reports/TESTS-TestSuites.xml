@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="0" name="AlunoControllerSpec" package="tfcmanager" tests="7" time="9.124" timestamp="2014-11-06T20:10:43">
+      <properties />
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test the index action returns the correct model" time="6.168" />
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test the create action returns the correct model" time="0.32" />
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test the save action correctly persists an instance" time="0.946">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.AlunoController.tt__save_closure11_closure16(AlunoController.groovy:65)
+	at tfcmanager.AlunoController.$tt__save(AlunoController.groovy:62)
+	at tfcmanager.AlunoControllerSpec.Test the save action correctly persists an instance(AlunoControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test that the show action returns the correct model" time="0.165" />
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test that the edit action returns the correct model" time="0.127" />
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.573">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.AlunoControllerSpec.Test the update action performs an update on a valid domain instance(AlunoControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.AlunoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.204">
+          <failure message="Condition not satisfied:&#xa;&#xa;Aluno.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+	at tfcmanager.AlunoControllerSpec.Test that the delete action deletes an instance if it exists(AlunoControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="1" name="Aluno_has_HorarioSemanalControllerSpec" package="tfcmanager" tests="7" time="2.477" timestamp="2014-11-06T20:10:53">
+      <properties />
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the index action returns the correct model" time="0.781" />
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the create action returns the correct model" time="0.14" />
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the save action correctly persists an instance" time="0.202">
+          <error message="Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Aluno_has_HorarioSemanalController.tt__save_closure9_closure14(Aluno_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Aluno_has_HorarioSemanalController.$tt__save(Aluno_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Aluno_has_HorarioSemanalControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the show action returns the correct model" time="0.136" />
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the edit action returns the correct model" time="0.124" />
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.325">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Aluno_has_HorarioSemanalControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.175">
+          <failure message="Condition not satisfied:&#xa;&#xa;Aluno_has_HorarioSemanal.count() == 1&#xa;                         |       |&#xa;                         0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno_has_HorarioSemanal.count() == 1
+                         |       |
+                         0       false
+
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Aluno_has_HorarioSemanalControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="2" name="AvaliacaoTFCControllerSpec" package="tfcmanager" tests="7" time="2.933" timestamp="2014-11-06T20:10:55">
+      <properties />
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test the index action returns the correct model" time="0.864" />
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test the create action returns the correct model" time="0.148" />
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test the save action correctly persists an instance" time="0.656">
+          <error message="Cannot redirect for object [tfcmanager.AvaliacaoTFC : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.AvaliacaoTFC : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.AvaliacaoTFCController.tt__save_closure9_closure14(AvaliacaoTFCController.groovy:44)
+	at tfcmanager.AvaliacaoTFCController.$tt__save(AvaliacaoTFCController.groovy:41)
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test the save action correctly persists an instance(AvaliacaoTFCControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test that the show action returns the correct model" time="0.107" />
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test that the edit action returns the correct model" time="0.103" />
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.242">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test the update action performs an update on a valid domain instance(AvaliacaoTFCControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.AvaliacaoTFCControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.131">
+          <failure message="Condition not satisfied:&#xa;&#xa;AvaliacaoTFC.count() == 1&#xa;             |       |&#xa;             0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+AvaliacaoTFC.count() == 1
+             |       |
+             0       false
+
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test that the delete action deletes an instance if it exists(AvaliacaoTFCControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="3" name="BancaDefesaControllerSpec" package="tfcmanager" tests="7" time="2.428" timestamp="2014-11-06T20:10:58">
+      <properties />
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test the index action returns the correct model" time="0.974" />
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test the create action returns the correct model" time="0.131" />
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test the save action correctly persists an instance" time="0.2">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.BancaDefesaController.tt__save_closure9_closure14(BancaDefesaController.groovy:50)
+	at tfcmanager.BancaDefesaController.$tt__save(BancaDefesaController.groovy:47)
+	at tfcmanager.BancaDefesaControllerSpec.Test the save action correctly persists an instance(BancaDefesaControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test that the show action returns the correct model" time="0.097" />
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test that the edit action returns the correct model" time="0.131" />
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.235">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.BancaDefesaControllerSpec.Test the update action performs an update on a valid domain instance(BancaDefesaControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.BancaDefesaControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.115">
+          <failure message="Condition not satisfied:&#xa;&#xa;BancaDefesa.count() == 1&#xa;            |       |&#xa;            0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+BancaDefesa.count() == 1
+            |       |
+            0       false
+
+	at tfcmanager.BancaDefesaControllerSpec.Test that the delete action deletes an instance if it exists(BancaDefesaControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="4" name="ConvocacaoControllerSpec" package="tfcmanager" tests="7" time="2.126" timestamp="2014-11-06T20:11:01">
+      <properties />
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test the index action returns the correct model" time="0.736" />
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test the create action returns the correct model" time="0.111" />
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test the save action correctly persists an instance" time="0.197">
+          <error message="Cannot redirect for object [tfcmanager.Convocacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Convocacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.ConvocacaoController.tt__save_closure9_closure14(ConvocacaoController.groovy:44)
+	at tfcmanager.ConvocacaoController.$tt__save(ConvocacaoController.groovy:41)
+	at tfcmanager.ConvocacaoControllerSpec.Test the save action correctly persists an instance(ConvocacaoControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test that the show action returns the correct model" time="0.1" />
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test that the edit action returns the correct model" time="0.108" />
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.253">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.ConvocacaoControllerSpec.Test the update action performs an update on a valid domain instance(ConvocacaoControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.ConvocacaoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.119">
+          <failure message="Condition not satisfied:&#xa;&#xa;Convocacao.count() == 1&#xa;           |       |&#xa;           0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Convocacao.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.ConvocacaoControllerSpec.Test that the delete action deletes an instance if it exists(ConvocacaoControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="5" name="DisciplinaControllerSpec" package="tfcmanager" tests="7" time="2.394" timestamp="2014-11-06T20:11:03">
+      <properties />
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test the index action returns the correct model" time="0.748" />
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test the create action returns the correct model" time="0.141" />
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test the save action correctly persists an instance" time="0.212">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.DisciplinaController.tt__save_closure9_closure14(DisciplinaController.groovy:47)
+	at tfcmanager.DisciplinaController.$tt__save(DisciplinaController.groovy:44)
+	at tfcmanager.DisciplinaControllerSpec.Test the save action correctly persists an instance(DisciplinaControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test that the show action returns the correct model" time="0.148" />
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test that the edit action returns the correct model" time="0.153" />
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.226">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.DisciplinaControllerSpec.Test the update action performs an update on a valid domain instance(DisciplinaControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.DisciplinaControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.133">
+          <failure message="Condition not satisfied:&#xa;&#xa;Disciplina.count() == 1&#xa;           |       |&#xa;           0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Disciplina.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.DisciplinaControllerSpec.Test that the delete action deletes an instance if it exists(DisciplinaControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="6" name="DocumentosControllerSpec" package="tfcmanager" tests="7" time="2.296" timestamp="2014-11-06T20:11:05">
+      <properties />
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test the index action returns the correct model" time="0.87" />
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test the create action returns the correct model" time="0.121" />
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test the save action correctly persists an instance" time="0.219">
+          <error message="Cannot redirect for object [tfcmanager.Documentos : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Documentos : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.DocumentosController.tt__save_closure9_closure14(DocumentosController.groovy:47)
+	at tfcmanager.DocumentosController.$tt__save(DocumentosController.groovy:44)
+	at tfcmanager.DocumentosControllerSpec.Test the save action correctly persists an instance(DocumentosControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test that the show action returns the correct model" time="0.1" />
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test that the edit action returns the correct model" time="0.105" />
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.219">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.DocumentosControllerSpec.Test the update action performs an update on a valid domain instance(DocumentosControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.DocumentosControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.106">
+          <failure message="Condition not satisfied:&#xa;&#xa;Documentos.count() == 1&#xa;           |       |&#xa;           0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Documentos.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.DocumentosControllerSpec.Test that the delete action deletes an instance if it exists(DocumentosControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="7" name="FaculdadeControllerSpec" package="tfcmanager" tests="7" time="2.227" timestamp="2014-11-06T20:11:07">
+      <properties />
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test the index action returns the correct model" time="0.777" />
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test the create action returns the correct model" time="0.115" />
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test the save action correctly persists an instance" time="0.193">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.FaculdadeController.tt__save_closure9_closure14(FaculdadeController.groovy:47)
+	at tfcmanager.FaculdadeController.$tt__save(FaculdadeController.groovy:44)
+	at tfcmanager.FaculdadeControllerSpec.Test the save action correctly persists an instance(FaculdadeControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test that the show action returns the correct model" time="0.102" />
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test that the edit action returns the correct model" time="0.16" />
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.229">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.FaculdadeControllerSpec.Test the update action performs an update on a valid domain instance(FaculdadeControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.FaculdadeControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.116">
+          <failure message="Condition not satisfied:&#xa;&#xa;Faculdade.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.FaculdadeControllerSpec.Test that the delete action deletes an instance if it exists(FaculdadeControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="8" name="HorarioSemanalControllerSpec" package="tfcmanager" tests="7" time="2.245" timestamp="2014-11-06T20:11:10">
+      <properties />
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test the index action returns the correct model" time="0.751" />
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test the create action returns the correct model" time="0.113" />
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test the save action correctly persists an instance" time="0.224">
+          <error message="Cannot redirect for object [null - null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null - null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.HorarioSemanalController.tt__save_closure9_closure14(HorarioSemanalController.groovy:47)
+	at tfcmanager.HorarioSemanalController.$tt__save(HorarioSemanalController.groovy:44)
+	at tfcmanager.HorarioSemanalControllerSpec.Test the save action correctly persists an instance(HorarioSemanalControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test that the show action returns the correct model" time="0.14" />
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test that the edit action returns the correct model" time="0.096" />
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.282">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(HorarioSemanalControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.HorarioSemanalControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.114">
+          <failure message="Condition not satisfied:&#xa;&#xa;HorarioSemanal.count() == 1&#xa;               |       |&#xa;               0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+HorarioSemanal.count() == 1
+               |       |
+               0       false
+
+	at tfcmanager.HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(HorarioSemanalControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="9" name="MemorandoControllerSpec" package="tfcmanager" tests="7" time="2.512" timestamp="2014-11-06T20:11:12">
+      <properties />
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the index action returns the correct model" time="0.861" />
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the create action returns the correct model" time="0.145" />
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the save action correctly persists an instance" time="0.319">
+          <error message="Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.MemorandoController.tt__save_closure9_closure14(MemorandoController.groovy:44)
+	at tfcmanager.MemorandoController.$tt__save(MemorandoController.groovy:41)
+	at tfcmanager.MemorandoControllerSpec.Test the save action correctly persists an instance(MemorandoControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the show action returns the correct model" time="0.103" />
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the edit action returns the correct model" time="0.1" />
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.26">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.MemorandoControllerSpec.Test the update action performs an update on a valid domain instance(MemorandoControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.MemorandoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.176">
+          <failure message="Condition not satisfied:&#xa;&#xa;Memorando.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Memorando.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.MemorandoControllerSpec.Test that the delete action deletes an instance if it exists(MemorandoControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="10" name="PapelControllerSpec" package="tfcmanager" tests="7" time="2.163" timestamp="2014-11-06T20:11:14">
+      <properties />
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test the index action returns the correct model" time="0.727" />
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test the create action returns the correct model" time="0.113" />
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test the save action correctly persists an instance" time="0.248">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.PapelController.tt__save_closure9_closure14(PapelController.groovy:47)
+	at tfcmanager.PapelController.$tt__save(PapelController.groovy:44)
+	at tfcmanager.PapelControllerSpec.Test the save action correctly persists an instance(PapelControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test that the show action returns the correct model" time="0.102" />
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test that the edit action returns the correct model" time="0.098" />
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.241">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.PapelControllerSpec.Test the update action performs an update on a valid domain instance(PapelControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.PapelControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.115">
+          <failure message="Condition not satisfied:&#xa;&#xa;Papel.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Papel.count() == 1
+      |       |
+      0       false
+
+	at tfcmanager.PapelControllerSpec.Test that the delete action deletes an instance if it exists(PapelControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="11" name="PresencaOrientacaoControllerSpec" package="tfcmanager" tests="7" time="2.376" timestamp="2014-11-06T20:11:17">
+      <properties />
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test the index action returns the correct model" time="0.749" />
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test the create action returns the correct model" time="0.153" />
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test the save action correctly persists an instance" time="0.271">
+          <error message="Cannot redirect for object [tfcmanager.PresencaOrientacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.PresencaOrientacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.PresencaOrientacaoController.tt__save_closure9_closure14(PresencaOrientacaoController.groovy:47)
+	at tfcmanager.PresencaOrientacaoController.$tt__save(PresencaOrientacaoController.groovy:44)
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test the save action correctly persists an instance(PresencaOrientacaoControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test that the show action returns the correct model" time="0.111" />
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test that the edit action returns the correct model" time="0.132" />
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.235">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test the update action performs an update on a valid domain instance(PresencaOrientacaoControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.PresencaOrientacaoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.103">
+          <failure message="Condition not satisfied:&#xa;&#xa;PresencaOrientacao.count() == 1&#xa;                   |       |&#xa;                   0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+PresencaOrientacao.count() == 1
+                   |       |
+                   0       false
+
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test that the delete action deletes an instance if it exists(PresencaOrientacaoControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="12" name="ProfessorControllerSpec" package="tfcmanager" tests="7" time="2.76" timestamp="2014-11-06T20:11:19">
+      <properties />
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test the index action returns the correct model" time="0.766" />
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test the create action returns the correct model" time="0.693" />
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test the save action correctly persists an instance" time="0.236">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.ProfessorController.tt__save_closure9_closure14(ProfessorController.groovy:44)
+	at tfcmanager.ProfessorController.$tt__save(ProfessorController.groovy:41)
+	at tfcmanager.ProfessorControllerSpec.Test the save action correctly persists an instance(ProfessorControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test that the show action returns the correct model" time="0.096" />
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test that the edit action returns the correct model" time="0.098" />
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.229">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(ProfessorControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.ProfessorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.115">
+          <failure message="Condition not satisfied:&#xa;&#xa;Professor.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(ProfessorControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="13" name="Professor_has_HorarioSemanalControllerSpec" package="tfcmanager" tests="7" time="2.185" timestamp="2014-11-06T20:11:22">
+      <properties />
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test the index action returns the correct model" time="0.742" />
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test the create action returns the correct model" time="0.111" />
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test the save action correctly persists an instance" time="0.26">
+          <error message="Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Professor_has_HorarioSemanalController.tt__save_closure9_closure14(Professor_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Professor_has_HorarioSemanalController.$tt__save(Professor_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Professor_has_HorarioSemanalControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test that the show action returns the correct model" time="0.102" />
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test that the edit action returns the correct model" time="0.1" />
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.219">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Professor_has_HorarioSemanalControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.Professor_has_HorarioSemanalControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.106">
+          <failure message="Condition not satisfied:&#xa;&#xa;Professor_has_HorarioSemanal.count() == 1&#xa;                             |       |&#xa;                             0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor_has_HorarioSemanal.count() == 1
+                             |       |
+                             0       false
+
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Professor_has_HorarioSemanalControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="14" name="SeminarioControllerSpec" package="tfcmanager" tests="7" time="2.354" timestamp="2014-11-06T20:11:24">
+      <properties />
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test the index action returns the correct model" time="0.882" />
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test the create action returns the correct model" time="0.143" />
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test the save action correctly persists an instance" time="0.233">
+          <error message="Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.SeminarioController.tt__save_closure9_closure14(SeminarioController.groovy:47)
+	at tfcmanager.SeminarioController.$tt__save(SeminarioController.groovy:44)
+	at tfcmanager.SeminarioControllerSpec.Test the save action correctly persists an instance(SeminarioControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test that the show action returns the correct model" time="0.103" />
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test that the edit action returns the correct model" time="0.097" />
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.222">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.SeminarioControllerSpec.Test the update action performs an update on a valid domain instance(SeminarioControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.SeminarioControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.108">
+          <failure message="Condition not satisfied:&#xa;&#xa;Seminario.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Seminario.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.SeminarioControllerSpec.Test that the delete action deletes an instance if it exists(SeminarioControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="3" failures="0" hostname="Rogerio-PC" id="15" name="TFCControllerSpec" package="tfcmanager" tests="7" time="2.24" timestamp="2014-11-06T20:11:26">
+      <properties />
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test the index action returns the correct model" time="0.765" />
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test the create action returns the correct model" time="0.114" />
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test the save action correctly persists an instance" time="0.255">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFCController.tt__save_closure9_closure14(TFCController.groovy:44)
+	at tfcmanager.TFCController.$tt__save(TFCController.groovy:41)
+	at tfcmanager.TFCControllerSpec.Test the save action correctly persists an instance(TFCControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test that the show action returns the correct model" time="0.099" />
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test that the edit action returns the correct model" time="0.101" />
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.293">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.TFCControllerSpec.Test the update action performs an update on a valid domain instance(TFCControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.TFCControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.12">
+          <error message="Cannot invoke method count() on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFCControllerSpec.Test that the delete action deletes an instance if it exists(TFCControllerSpec.groovy:139)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="3" failures="0" hostname="Rogerio-PC" id="16" name="TFC_has_ProfessorControllerSpec" package="tfcmanager" tests="7" time="2.166" timestamp="2014-11-06T20:11:29">
+      <properties />
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test the index action returns the correct model" time="0.755" />
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test the create action returns the correct model" time="0.113" />
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test the save action correctly persists an instance" time="0.209">
+          <error message="Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFC_has_ProfessorController.tt__save_closure9_closure14(TFC_has_ProfessorController.groovy:47)
+	at tfcmanager.TFC_has_ProfessorController.$tt__save(TFC_has_ProfessorController.groovy:44)
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the save action correctly persists an instance(TFC_has_ProfessorControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test that the show action returns the correct model" time="0.142" />
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test that the edit action returns the correct model" time="0.106" />
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.222">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(TFC_has_ProfessorControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.TFC_has_ProfessorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.102">
+          <error message="Cannot invoke method count() on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(TFC_has_ProfessorControllerSpec.groovy:139)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="17" name="UsuarioControllerSpec" package="tfcmanager" tests="7" time="2.486" timestamp="2014-11-06T20:11:31">
+      <properties />
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test the index action returns the correct model" time="0.951" />
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test the create action returns the correct model" time="0.123" />
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test the save action correctly persists an instance" time="0.214">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.UsuarioController.tt__save_closure9_closure14(UsuarioController.groovy:47)
+	at tfcmanager.UsuarioController.$tt__save(UsuarioController.groovy:44)
+	at tfcmanager.UsuarioControllerSpec.Test the save action correctly persists an instance(UsuarioControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test that the show action returns the correct model" time="0.093" />
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test that the edit action returns the correct model" time="0.162" />
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.258">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.UsuarioControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.UsuarioControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.139">
+          <failure message="Condition not satisfied:&#xa;&#xa;Usuario.count() == 1&#xa;        |       |&#xa;        0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Usuario.count() == 1
+        |       |
+        0       false
+
+	at tfcmanager.UsuarioControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="Rogerio-PC" id="18" name="UsuarioPapelControllerSpec" package="tfcmanager" tests="7" time="1.723" timestamp="2014-11-06T20:11:33">
+      <properties />
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the index action returns the correct model" time="0.794" />
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the create action returns the correct model" time="0.122" />
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the save action correctly persists an instance" time="0.264">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/usuarioPapel/show/1&apos;&#xa;|        |             |&#xa;|        |             false&#xa;|        |             6 differences (70% similarity)&#xa;|        |             /usuarioPapel/(index-)&#xa;|        |             /usuarioPapel/(show/1)&#xa;|        /usuarioPapel/index&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/usuarioPapel/show/1&apos;
+|        |             |
+|        |             false
+|        |             6 differences (70% similarity)
+|        |             /usuarioPapel/(index-)
+|        |             /usuarioPapel/(show/1)
+|        /usuarioPapel/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test the save action correctly persists an instance(UsuarioPapelControllerSpec.groovy:56)
+</failure>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the show action returns the correct model" time="0.095" />
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the edit action returns the correct model" time="0.14" />
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.162">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.UsuarioPapelControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioPapelControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.137">
+          <failure message="Condition not satisfied:&#xa;&#xa;UsuarioPapel.count() == 1&#xa;             |       |&#xa;             0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+UsuarioPapel.count() == 1
+             |       |
+             0       false
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioPapelControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

@@ -1,0 +1,45 @@
+Testsuite: tfcmanager.TFCControllerSpec
+Tests run: 7, Failures: 0, Errors: 3, Time elapsed: 2,24 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,765 sec
+Testcase: Test the create action returns the correct model took 0,114 sec
+Testcase: Test the save action correctly persists an instance took 0,238 sec
+	Caused an ERROR
+Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFCController.tt__save_closure9_closure14(TFCController.groovy:44)
+	at tfcmanager.TFCController.$tt__save(TFCController.groovy:41)
+	at tfcmanager.TFCControllerSpec.Test the save action correctly persists an instance(TFCControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,099 sec
+Testcase: Test that the edit action returns the correct model took 0,101 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,277 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.TFCControllerSpec.Test the update action performs an update on a valid domain instance(TFCControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,104 sec
+	Caused an ERROR
+Cannot invoke method count() on null object
+java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFCControllerSpec.Test that the delete action deletes an instance if it exists(TFCControllerSpec.groovy:139)
+

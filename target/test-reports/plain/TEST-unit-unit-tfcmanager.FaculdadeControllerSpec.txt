@@ -1,0 +1,55 @@
+Testsuite: tfcmanager.FaculdadeControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 2,227 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,777 sec
+Testcase: Test the create action returns the correct model took 0,115 sec
+Testcase: Test the save action correctly persists an instance took 0,173 sec
+	Caused an ERROR
+Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.FaculdadeController.tt__save_closure9_closure14(FaculdadeController.groovy:47)
+	at tfcmanager.FaculdadeController.$tt__save(FaculdadeController.groovy:44)
+	at tfcmanager.FaculdadeControllerSpec.Test the save action correctly persists an instance(FaculdadeControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,102 sec
+Testcase: Test that the edit action returns the correct model took 0,16 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,213 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.FaculdadeControllerSpec.Test the update action performs an update on a valid domain instance(FaculdadeControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,095 sec
+	FAILED
+Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.FaculdadeControllerSpec.Test that the delete action deletes an instance if it exists(FaculdadeControllerSpec.groovy:139)
+

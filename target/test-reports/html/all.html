@@ -1,0 +1,3051 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+        Unit Test Results
+     - All tests</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="report" class="container container_8">
+<div class="grid_6 alpha">
+<div class="grailslogo"></div>
+<h1>
+        Unit Test Results
+     - All tests </h1>
+<p class="intro">
+                        Executed
+                        133
+                        tests
+                    
+                        with
+                        39 errors
+
+                        and
+                        18 failures
+                        .
+                    </p>
+</div>
+<div class="grid_2 omega">
+<nav id="navigationlinks">
+<p>
+<a href="failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite error">
+<div class="header">
+<h2>Aluno_has_HorarioSemanalControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.781 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.14 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.202 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Aluno_has_HorarioSemanalController.tt__save_closure9_closure14(Aluno_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Aluno_has_HorarioSemanalController.$tt__save(Aluno_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Aluno_has_HorarioSemanalControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.136 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.124 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.325 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Aluno_has_HorarioSemanalControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.175 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Aluno_has_HorarioSemanal.count() == 1
+                         |       |
+                         0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno_has_HorarioSemanal.count() == 1
+                         |       |
+                         0       false
+
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Aluno_has_HorarioSemanalControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>AlunoControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 6.168 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.32 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.946 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.AlunoController.tt__save_closure11_closure16(AlunoController.groovy:65)
+	at tfcmanager.AlunoController.$tt__save(AlunoController.groovy:62)
+	at tfcmanager.AlunoControllerSpec.Test the save action correctly persists an instance(AlunoControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.165 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.127 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.573 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.AlunoControllerSpec.Test the update action performs an update on a valid domain instance(AlunoControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.204 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+	at tfcmanager.AlunoControllerSpec.Test that the delete action deletes an instance if it exists(AlunoControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>AvaliacaoTFCControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.864 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.148 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.656 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.AvaliacaoTFC : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.AvaliacaoTFC : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.AvaliacaoTFCController.tt__save_closure9_closure14(AvaliacaoTFCController.groovy:44)
+	at tfcmanager.AvaliacaoTFCController.$tt__save(AvaliacaoTFCController.groovy:41)
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test the save action correctly persists an instance(AvaliacaoTFCControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.107 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.103 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.242 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test the update action performs an update on a valid domain instance(AvaliacaoTFCControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.131 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+AvaliacaoTFC.count() == 1
+             |       |
+             0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+AvaliacaoTFC.count() == 1
+             |       |
+             0       false
+
+	at tfcmanager.AvaliacaoTFCControllerSpec.Test that the delete action deletes an instance if it exists(AvaliacaoTFCControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>BancaDefesaControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.974 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.131 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.2 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.BancaDefesaController.tt__save_closure9_closure14(BancaDefesaController.groovy:50)
+	at tfcmanager.BancaDefesaController.$tt__save(BancaDefesaController.groovy:47)
+	at tfcmanager.BancaDefesaControllerSpec.Test the save action correctly persists an instance(BancaDefesaControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.097 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.131 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.235 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.BancaDefesaControllerSpec.Test the update action performs an update on a valid domain instance(BancaDefesaControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.115 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+BancaDefesa.count() == 1
+            |       |
+            0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+BancaDefesa.count() == 1
+            |       |
+            0       false
+
+	at tfcmanager.BancaDefesaControllerSpec.Test that the delete action deletes an instance if it exists(BancaDefesaControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>ConvocacaoControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.736 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.111 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.197 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Convocacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Convocacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.ConvocacaoController.tt__save_closure9_closure14(ConvocacaoController.groovy:44)
+	at tfcmanager.ConvocacaoController.$tt__save(ConvocacaoController.groovy:41)
+	at tfcmanager.ConvocacaoControllerSpec.Test the save action correctly persists an instance(ConvocacaoControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.1 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.108 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.253 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.ConvocacaoControllerSpec.Test the update action performs an update on a valid domain instance(ConvocacaoControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.119 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Convocacao.count() == 1
+           |       |
+           0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Convocacao.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.ConvocacaoControllerSpec.Test that the delete action deletes an instance if it exists(ConvocacaoControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>DisciplinaControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.748 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.212 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.DisciplinaController.tt__save_closure9_closure14(DisciplinaController.groovy:47)
+	at tfcmanager.DisciplinaController.$tt__save(DisciplinaController.groovy:44)
+	at tfcmanager.DisciplinaControllerSpec.Test the save action correctly persists an instance(DisciplinaControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.148 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.153 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.226 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.DisciplinaControllerSpec.Test the update action performs an update on a valid domain instance(DisciplinaControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.133 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Disciplina.count() == 1
+           |       |
+           0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Disciplina.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.DisciplinaControllerSpec.Test that the delete action deletes an instance if it exists(DisciplinaControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>DocumentosControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.87 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.121 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.219 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Documentos : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Documentos : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.DocumentosController.tt__save_closure9_closure14(DocumentosController.groovy:47)
+	at tfcmanager.DocumentosController.$tt__save(DocumentosController.groovy:44)
+	at tfcmanager.DocumentosControllerSpec.Test the save action correctly persists an instance(DocumentosControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.1 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.105 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.219 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.DocumentosControllerSpec.Test the update action performs an update on a valid domain instance(DocumentosControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.106 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Documentos.count() == 1
+           |       |
+           0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Documentos.count() == 1
+           |       |
+           0       false
+
+	at tfcmanager.DocumentosControllerSpec.Test that the delete action deletes an instance if it exists(DocumentosControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>FaculdadeControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.777 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.115 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.193 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.FaculdadeController.tt__save_closure9_closure14(FaculdadeController.groovy:47)
+	at tfcmanager.FaculdadeController.$tt__save(FaculdadeController.groovy:44)
+	at tfcmanager.FaculdadeControllerSpec.Test the save action correctly persists an instance(FaculdadeControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.102 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.16 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.229 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.FaculdadeControllerSpec.Test the update action performs an update on a valid domain instance(FaculdadeControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.116 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.FaculdadeControllerSpec.Test that the delete action deletes an instance if it exists(FaculdadeControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>HorarioSemanalControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.751 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.113 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.224 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null - null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null - null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.HorarioSemanalController.tt__save_closure9_closure14(HorarioSemanalController.groovy:47)
+	at tfcmanager.HorarioSemanalController.$tt__save(HorarioSemanalController.groovy:44)
+	at tfcmanager.HorarioSemanalControllerSpec.Test the save action correctly persists an instance(HorarioSemanalControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.14 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.096 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.282 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(HorarioSemanalControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.114 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+HorarioSemanal.count() == 1
+               |       |
+               0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+HorarioSemanal.count() == 1
+               |       |
+               0       false
+
+	at tfcmanager.HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(HorarioSemanalControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>MemorandoControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.861 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.145 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.319 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Memorando : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.MemorandoController.tt__save_closure9_closure14(MemorandoController.groovy:44)
+	at tfcmanager.MemorandoController.$tt__save(MemorandoController.groovy:41)
+	at tfcmanager.MemorandoControllerSpec.Test the save action correctly persists an instance(MemorandoControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.103 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.1 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.26 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.MemorandoControllerSpec.Test the update action performs an update on a valid domain instance(MemorandoControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.176 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Memorando.count() == 1
+          |       |
+          0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Memorando.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.MemorandoControllerSpec.Test that the delete action deletes an instance if it exists(MemorandoControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>PapelControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.727 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.113 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.248 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.PapelController.tt__save_closure9_closure14(PapelController.groovy:47)
+	at tfcmanager.PapelController.$tt__save(PapelController.groovy:44)
+	at tfcmanager.PapelControllerSpec.Test the save action correctly persists an instance(PapelControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.102 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.098 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.241 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.PapelControllerSpec.Test the update action performs an update on a valid domain instance(PapelControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.115 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Papel.count() == 1
+      |       |
+      0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Papel.count() == 1
+      |       |
+      0       false
+
+	at tfcmanager.PapelControllerSpec.Test that the delete action deletes an instance if it exists(PapelControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>PresencaOrientacaoControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.749 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.153 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.271 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.PresencaOrientacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.PresencaOrientacao : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.PresencaOrientacaoController.tt__save_closure9_closure14(PresencaOrientacaoController.groovy:47)
+	at tfcmanager.PresencaOrientacaoController.$tt__save(PresencaOrientacaoController.groovy:44)
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test the save action correctly persists an instance(PresencaOrientacaoControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.111 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.132 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.235 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test the update action performs an update on a valid domain instance(PresencaOrientacaoControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.103 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+PresencaOrientacao.count() == 1
+                   |       |
+                   0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+PresencaOrientacao.count() == 1
+                   |       |
+                   0       false
+
+	at tfcmanager.PresencaOrientacaoControllerSpec.Test that the delete action deletes an instance if it exists(PresencaOrientacaoControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>Professor_has_HorarioSemanalControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.742 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.111 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.26 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Professor_has_HorarioSemanalController.tt__save_closure9_closure14(Professor_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Professor_has_HorarioSemanalController.$tt__save(Professor_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Professor_has_HorarioSemanalControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.102 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.1 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.219 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Professor_has_HorarioSemanalControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.106 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Professor_has_HorarioSemanal.count() == 1
+                             |       |
+                             0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor_has_HorarioSemanal.count() == 1
+                             |       |
+                             0       false
+
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Professor_has_HorarioSemanalControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>ProfessorControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.766 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.693 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.236 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.ProfessorController.tt__save_closure9_closure14(ProfessorController.groovy:44)
+	at tfcmanager.ProfessorController.$tt__save(ProfessorController.groovy:41)
+	at tfcmanager.ProfessorControllerSpec.Test the save action correctly persists an instance(ProfessorControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.096 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.098 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.229 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(ProfessorControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.115 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Professor.count() == 1
+          |       |
+          0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(ProfessorControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>SeminarioControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.882 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.143 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.233 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Seminario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.SeminarioController.tt__save_closure9_closure14(SeminarioController.groovy:47)
+	at tfcmanager.SeminarioController.$tt__save(SeminarioController.groovy:44)
+	at tfcmanager.SeminarioControllerSpec.Test the save action correctly persists an instance(SeminarioControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.103 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.097 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.222 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.SeminarioControllerSpec.Test the update action performs an update on a valid domain instance(SeminarioControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.108 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Seminario.count() == 1
+          |       |
+          0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Seminario.count() == 1
+          |       |
+          0       false
+
+	at tfcmanager.SeminarioControllerSpec.Test that the delete action deletes an instance if it exists(SeminarioControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>TFC_has_ProfessorControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 errors
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.755 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.113 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.209 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFC_has_ProfessorController.tt__save_closure9_closure14(TFC_has_ProfessorController.groovy:47)
+	at tfcmanager.TFC_has_ProfessorController.$tt__save(TFC_has_ProfessorController.groovy:44)
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the save action correctly persists an instance(TFC_has_ProfessorControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.142 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.106 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.222 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(TFC_has_ProfessorControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.102 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot invoke method count() on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(TFC_has_ProfessorControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>TFCControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        3 errors
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.765 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.114 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.255 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFCController.tt__save_closure9_closure14(TFCController.groovy:44)
+	at tfcmanager.TFCController.$tt__save(TFCController.groovy:41)
+	at tfcmanager.TFCControllerSpec.Test the save action correctly persists an instance(TFCControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.099 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.101 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.293 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.TFCControllerSpec.Test the update action performs an update on a valid domain instance(TFCControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.12 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot invoke method count() on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFCControllerSpec.Test that the delete action deletes an instance if it exists(TFCControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>UsuarioControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        2 errors
+
+                        and
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.951 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.123 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.214 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
+</p>
+<pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.UsuarioController.tt__save_closure9_closure14(UsuarioController.groovy:47)
+	at tfcmanager.UsuarioController.$tt__save(UsuarioController.groovy:44)
+	at tfcmanager.UsuarioControllerSpec.Test the save action correctly persists an instance(UsuarioControllerSpec.groovy:53)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.093 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.162 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.258 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.UsuarioControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.139 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+Usuario.count() == 1
+        |       |
+        0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+Usuario.count() == 1
+        |       |
+        0       false
+
+	at tfcmanager.UsuarioControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>UsuarioPapelControllerSpec</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        with
+                        one error
+
+                        and
+                        2 failures
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the index action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.794 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test the create action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.122 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the save action correctly persists an instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test the save action correctly persists an instance</b>
+</p>
+<p class="summary">Executed in 0.264 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/usuarioPapel/show/1'
+|        |             |
+|        |             false
+|        |             6 differences (70% similarity)
+|        |             /usuarioPapel/(index-)
+|        |             /usuarioPapel/(show/1)
+|        /usuarioPapel/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/usuarioPapel/show/1'
+|        |             |
+|        |             false
+|        |             6 differences (70% similarity)
+|        |             /usuarioPapel/(index-)
+|        |             /usuarioPapel/(show/1)
+|        /usuarioPapel/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test the save action correctly persists an instance(UsuarioPapelControllerSpec.groovy:56)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the show action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.095 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Test that the edit action returns the correct model">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
+</p>
+<p class="summary">Executed in 0.14 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+</p>
+<p class="summary">Executed in 0.162 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Cannot get property 'id' on null object</b>
+</p>
+<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.UsuarioPapelControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioPapelControllerSpec.groovy:120)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test that the delete action deletes an instance if it exists">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
+</p>
+<p class="summary">Executed in 0.137 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+UsuarioPapel.count() == 1
+             |       |
+             0       false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+UsuarioPapel.count() == 1
+             |       |
+             0       false
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioPapelControllerSpec.groovy:139)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

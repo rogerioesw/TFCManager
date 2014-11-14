@@ -13,7 +13,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'situacao', 'error')} required">
 	<label for="situacao">
-		<g:message code="TFC.situacao.label" default="Situacao" />
+		<g:message code="TFC.situacao.label" default="Situação" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="situacao" maxlength="8" required="" value="${TFCInstance?.situacao}"/>
@@ -22,7 +22,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'observacao', 'error')} required">
 	<label for="observacao">
-		<g:message code="TFC.observacao.label" default="Observacao" />
+		<g:message code="TFC.observacao.label" default="Observação" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="observacao" maxlength="30" required="" value="${TFCInstance?.observacao}"/>
@@ -76,7 +76,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'presenca', 'error')} ">
 	<label for="presenca">
-		<g:message code="TFC.presenca.label" default="Presenca" />
+		<g:message code="TFC.presenca.label" default="Presença" />
 		
 	</label>
 	
@@ -121,7 +121,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'tfc_has_professor', 'error')} ">
 	<label for="tfc_has_professor">
-		<g:message code="TFC.tfc_has_professor.label" default="Tfchasprofessor" />
+		<g:message code="TFC.tfc_has_professor.label" default="Orientadores" />
 		
 	</label>
 	
@@ -130,7 +130,7 @@
     <li><g:link controller="TFC_has_Professor" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
 </g:each>
 <li class="add">
-<g:link controller="TFC_has_Professor" action="create" params="['TFC.id': TFCInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'TFC_has_Professor.label', default: 'TFC_has_Professor')])}</g:link>
+<g:link controller="TFC_has_Professor" action="create" params="['TFC.id': TFCInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'TFC_has_Professor.label', default: 'Orientador')])}</g:link>
 </li>
 </ul>
 

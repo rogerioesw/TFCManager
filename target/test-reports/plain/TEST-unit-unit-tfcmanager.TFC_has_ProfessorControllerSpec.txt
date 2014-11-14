@@ -1,0 +1,45 @@
+Testsuite: tfcmanager.TFC_has_ProfessorControllerSpec
+Tests run: 7, Failures: 0, Errors: 3, Time elapsed: 2,166 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,755 sec
+Testcase: Test the create action returns the correct model took 0,113 sec
+Testcase: Test the save action correctly persists an instance took 0,193 sec
+	Caused an ERROR
+Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.TFC_has_Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.TFC_has_ProfessorController.tt__save_closure9_closure14(TFC_has_ProfessorController.groovy:47)
+	at tfcmanager.TFC_has_ProfessorController.$tt__save(TFC_has_ProfessorController.groovy:44)
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the save action correctly persists an instance(TFC_has_ProfessorControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,142 sec
+Testcase: Test that the edit action returns the correct model took 0,106 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,207 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(TFC_has_ProfessorControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,082 sec
+	Caused an ERROR
+Cannot invoke method count() on null object
+java.lang.NullPointerException: Cannot invoke method count() on null object
+	at tfcmanager.TFC_has_ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(TFC_has_ProfessorControllerSpec.groovy:139)
+

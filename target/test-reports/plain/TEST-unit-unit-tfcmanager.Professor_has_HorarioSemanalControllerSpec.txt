@@ -1,0 +1,55 @@
+Testsuite: tfcmanager.Professor_has_HorarioSemanalControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 2,185 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,742 sec
+Testcase: Test the create action returns the correct model took 0,111 sec
+Testcase: Test the save action correctly persists an instance took 0,245 sec
+	Caused an ERROR
+Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Professor_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Professor_has_HorarioSemanalController.tt__save_closure9_closure14(Professor_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Professor_has_HorarioSemanalController.$tt__save(Professor_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Professor_has_HorarioSemanalControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,102 sec
+Testcase: Test that the edit action returns the correct model took 0,1 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,204 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Professor_has_HorarioSemanalControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,09 sec
+	FAILED
+Condition not satisfied:
+
+Professor_has_HorarioSemanal.count() == 1
+                             |       |
+                             0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor_has_HorarioSemanal.count() == 1
+                             |       |
+                             0       false
+
+	at tfcmanager.Professor_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Professor_has_HorarioSemanalControllerSpec.groovy:139)
+

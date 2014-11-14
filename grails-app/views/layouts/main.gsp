@@ -81,8 +81,30 @@
 						<li><g:link controller="avaliacaoTFC">Lançamento de Notas</g:link></li>
 					</ul>
 				</li>
-				<li><g:link controller="relatorios">Relatórios</g:link>
+				<li>Relatórios
+				   <ul>
+				      <li><g:link controller="relatorios">Convite de Orientação</g:link></li>
+				      <li><g:link controller="anexo1">Declaração de Cienc. e Normas</g:link></li>
+				      <li><g:link controller="anexo2">Frequência de Orientação</g:link></li>
+				      <li><g:link controller="anexo3">Relatório Parcial</g:link></li>
+				      <li><g:link controller="anexo4">Encaminhamento à Defesa</g:link></li>
+				      <li><g:link controller="anexo5">Ficha de Avaliação do TCC</g:link></li>
+				      <li><g:link controller="anexo6">Avaliação de Trabalho Final de Curso</g:link></li>
+				      <li><g:link controller="anexo7">Convite para Banca</g:link></li>
+				      <li><g:link controller="anexo8">Checklist de Documentos</g:link></li>
+				      <li><g:link controller="anexo9">Folha de Aprovação</g:link></li>
+				      <li><g:link controller="anexo10">Declaração de Correção de Português</g:link></li>
+				      <li><g:link controller="anexo11">Declaração de Correção de Banca</g:link></li>
+				      <li><g:link controller="anexo12">Declaração de Participação em Banca</g:link></li>
+				      <li><g:link controller="anexo121">Declaração de Participação em Orientação</g:link></li>
+				      <li><g:link controller="anexo22">Horário de Bancas</g:link></li>
+				      <li><g:link controller="anexo32">Declaração de Pré-Banca</g:link></li>
+				      <li><g:link controller="anexo35">Horário de Seminários</g:link></li>
+				      <li><g:link controller="anexo36">Convocação</g:link></li>
+				      <li><g:link controller="anexo37">Memorandos</g:link></li>
+				   </ul>
 				</li>
+				
 			</ul>
 		</div>
 		

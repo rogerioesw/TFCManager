@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="Rogerio-PC" name="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" tests="7" time="2.477" timestamp="2014-11-06T20:10:53">
+  <properties />
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the index action returns the correct model" time="0.781" />
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the create action returns the correct model" time="0.14" />
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the save action correctly persists an instance" time="0.202">
+    <error message="Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [tfcmanager.Aluno_has_HorarioSemanal : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at tfcmanager.Aluno_has_HorarioSemanalController.tt__save_closure9_closure14(Aluno_has_HorarioSemanalController.groovy:47)
+	at tfcmanager.Aluno_has_HorarioSemanalController.$tt__save(Aluno_has_HorarioSemanalController.groovy:44)
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the save action correctly persists an instance(Aluno_has_HorarioSemanalControllerSpec.groovy:53)
+</error>
+  </testcase>
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the show action returns the correct model" time="0.136" />
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the edit action returns the correct model" time="0.124" />
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.325">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test the update action performs an update on a valid domain instance(Aluno_has_HorarioSemanalControllerSpec.groovy:120)
+</error>
+  </testcase>
+  <testcase classname="tfcmanager.Aluno_has_HorarioSemanalControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.175">
+    <failure message="Condition not satisfied:&#xa;&#xa;Aluno_has_HorarioSemanal.count() == 1&#xa;                         |       |&#xa;                         0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno_has_HorarioSemanal.count() == 1
+                         |       |
+                         0       false
+
+	at tfcmanager.Aluno_has_HorarioSemanalControllerSpec.Test that the delete action deletes an instance if it exists(Aluno_has_HorarioSemanalControllerSpec.groovy:139)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

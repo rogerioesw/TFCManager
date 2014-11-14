@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="2" hostname="Rogerio-PC" name="tfcmanager.UsuarioPapelControllerSpec" tests="7" time="1.723" timestamp="2014-11-06T20:11:33">
+  <properties />
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the index action returns the correct model" time="0.794" />
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the create action returns the correct model" time="0.122" />
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the save action correctly persists an instance" time="0.264">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/usuarioPapel/show/1&apos;&#xa;|        |             |&#xa;|        |             false&#xa;|        |             6 differences (70% similarity)&#xa;|        |             /usuarioPapel/(index-)&#xa;|        |             /usuarioPapel/(show/1)&#xa;|        /usuarioPapel/index&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/usuarioPapel/show/1&apos;
+|        |             |
+|        |             false
+|        |             6 differences (70% similarity)
+|        |             /usuarioPapel/(index-)
+|        |             /usuarioPapel/(show/1)
+|        /usuarioPapel/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1243a0a
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test the save action correctly persists an instance(UsuarioPapelControllerSpec.groovy:56)
+</failure>
+  </testcase>
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the show action returns the correct model" time="0.095" />
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the edit action returns the correct model" time="0.14" />
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.162">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at tfcmanager.UsuarioPapelControllerSpec.Test the update action performs an update on a valid domain instance(UsuarioPapelControllerSpec.groovy:120)
+</error>
+  </testcase>
+  <testcase classname="tfcmanager.UsuarioPapelControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.137">
+    <failure message="Condition not satisfied:&#xa;&#xa;UsuarioPapel.count() == 1&#xa;             |       |&#xa;             0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+UsuarioPapel.count() == 1
+             |       |
+             0       false
+
+	at tfcmanager.UsuarioPapelControllerSpec.Test that the delete action deletes an instance if it exists(UsuarioPapelControllerSpec.groovy:139)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>
