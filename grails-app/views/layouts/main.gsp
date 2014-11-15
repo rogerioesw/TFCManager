@@ -53,7 +53,6 @@
 						<li>Banca de Defesa
 							<ul>
 								<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link></li>
-								<li><g:link controller="bancaDefesa_has_Professor">Cadastro de Avaliadores da Banca</g:link></li>
 							</ul>
 						</li>
 						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>

@@ -17,5 +17,9 @@ class Memorando {
 		assunto(blank:false, minSize:4, maxSize:25)
 		mensagem(blank:false, minSize:4, maxSize:80)
 	}
+	
+	public String toString() {
+		this.assunto
+	}
     
 }
