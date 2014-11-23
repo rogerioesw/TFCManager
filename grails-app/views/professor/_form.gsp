@@ -20,3 +20,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: professorInstance, field: 'area', 'error')} required">
+	<label for="area">
+		<g:message code="professor.area.label" default="Area" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="area" required="" value="${professorInstance?.area}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: professorInstance, field: 'faculdade', 'error')} required">
+	<label for="faculdade">
+		<g:message code="professor.faculdade.label" default="Faculdade" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="faculdade" name="faculdade.id" from="${tfcmanager.Faculdade.list()}" optionKey="id" required="" value="${professorInstance?.faculdade?.id}" class="many-to-one"/>
+
+</div>
+

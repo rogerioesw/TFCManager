@@ -7,18 +7,18 @@ import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class AlunoController {
-
-	def alunoService
 	
+	def alunoService
+
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-	@Secured(['ROLE_ADMIN'])
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Aluno.list(params), model:[alunoInstanceCount: Aluno.count()]
     }
 
-	@Secured(['ROLE_ADMIN'])
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Aluno alunoInstance) {
         respond alunoInstance
     }
@@ -28,7 +28,7 @@ class AlunoController {
         respond new Aluno(params)
     }
 	
-	@Secured(['ROLE_ADMIN'])
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def list(Integer max) {
 		params.max = Math.min(max ?: 10, 100)
 		def alunoList = alunoService.list(params)
@@ -37,7 +37,7 @@ class AlunoController {
 		[alunoInstanceList: alunoList, alunoInstanceTotal: alunoCount]
 	}
 	
-	@Secured(['ROLE_ADMIN'])
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def filter() {
 		def alunoList = Aluno.findAllByNomeLike("%${params.pesquisa}%")
 		

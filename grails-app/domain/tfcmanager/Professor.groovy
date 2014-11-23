@@ -3,6 +3,8 @@ package tfcmanager
 class Professor {
 	String nome
 	String email
+	String area
+	Faculdade faculdade
 	
 	static hasMany = [professorhasHorario:Professor_has_HorarioSemanal, 
 		banca:BancaDefesa, tfchasProfessor:TFC_has_Professor, convocacao:Convocacao, 

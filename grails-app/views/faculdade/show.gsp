@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list faculdade">
 			
+				<g:if test="${faculdadeInstance?.nome}">
+				<li class="fieldcontain">
+					<span id="nome-label" class="property-label"><g:message code="faculdade.nome.label" default="Nome" /></span>
+					
+						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${faculdadeInstance}" field="nome"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${faculdadeInstance?.aluno}">
 				<li class="fieldcontain">
 					<span id="aluno-label" class="property-label"><g:message code="faculdade.aluno.label" default="Aluno" /></span>
@@ -34,11 +43,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${faculdadeInstance?.nome}">
+				<g:if test="${faculdadeInstance?.professor}">
 				<li class="fieldcontain">
-					<span id="nome-label" class="property-label"><g:message code="faculdade.nome.label" default="Nome" /></span>
+					<span id="professor-label" class="property-label"><g:message code="faculdade.professor.label" default="Professor" /></span>
 					
-						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${faculdadeInstance}" field="nome"/></span>
+						<g:each in="${faculdadeInstance.professor}" var="p">
+						<span class="property-value" aria-labelledby="professor-label"><g:link controller="professor" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'avaliacaoTFC.label', default: 'Avaliação TFC')}" />
+		<g:set var="entityName" value="${message(code: 'avaliacaoTFC.label', default: 'AvaliacaoTFC')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -23,6 +23,51 @@
 			</g:if>
 			<ol class="property-list avaliacaoTFC">
 			
+				<g:if test="${avaliacaoTFCInstance?.notafinal}">
+				<li class="fieldcontain">
+					<span id="notafinal-label" class="property-label"><g:message code="avaliacaoTFC.notafinal.label" default="Notafinal" /></span>
+					
+						<span class="property-value" aria-labelledby="notafinal-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="notafinal"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${avaliacaoTFCInstance?.coordenador}">
+				<li class="fieldcontain">
+					<span id="coordenador-label" class="property-label"><g:message code="avaliacaoTFC.coordenador.label" default="Coordenador" /></span>
+					
+						<span class="property-value" aria-labelledby="coordenador-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="coordenador"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${avaliacaoTFCInstance?.orientador}">
+				<li class="fieldcontain">
+					<span id="orientador-label" class="property-label"><g:message code="avaliacaoTFC.orientador.label" default="Orientador" /></span>
+					
+						<span class="property-value" aria-labelledby="orientador-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="orientador"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${avaliacaoTFCInstance?.banca}">
+				<li class="fieldcontain">
+					<span id="banca-label" class="property-label"><g:message code="avaliacaoTFC.banca.label" default="Banca" /></span>
+					
+						<span class="property-value" aria-labelledby="banca-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="banca"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${avaliacaoTFCInstance?.preprojetoTFCI}">
+				<li class="fieldcontain">
+					<span id="preprojetoTFCI-label" class="property-label"><g:message code="avaliacaoTFC.preprojetoTFCI.label" default="Preprojeto TFCI" /></span>
+					
+						<span class="property-value" aria-labelledby="preprojetoTFCI-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="preprojetoTFCI"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${avaliacaoTFCInstance?.aluno}">
 				<li class="fieldcontain">
 					<span id="aluno-label" class="property-label"><g:message code="avaliacaoTFC.aluno.label" default="Aluno" /></span>
@@ -37,51 +82,6 @@
 					<span id="tfc-label" class="property-label"><g:message code="avaliacaoTFC.tfc.label" default="Tfc" /></span>
 					
 						<span class="property-value" aria-labelledby="tfc-label"><g:link controller="TFC" action="show" id="${avaliacaoTFCInstance?.tfc?.id}">${avaliacaoTFCInstance?.tfc?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-				
-				<g:if test="${avaliacaoTFCInstance?.preprojetoTFCI}">
-				<li class="fieldcontain">
-					<span id="preprojetoTFCI-label" class="property-label"><g:message code="avaliacaoTFC.preprojetoTFCI.label" default="Pré-projeto ou TFCI" /></span>
-					
-						<span class="property-value" aria-labelledby="preprojetoTFCI-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="preprojetoTFCI"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${avaliacaoTFCInstance?.orientador}">
-				<li class="fieldcontain">
-					<span id="orientador-label" class="property-label"><g:message code="avaliacaoTFC.orientador.label" default="Orientador" /></span>
-					
-						<span class="property-value" aria-labelledby="orientador-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="orientador"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${avaliacaoTFCInstance?.coordenador}">
-				<li class="fieldcontain">
-					<span id="coordenador-label" class="property-label"><g:message code="avaliacaoTFC.coordenador.label" default="Coordenador" /></span>
-					
-						<span class="property-value" aria-labelledby="coordenador-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="coordenador"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${avaliacaoTFCInstance?.banca}">
-				<li class="fieldcontain">
-					<span id="banca-label" class="property-label"><g:message code="avaliacaoTFC.banca.label" default="Banca" /></span>
-					
-						<span class="property-value" aria-labelledby="banca-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="banca"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${avaliacaoTFCInstance?.notafinal}">
-				<li class="fieldcontain">
-					<span id="notafinal-label" class="property-label"><g:message code="avaliacaoTFC.notafinal.label" default="Nota Final" /></span>
-					
-						<span class="property-value" aria-labelledby="notafinal-label"><g:fieldValue bean="${avaliacaoTFCInstance}" field="notafinal"/></span>
 					
 				</li>
 				</g:if>

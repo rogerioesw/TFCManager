@@ -6,25 +6,47 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
-@Secured(['ROLE_ADMIN'])
 class TFCController {
+	
+	def TFCService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond TFC.list(params), model:[TFCInstanceCount: TFC.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(TFC TFCInstance) {
         respond TFCInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new TFC(params)
     }
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def list(Integer max) {
+		params.max = Math.min(max ?: 10, 100)
+		def TFCList = TFCService.list(params)
+		def TFCCount = TFCService.count()
+ 
+		[TFCInstanceList: TFCList, TFCInstanceTotal: TFCCount]
+	}
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def filter() {
+		def TFCList = TFC.findAllByProjetoLike("%${params.pesquisa}%")
+		
+		render view: "index", model: [TFCInstanceList: TFCList, TFCInstanceTotal: TFCList.size()]
+	}
+
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(TFC TFCInstance) {
         if (TFCInstance == null) {
             notFound()
@@ -47,11 +69,13 @@ class TFCController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(TFC TFCInstance) {
         respond TFCInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(TFC TFCInstance) {
         if (TFCInstance == null) {
             notFound()
@@ -75,6 +99,7 @@ class TFCController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(TFC TFCInstance) {
 
         if (TFCInstance == null) {

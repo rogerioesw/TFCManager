@@ -15,6 +15,13 @@
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
+		
+		<g:form action="filter" controller="professor" method="post">
+			<label for="titulo">Pesquisa por nome:</label>
+            <g:textField name="pesquisa" id="pesquisa" value="" style="width: 250px;"/>
+            <g:submitButton name="btnpesquisa" value="Pesquisar" />
+		</g:form>
+		
 		<div id="list-professor" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -28,6 +35,10 @@
 					
 						<g:sortableColumn property="email" title="${message(code: 'professor.email.label', default: 'Email')}" />
 					
+						<g:sortableColumn property="area" title="${message(code: 'professor.area.label', default: 'Area')}" />
+					
+						<th><g:message code="professor.faculdade.label" default="Faculdade" /></th>
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +48,10 @@
 						<td><g:link action="show" id="${professorInstance.id}">${fieldValue(bean: professorInstance, field: "nome")}</g:link></td>
 					
 						<td>${fieldValue(bean: professorInstance, field: "email")}</td>
+					
+						<td>${fieldValue(bean: professorInstance, field: "area")}</td>
+					
+						<td>${fieldValue(bean: professorInstance, field: "faculdade")}</td>
 					
 					</tr>
 				</g:each>

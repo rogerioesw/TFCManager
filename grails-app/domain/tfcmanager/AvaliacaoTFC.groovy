@@ -21,12 +21,12 @@ class AvaliacaoTFC {
 	
 	double getNotafinal() {
 		try {
-		if((tfc?.disciplina?.nome=="TFCI")||(tfc?.disciplina?.nome=="TCCI")) {
-			def nf = ((preprojetoTFCI*10)+(orientador*20)+(coordenador*20)+(banca*50))/100
+		if((tfc?.formula?.disciplina?.nome=="TFCI")) {
+			def nf = ((preprojetoTFCI*tfc?.formula?.preprojetoTFCI)+(orientador*tfc?.formula?.orientador)+(coordenador*tfc?.formula?.coordenador)+(banca*tfc?.formula?.banca))/100
 			return nf
 		}
-		if((tfc?.disciplina?.nome=="TFCII")||(tfc?.disciplina?.nome)=="TCCII") {
-			def nf = ((preprojetoTFCI*15)+(orientador*20)+(coordenador*15)+(banca*50))/100
+		if((tfc?.formula?.disciplina?.nome=="TFCII")) {
+			def nf = ((preprojetoTFCI*tfc?.formula?.preprojetoTFCI)+(orientador*tfc?.formula?.orientador)+(coordenador*tfc?.formula?.coordenador)+(banca*tfc?.formula?.banca))/100
 			return nf
 		}
 		} catch(Exception ex) {

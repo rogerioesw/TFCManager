@@ -7,6 +7,7 @@ class TFC {
 	Disciplina disciplina
 	String projeto
 	HorarioSemanal horario
+	Formula formula
 	
 	
 	static hasMany = [seminario : Seminario, presenca : PresencaOrientacao, 

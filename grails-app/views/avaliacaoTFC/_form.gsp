@@ -20,7 +20,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: avaliacaoTFCInstance, field: 'preprojetoTFCI', 'error')} required">
 	<label for="preprojetoTFCI">
-		<g:message code="avaliacaoTFC.preprojetoTFCI.label" default="Pre-projeto ou TFCI" />
+		<g:message code="avaliacaoTFC.preprojetoTFCI.label" default="Preprojeto TFCI" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="preprojetoTFCI" value="${fieldValue(bean: avaliacaoTFCInstance, field: 'preprojetoTFCI')}" required=""/>
@@ -62,4 +62,5 @@
 	<g:field name="notafinal" value="${fieldValue(bean: avaliacaoTFCInstance, field: 'notafinal')}" readonly="true" style= "background:gray;" required=""/>
 
 </div>
+
 

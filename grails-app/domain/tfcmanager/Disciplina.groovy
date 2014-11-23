@@ -4,10 +4,10 @@ class Disciplina {
 	String nome
 	String status
 	
-	static hasMany = [tfc : TFC]
+	static hasMany = [tfc : TFC, formula : Formula]
 
     static constraints = {
-		nome(inList:['TFCI', 'TFCII', 'TCCI', 'TCCII'])
+		nome(inList:['TFCI', 'TFCII'])
 		status(inList:['Ativo', 'Inativo'])
     }
 	
@@ -15,8 +15,6 @@ class Disciplina {
 		switch(nome) {
 			case 'TFCI' : return "TFCI"; break
 			case 'TFCII' : return "TFCII"; break
-			case 'TCCI' : return "TCCI"; break
-			case 'TCCII' : return "TCCII"; break
 			default: "Não cadastrado"
 		}
 	}

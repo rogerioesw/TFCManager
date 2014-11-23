@@ -81,6 +81,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${TFCInstance?.formula}">
+				<li class="fieldcontain">
+					<span id="formula-label" class="property-label"><g:message code="TFC.formula.label" default="Formula" /></span>
+					
+						<span class="property-value" aria-labelledby="formula-label"><g:link controller="formula" action="show" id="${TFCInstance?.formula?.id}">${TFCInstance?.formula?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${TFCInstance?.horario}">
 				<li class="fieldcontain">
 					<span id="horario-label" class="property-label"><g:message code="TFC.horario.label" default="Horario" /></span>

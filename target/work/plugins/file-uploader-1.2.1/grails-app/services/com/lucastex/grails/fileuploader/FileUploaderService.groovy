@@ -38,7 +38,7 @@ class FileUploaderService {
     if (config.maxSize) { //if maxSize config exists
       def maxSizeInKb = ((int) (config.maxSize / 1024))
       if (file.size > config.maxSize) { //if filesize is bigger than allowed
-        log.debug "FileUploader plugin received a file bigger than allowed. Max file size is ${maxSizeInKb} kb"
+        log.debug "O plugin FileUploader recebeu um arquivo maior do que o permitido. O tamanho maximo é ${maxSizeInKb} kb"
         def msg = messageSource.getMessage("fileupload.upload.fileBiggerThanAllowed", [maxSizeInKb] as Object[], locale)
         throw new FileUploaderServiceException(msg)
       }
@@ -75,16 +75,16 @@ class FileUploaderService {
     def borro = false;
     def ufile = UFile.get(idUfile)
       if (!ufile) {
-        log.error "could not delete file: ${file}"
+        log.error "Arquivo excluido: ${file}"
         return;
       }
     def file = new File(ufile.path)
     if (file.exists()) {
       if (file.delete()) {
-        log.debug "file [${ufile.path}] deleted"
+        log.debug "Arquivo [${ufile.path}] excluido"
         borro=true;
       } else {
-       log.error "could not delete file: ${file}"
+       log.error "Nao foi possivel excluir o arquivo: ${file}"
       }
     }
     return borro;

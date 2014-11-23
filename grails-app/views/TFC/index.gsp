@@ -15,6 +15,13 @@
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
+		
+		<g:form action="filter" controller="TFC" method="post">
+			<label for="titulo">Pesquisa por projeto:</label>
+            <g:textField name="pesquisa" id="pesquisa" value="" style="width: 250px;"/>
+            <g:submitButton name="btnpesquisa" value="Pesquisar" />
+		</g:form>
+		
 		<div id="list-TFC" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -28,13 +35,13 @@
 					
 						<g:sortableColumn property="situacao" title="${message(code: 'TFC.situacao.label', default: 'Situacao')}" />
 					
-						<g:sortableColumn property="observacao" title="${message(code: 'TFC.observacao.label', default: 'Observacao')}" />
+						<g:sortableColumn property="projeto" title="${message(code: 'TFC.projeto.label', default: 'Projeto')}" />
 					
 						<th><g:message code="TFC.disciplina.label" default="Disciplina" /></th>
 					
-						<th><g:message code="TFC.horario.label" default="Horario" /></th>
+						<th><g:message code="TFC.formula.label" default="Formula" /></th>
 					
-						<g:sortableColumn property="projeto" title="${message(code: 'TFC.projeto.label', default: 'Projeto')}" />
+						<th><g:message code="TFC.horario.label" default="Horario" /></th>
 					
 					</tr>
 				</thead>
@@ -46,13 +53,13 @@
 					
 						<td>${fieldValue(bean: TFCInstance, field: "situacao")}</td>
 					
-						<td>${fieldValue(bean: TFCInstance, field: "observacao")}</td>
+						<td>${fieldValue(bean: TFCInstance, field: "projeto")}</td>
 					
 						<td>${fieldValue(bean: TFCInstance, field: "disciplina")}</td>
 					
-						<td>${fieldValue(bean: TFCInstance, field: "horario")}</td>
+						<td>${fieldValue(bean: TFCInstance, field: "formula")}</td>
 					
-						<td>${fieldValue(bean: TFCInstance, field: "projeto")}</td>
+						<td>${fieldValue(bean: TFCInstance, field: "horario")}</td>
 					
 					</tr>
 				</g:each>

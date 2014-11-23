@@ -41,6 +41,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${disciplinaInstance?.formula}">
+				<li class="fieldcontain">
+					<span id="formula-label" class="property-label"><g:message code="disciplina.formula.label" default="Formula" /></span>
+					
+						<g:each in="${disciplinaInstance.formula}" var="f">
+						<span class="property-value" aria-labelledby="formula-label"><g:link controller="formula" action="show" id="${f.id}">${f?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${disciplinaInstance?.tfc}">
 				<li class="fieldcontain">
 					<span id="tfc-label" class="property-label"><g:message code="disciplina.tfc.label" default="Tfc" /></span>

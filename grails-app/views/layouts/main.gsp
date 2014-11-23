@@ -78,6 +78,7 @@
 				<li>Notas
 					<ul>
 						<li><g:link controller="avaliacaoTFC">Lançamento de Notas</g:link></li>
+						<li><g:link controller="formula">Cadastro de Pesos nas Avaliações</g:link></li>
 					</ul>
 				</li>
 				<li>Relatórios

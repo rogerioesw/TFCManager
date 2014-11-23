@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${professorInstance?.area}">
+				<li class="fieldcontain">
+					<span id="area-label" class="property-label"><g:message code="professor.area.label" default="Area" /></span>
+					
+						<span class="property-value" aria-labelledby="area-label"><g:fieldValue bean="${professorInstance}" field="area"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${professorInstance?.banca}">
 				<li class="fieldcontain">
 					<span id="banca-label" class="property-label"><g:message code="professor.banca.label" default="Banca" /></span>
@@ -58,6 +67,26 @@
 					
 						<g:each in="${professorInstance.convocacao}" var="c">
 						<span class="property-value" aria-labelledby="convocacao-label"><g:link controller="convocacao" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${professorInstance?.faculdade}">
+				<li class="fieldcontain">
+					<span id="faculdade-label" class="property-label"><g:message code="professor.faculdade.label" default="Faculdade" /></span>
+					
+						<span class="property-value" aria-labelledby="faculdade-label"><g:link controller="faculdade" action="show" id="${professorInstance?.faculdade?.id}">${professorInstance?.faculdade?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${professorInstance?.memorando}">
+				<li class="fieldcontain">
+					<span id="memorando-label" class="property-label"><g:message code="professor.memorando.label" default="Memorando" /></span>
+					
+						<g:each in="${professorInstance.memorando}" var="m">
+						<span class="property-value" aria-labelledby="memorando-label"><g:link controller="memorando" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

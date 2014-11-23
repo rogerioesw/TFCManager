@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'avaliacaoTFC.label', default: 'Avaliação TFC')}" />
+		<g:set var="entityName" value="${message(code: 'avaliacaoTFC.label', default: 'AvaliacaoTFC')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
@@ -23,17 +23,18 @@
 			<table>
 			<thead>
 					<tr>
-						<th><g:message code="avaliacaoTFC.aluno.label" default="Aluno" /></th>
 					
-						<g:sortableColumn property="preprojetoTFCI" title="${message(code: 'avaliacaoTFC.preprojetoTFCI.label', default: 'Pré-projeto ou TFCI')}" />
-					
-						<g:sortableColumn property="orientador" title="${message(code: 'avaliacaoTFC.orientador.label', default: 'Orientador')}" />
+						<g:sortableColumn property="notafinal" title="${message(code: 'avaliacaoTFC.notafinal.label', default: 'Notafinal')}" />
 					
 						<g:sortableColumn property="coordenador" title="${message(code: 'avaliacaoTFC.coordenador.label', default: 'Coordenador')}" />
 					
+						<g:sortableColumn property="orientador" title="${message(code: 'avaliacaoTFC.orientador.label', default: 'Orientador')}" />
+					
 						<g:sortableColumn property="banca" title="${message(code: 'avaliacaoTFC.banca.label', default: 'Banca')}" />
 					
-						<g:sortableColumn property="notafinal" title="${message(code: 'avaliacaoTFC.notafinal.label', default: 'Nota Final')}" />
+						<g:sortableColumn property="preprojetoTFCI" title="${message(code: 'avaliacaoTFC.preprojetoTFCI.label', default: 'Preprojeto TFCI')}" />
+					
+						<th><g:message code="avaliacaoTFC.aluno.label" default="Aluno" /></th>
 					
 					</tr>
 				</thead>
@@ -41,17 +42,17 @@
 				<g:each in="${avaliacaoTFCInstanceList}" status="i" var="avaliacaoTFCInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "aluno")}</td>
-					
-						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "preprojetoTFCI")}</td>
-					
-						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "orientador")}</td>
+						<td><g:link action="show" id="${avaliacaoTFCInstance.id}">${fieldValue(bean: avaliacaoTFCInstance, field: "notafinal")}</g:link></td>
 					
 						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "coordenador")}</td>
 					
+						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "orientador")}</td>
+					
 						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "banca")}</td>
 					
-						<td><g:link action="show" id="${avaliacaoTFCInstance.id}">${fieldValue(bean: avaliacaoTFCInstance, field: "notafinal")}</g:link></td>
+						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "preprojetoTFCI")}</td>
+					
+						<td>${fieldValue(bean: avaliacaoTFCInstance, field: "aluno")}</td>
 					
 					</tr>
 				</g:each>

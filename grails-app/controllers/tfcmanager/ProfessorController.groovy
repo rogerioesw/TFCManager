@@ -6,25 +6,47 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
-@Secured(['ROLE_ADMIN'])
 class ProfessorController {
+	
+	def professorService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Professor.list(params), model:[professorInstanceCount: Professor.count()]
     }
 
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
     def show(Professor professorInstance) {
         respond professorInstance
     }
 
+	@Secured(['ROLE_ADMIN'])
     def create() {
         respond new Professor(params)
     }
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def list(Integer max) {
+		params.max = Math.min(max ?: 10, 100)
+		def professorList = professorService.list(params)
+		def professorCount = professorService.count()
+ 
+		[professorInstanceList: professorList, professorInstanceTotal: professorCount]
+	}
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def filter() {
+		def professorList = Professor.findAllByNomeLike("%${params.pesquisa}%")
+		
+		render view: "index", model: [professorInstanceList: professorList, professorInstanceTotal: professorList.size()]
+	}
+
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def save(Professor professorInstance) {
         if (professorInstance == null) {
             notFound()
@@ -47,11 +69,13 @@ class ProfessorController {
         }
     }
 
+	@Secured(['ROLE_ADMIN'])
     def edit(Professor professorInstance) {
         respond professorInstance
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def update(Professor professorInstance) {
         if (professorInstance == null) {
             notFound()
@@ -75,6 +99,7 @@ class ProfessorController {
     }
 
     @Transactional
+	@Secured(['ROLE_ADMIN'])
     def delete(Professor professorInstance) {
 
         if (professorInstance == null) {
