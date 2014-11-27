@@ -55,12 +55,11 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: avaliacaoTFCInstance, field: 'notafinal', 'error')} required">
-	<label for="notafinal" style= "font-weight:bold;">
-		<g:message code="avaliacaoTFC.notafinal.label" default="Nota Final" />
+	<label for="notafinal" style="font-weight:bold;">
+		<g:message code="avaliacaoTFC.notafinal.label" default="Notafinal" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="notafinal" value="${fieldValue(bean: avaliacaoTFCInstance, field: 'notafinal')}" readonly="true" style= "background:gray;" required=""/>
 
 </div>
-
 

@@ -21,14 +21,8 @@ class AvaliacaoTFC {
 	
 	double getNotafinal() {
 		try {
-		if((tfc?.formula?.disciplina?.nome=="TFCI")) {
 			def nf = ((preprojetoTFCI*tfc?.formula?.preprojetoTFCI)+(orientador*tfc?.formula?.orientador)+(coordenador*tfc?.formula?.coordenador)+(banca*tfc?.formula?.banca))/100
 			return nf
-		}
-		if((tfc?.formula?.disciplina?.nome=="TFCII")) {
-			def nf = ((preprojetoTFCI*tfc?.formula?.preprojetoTFCI)+(orientador*tfc?.formula?.orientador)+(coordenador*tfc?.formula?.coordenador)+(banca*tfc?.formula?.banca))/100
-			return nf
-		}
 		} catch(Exception ex) {
 			return 0.0
 		}

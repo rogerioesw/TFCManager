@@ -7,6 +7,8 @@ import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class SeminarioController {
+	
+	def seminarioService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -25,6 +27,23 @@ class SeminarioController {
     def create() {
         respond new Seminario(params)
     }
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def list(Integer max) {
+		params.max = Math.min(max ?: 10, 100)
+		def seminarioList = seminarioService.list(params)
+		def seminarioCount = seminarioService.count()
+ 
+		[seminarioInstanceList: seminarioList, seminarioInstanceTotal: seminarioCount]
+	}
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def filter() {
+		def seminarioList = Seminario.findAllByObservacaoLike("%${params.pesquisa}%")
+		
+		render view: "index", model: [seminarioInstanceList: seminarioList, seminarioInstanceTotal: seminarioList.size()]
+	}
+
 
     @Transactional
 	@Secured(['ROLE_ADMIN'])

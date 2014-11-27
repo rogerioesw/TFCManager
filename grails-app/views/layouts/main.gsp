@@ -42,6 +42,10 @@
 						<li><g:link controller="professor">Cadastro de Professores</g:link></li>
 						<li><g:link controller="faculdade">Cadastro de Faculdade</g:link></li>
 						<li><g:link controller="disciplina">Cadastro de Disciplinas</g:link></li>
+						<li><g:link controller="seminario">Cadastro de Seminários</g:link></li>
+						<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link></li>
+						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>
+						<li><g:link controller="TFC_has_Professor">Cadastro de Orientadores</g:link></li>
 						<li>Horários Semanais
 							<ul>
 								<li><g:link controller="horarioSemanal">Cadastro de Horários Semanais</g:link></li>
@@ -49,14 +53,7 @@
 								<li><g:link controller="professor_has_HorarioSemanal">Horários Disponíveis para Professores</g:link></li>
 							</ul>
 						</li>
-						<li><g:link controller="seminario">Cadastro de Seminários</g:link></li>
-						<li>Banca de Defesa
-							<ul>
-								<li><g:link controller="bancaDefesa">Cadastro de Banca de Defesa</g:link></li>
-							</ul>
-						</li>
-						<li><g:link controller="TFC">Cadastro de TFCs</g:link></li>
-						<li><g:link controller="TFC_has_Professor">Cadastro de Orientadores</g:link></li>
+						
 						<li>Usuários
 							<ul>
 								<li><g:link controller="usuario">Cadastro de Usuários</g:link></li>

@@ -24,17 +24,13 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="username" title="${message(code: 'usuario.username.label', default: 'Username')}" />
+						<g:sortableColumn property="username" title="${message(code: 'usuario.username.label', default: 'Nome')}" />
 					
-						<g:sortableColumn property="password" title="${message(code: 'usuario.password.label', default: 'Password')}" />
+						<g:sortableColumn property="accountLocked" title="${message(code: 'usuario.accountLocked.label', default: 'Conta Bloqueada')}" />
 					
-						<g:sortableColumn property="accountExpired" title="${message(code: 'usuario.accountExpired.label', default: 'Account Expired')}" />
+						<g:sortableColumn property="enabled" title="${message(code: 'usuario.enabled.label', default: 'Situação')}" />
 					
-						<g:sortableColumn property="accountLocked" title="${message(code: 'usuario.accountLocked.label', default: 'Account Locked')}" />
-					
-						<g:sortableColumn property="enabled" title="${message(code: 'usuario.enabled.label', default: 'Enabled')}" />
-					
-						<g:sortableColumn property="passwordExpired" title="${message(code: 'usuario.passwordExpired.label', default: 'Password Expired')}" />
+						<g:sortableColumn property="passwordExpired" title="${message(code: 'usuario.passwordExpired.label', default: 'Expira Senha')}" />
 					
 					</tr>
 				</thead>
@@ -43,10 +39,6 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${usuarioInstance.id}">${fieldValue(bean: usuarioInstance, field: "username")}</g:link></td>
-					
-						<td>${fieldValue(bean: usuarioInstance, field: "password")}</td>
-					
-						<td><g:formatBoolean boolean="${usuarioInstance.accountExpired}" /></td>
 					
 						<td><g:formatBoolean boolean="${usuarioInstance.accountLocked}" /></td>
 					
