@@ -1,6 +1,6 @@
 <%@ page import="tfcmanager.TFC" %>
 
-
+<script type="text/javascript" src="${resource(dir:'js',file:'AbreJanela.js')}"></script>
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'semestre', 'error')} required">
 	<label for="semestre">
@@ -53,7 +53,7 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="formula" name="formula.id" from="${tfcmanager.Formula.list()}" optionKey="id" required="" value="${TFCInstance?.formula?.id}" class="many-to-one"/>
-
+	<input type="button" class="home" onclick="abrejanelaformula()" value="...">
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: TFCInstance, field: 'horario', 'error')} required">
